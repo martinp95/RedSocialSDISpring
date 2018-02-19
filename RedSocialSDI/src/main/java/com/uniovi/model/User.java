@@ -1,0 +1,141 @@
+package com.uniovi.model;
+
+import java.util.HashSet;
+import java.util.Set;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+
+@Entity
+public class User {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
+	@Column(unique = true)
+	private String email;
+	private String nombre;
+	private String password;
+	private boolean admin;
+
+	@OneToMany(mappedBy = "user")
+	private Set<Publication> publications = new HashSet<Publication>();
+
+	@OneToMany(mappedBy = "user1")
+	private Set<Friend> friends = new HashSet<Friend>();
+
+	@OneToMany(mappedBy = "user1")
+	private Set<FriendshipRequest> friendsRequest = new HashSet<FriendshipRequest>();
+
+	protected User() {
+	}
+
+	public User(String email, String nombre, String password) {
+		super();
+		this.email = email;
+		this.nombre = nombre;
+		this.password = password;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public Long getId() {
+		return id;
+	}
+
+	protected Set<Publication> _getPublications() {
+		return publications;
+	}
+
+	public Set<Publication> getPublications() {
+		return new HashSet<Publication>(publications);
+	}
+
+	public void setPublications(Set<Publication> publications) {
+		this.publications = publications;
+	}
+
+	protected Set<Friend> _getFriends() {
+		return friends;
+	}
+
+	public Set<Friend> getFriends() {
+		return new HashSet<Friend>(friends);
+	}
+
+	public void setFriends(Set<Friend> friends) {
+		this.friends = friends;
+	}
+
+	protected Set<FriendshipRequest> _getFriendsRequest() {
+		return friendsRequest;
+	}
+
+	public Set<FriendshipRequest> getFriendsRequest() {
+		return new HashSet<FriendshipRequest>(friendsRequest);
+	}
+
+	protected void _setFriendsRequest(Set<FriendshipRequest> friendsRequest) {
+		this.friendsRequest = friendsRequest;
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((id == null) ? 0 : id.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		User other = (User) obj;
+		if (id == null) {
+			if (other.id != null)
+				return false;
+		} else if (!id.equals(other.id))
+			return false;
+		return true;
+	}
+
+	@Override
+	public String toString() {
+		return "User [id=" + id + ", email=" + email + ", nombre=" + nombre + ", password=" + password + "]";
+	}
+
+	public boolean isAdmin() {
+		return admin;
+	}
+}
