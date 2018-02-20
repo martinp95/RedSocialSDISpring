@@ -1,4 +1,4 @@
-package com.uniovi.model;
+package com.uniovi.entities;
 
 import java.util.Date;
 

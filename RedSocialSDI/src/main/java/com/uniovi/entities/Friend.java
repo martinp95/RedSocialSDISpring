@@ -1,15 +1,15 @@
-package com.uniovi.model;
+package com.uniovi.entities;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.IdClass;
 import javax.persistence.ManyToOne;
 
-import com.uniovi.model.types.FriendshipRequestKey;
+import com.uniovi.model.types.FriendKey;
 
 @Entity
-@IdClass(FriendshipRequestKey.class)
-public class FriendshipRequest {
+@IdClass(FriendKey.class)
+public class Friend {
 
 	@Id
 	@ManyToOne
@@ -19,11 +19,11 @@ public class FriendshipRequest {
 	@ManyToOne
 	private User user2;
 
-	protected FriendshipRequest() {
+	protected Friend() {
 	}
 
-	public FriendshipRequest(User user1, User user2) {
-		Association.SendFriendRequest.link(user1, this, user2);
+	public Friend(User user1, User user2) {
+		Association.BecomeFriends.link(user1, this, user2);
 	}
 
 	public User getUser1() {
@@ -59,7 +59,7 @@ public class FriendshipRequest {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		FriendshipRequest other = (FriendshipRequest) obj;
+		Friend other = (Friend) obj;
 		if (user1 == null) {
 			if (other.user1 != null)
 				return false;

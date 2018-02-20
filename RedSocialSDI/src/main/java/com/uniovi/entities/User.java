@@ -1,4 +1,4 @@
-package com.uniovi.model;
+package com.uniovi.entities;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -31,7 +31,7 @@ public class User {
 	@OneToMany(mappedBy = "user1")
 	private Set<FriendshipRequest> friendsRequest = new HashSet<FriendshipRequest>();
 
-	protected User() {
+	public User() {
 	}
 
 	public User(String email, String nombre, String password) {
