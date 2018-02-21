@@ -24,6 +24,12 @@ public class UsersController {
 	@Autowired
 	private SecurityService securityService;
 	
+	@RequestMapping("/user/listUsuarios")
+	public String getListado(Model model) {
+		model.addAttribute("usersList", usersService.getUsers());
+		return "user/listUsuarios";
+	}
+	
 	@RequestMapping(value = "/signup", method = RequestMethod.GET)
 	public String signup(Model model) {
 		model.addAttribute("user", new User());
