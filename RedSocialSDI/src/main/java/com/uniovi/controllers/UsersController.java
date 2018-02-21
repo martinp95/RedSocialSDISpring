@@ -1,8 +1,6 @@
 package com.uniovi.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -14,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import com.uniovi.entities.User;
 import com.uniovi.services.SecurityService;
 import com.uniovi.services.UsersService;
+import com.uniovi.validators.SignUpFormValidator;
 
 @Controller
 public class UsersController {
@@ -23,6 +22,9 @@ public class UsersController {
 	
 	@Autowired
 	private SecurityService securityService;
+
+	@Autowired
+	private SignUpFormValidator signUpFormValidator;
 	
 	@RequestMapping(value = "/signup", method = RequestMethod.GET)
 	public String signup(Model model) {
@@ -32,6 +34,11 @@ public class UsersController {
 
 	@RequestMapping(value = "/signup", method = RequestMethod.POST)
 	public String signup(@ModelAttribute("user") @Validated User user, BindingResult result, Model model) {
+		signUpFormValidator.validate(user, result);
+		if (result.hasErrors()) {
+			return "signup";
+		}
+		
 		usersService.addUser(user);
 		securityService.autoLogin(user.getEmail(), user.getPasswordConfirm());
 		return "redirect:home";
@@ -39,10 +46,10 @@ public class UsersController {
 	
 	@RequestMapping(value = { "/home" }, method = RequestMethod.GET)
 	public String home(Model model) {
-		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
-		/*String dni = auth.getName();
-		User activeUser = usersService.getUserByDni(dni);
-		model.addAttribute("markList", activeUser.getMarks());*/
+		//Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+		//String email = auth.getName();
+		//User activeUser = usersService.getUserByEmail(email);
+		//model.addAttribute("markList", activeUser.getMarks());
 		return "home";
 	}
 	
