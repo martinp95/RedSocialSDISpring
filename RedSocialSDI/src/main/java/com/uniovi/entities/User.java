@@ -9,6 +9,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+import javax.persistence.Transient;
 
 @Entity
 public class User {
@@ -21,6 +22,9 @@ public class User {
 	private String nombre;
 	private String password;
 	private boolean admin;
+	
+	@Transient // propiedad que no se almacena e la tabla.
+	private String passwordConfirm;
 
 	@OneToMany(mappedBy = "user")
 	private Set<Publication> publications = new HashSet<Publication>();
@@ -103,6 +107,14 @@ public class User {
 
 	protected void _setFriendsRequest(Set<FriendshipRequest> friendsRequest) {
 		this.friendsRequest = friendsRequest;
+	}
+	
+	public String getPasswordConfirm() {
+		return passwordConfirm;
+	}
+
+	public void setPasswordConfirm(String passwordConfirm) {
+		this.passwordConfirm = passwordConfirm;
 	}
 
 	@Override

@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.uniovi.entities.User;
+import com.uniovi.services.UsersService;
 
 @Service
 public class InsertSampleDataService {
