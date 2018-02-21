@@ -15,12 +15,18 @@ public class InsertSampleDataService {
 
 	@PostConstruct
 	public void init() {
-		User user1 = new User("email1", "Pedro", "Díaz");
-		User user2 = new User("email2", "Lucas", "Núñez");
-		User user3 = new User("email3", "María", "Rodríguez");
-		User user4 = new User("email4", "Marta", "Almonte");
-		User user5 = new User("email5", "Pelayo", "Valdes");
-		User user6 = new User("email6", "Edward", "Núñez");
+		User user1 = new User("email1", "Pedro");
+		user1.setPassword("123456");
+		User user2 = new User("email2", "Lucas");
+		user2.setPassword("123456");
+		User user3 = new User("email3", "María");
+		user3.setPassword("123456");
+		User user4 = new User("email4", "Marta");
+		user4.setPassword("123456");
+		User user5 = new User("email5", "Pelayo");
+		user5.setPassword("123456");
+		User user6 = new User("email6", "Edward");
+		user6.setPassword("123456");
 
 		usersService.addUser(user1);
 		usersService.addUser(user2);

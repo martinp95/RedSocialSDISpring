@@ -38,11 +38,10 @@ public class User {
 	public User() {
 	}
 
-	public User(String email, String nombre, String password) {
+	public User(String email, String nombre) {
 		super();
 		this.email = email;
 		this.nombre = nombre;
-		this.password = password;
 	}
 
 	public String getEmail() {
