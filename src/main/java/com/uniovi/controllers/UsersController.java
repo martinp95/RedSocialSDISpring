@@ -40,7 +40,7 @@ public class UsersController {
 	public String signup(@ModelAttribute("user") @Validated User user, BindingResult result, Model model) {
 		usersService.addUser(user);
 		securityService.autoLogin(user.getEmail(), user.getPasswordConfirm());
-		return "redirect:home";
+		return "redirect:user/listUsuarios";
 	}
 	
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
