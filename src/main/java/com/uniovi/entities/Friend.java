@@ -5,7 +5,7 @@ import javax.persistence.Id;
 import javax.persistence.IdClass;
 import javax.persistence.ManyToOne;
 
-import com.uniovi.model.types.FriendKey;
+import com.uniovi.entities.types.FriendKey;
 
 @Entity
 @IdClass(FriendKey.class)

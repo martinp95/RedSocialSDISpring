@@ -1,8 +1,8 @@
-package com.uniovi.model.types;
+package com.uniovi.entities.types;
 
 import java.io.Serializable;
 
-public class FriendshipRequestKey implements Serializable {
+public class FriendKey implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
