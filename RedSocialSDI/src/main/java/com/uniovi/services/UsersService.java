@@ -38,4 +38,8 @@ public class UsersService {
 		usersRepository.delete(id);
 	}
 
+	public User getUserByEmail(String email) {
+		return usersRepository.findByEmail(email);
+	}
+
 }
