@@ -24,6 +24,12 @@ public class UsersController {
 	@Autowired
 	private SecurityService securityService;
 	
+	@RequestMapping("/user/listUsuarios")
+	public String getListado(Model model) {
+		model.addAttribute("usersList", usersService.getUsers());
+		return "user/listUsuarios";
+	}
+	
 	@RequestMapping(value = "/signup", method = RequestMethod.GET)
 	public String signup(Model model) {
 		model.addAttribute("user", new User());
@@ -34,7 +40,7 @@ public class UsersController {
 	public String signup(@ModelAttribute("user") @Validated User user, BindingResult result, Model model) {
 		usersService.addUser(user);
 		securityService.autoLogin(user.getEmail(), user.getPasswordConfirm());
-		return "redirect:home";
+		return "redirect:user/listUsuarios";
 	}
 	
 	@RequestMapping(value = "/login", method = RequestMethod.GET)

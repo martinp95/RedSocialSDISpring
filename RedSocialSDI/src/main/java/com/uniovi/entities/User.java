@@ -19,10 +19,10 @@ public class User {
 	private Long id;
 	@Column(unique = true)
 	private String email;
-	private String nombre;
+	private String name;
 	private String password;
 	private boolean admin;
-	
+
 	@Transient // propiedad que no se almacena e la tabla.
 	private String passwordConfirm;
 
@@ -38,10 +38,10 @@ public class User {
 	public User() {
 	}
 
-	public User(String email, String nombre) {
+	public User(String email, String name) {
 		super();
 		this.email = email;
-		this.nombre = nombre;
+		this.name = name;
 	}
 
 	public String getEmail() {
@@ -52,12 +52,12 @@ public class User {
 		this.email = email;
 	}
 
-	public String getNombre() {
-		return nombre;
+	public String getName() {
+		return name;
 	}
 
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	public String getPassword() {
@@ -107,7 +107,7 @@ public class User {
 	protected void _setFriendsRequest(Set<FriendshipRequest> friendsRequest) {
 		this.friendsRequest = friendsRequest;
 	}
-	
+
 	public String getPasswordConfirm() {
 		return passwordConfirm;
 	}
@@ -143,10 +143,11 @@ public class User {
 
 	@Override
 	public String toString() {
-		return "User [id=" + id + ", email=" + email + ", nombre=" + nombre + ", password=" + password + "]";
+		return "User [id=" + id + ", email=" + email + ", name=" + name + ", password=" + password + "]";
 	}
 
 	public boolean isAdmin() {
 		return admin;
 	}
 }
+
