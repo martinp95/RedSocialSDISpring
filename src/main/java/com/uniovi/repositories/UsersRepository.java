@@ -1,9 +1,10 @@
 package com.uniovi.repositories;
 
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.repository.PagingAndSortingRepository;
 
 import com.uniovi.entities.User;
 
-public interface UsersRepository extends CrudRepository<User, Long> {
+public interface UsersRepository extends PagingAndSortingRepository<User, Long> {
 	User findByEmail(String email);
+
 }

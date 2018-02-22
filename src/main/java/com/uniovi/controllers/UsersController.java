@@ -1,6 +1,7 @@
 package com.uniovi.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -8,6 +9,7 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.uniovi.entities.User;
 import com.uniovi.services.SecurityService;
@@ -26,9 +28,17 @@ public class UsersController {
 	@Autowired
 	private SignUpFormValidator signUpFormValidator;
 
-	@RequestMapping("/user/listUsuarios")
+	/*@RequestMapping("/user/listUsuarios")
 	public String getListado(Model model) {
 		model.addAttribute("usersList", usersService.getUsers());
+		return "user/listUsuarios";
+	}*/
+	
+	@RequestMapping("/user/listUsuarios")
+	public String getListado(Model model, @RequestParam(defaultValue="0") int page) {
+		model.addAttribute("usersList", usersService.
+				findAll(new PageRequest(page, 5)));
+		model.addAttribute("currentPage", page);
 		return "user/listUsuarios";
 	}
 
