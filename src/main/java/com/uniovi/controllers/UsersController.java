@@ -50,26 +50,28 @@ public class UsersController {
 	}
 
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
-	public String login(Model model) {
+	public String login(Model model, String error) {
+		if (error != null)
+			model.addAttribute("error", "Your username and password is invalid.");
 		return "login";
 	}
-	
-	@RequestMapping(value = "/login", method = RequestMethod.POST)
-	public String login(@ModelAttribute("user") @Validated User user, BindingResult result, Model model) {
-		/*loginFormValidator.validate(user, result);
-		if (result.hasErrors()) {
-			return "signup";
-		}*/
-		return "login";
-	}
+
+//	@RequestMapping(value = "/login", method = RequestMethod.POST)
+//	public String login(@ModelAttribute("user") @Validated User user, BindingResult result, Model model) {
+//		/*
+//		 * loginFormValidator.validate(user, result); if (result.hasErrors()) {
+//		 * return "signup"; }
+//		 */
+//		return "login";
+//	}
 
 	@RequestMapping(value = { "/home" }, method = RequestMethod.GET)
 	public String home(Model model) {
 		/*
-		 * Authentication auth = SecurityContextHolder.getContext().getAuthentication();
-		 * String dni = auth.getName(); User activeUser =
-		 * usersService.getUserByDni(dni); model.addAttribute("markList",
-		 * activeUser.getMarks());
+		 * Authentication auth =
+		 * SecurityContextHolder.getContext().getAuthentication(); String dni =
+		 * auth.getName(); User activeUser = usersService.getUserByDni(dni);
+		 * model.addAttribute("markList", activeUser.getMarks());
 		 */
 		return "home";
 	}
