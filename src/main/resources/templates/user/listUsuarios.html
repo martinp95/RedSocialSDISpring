@@ -5,15 +5,14 @@
 	<!-- Barra de Navegación superior -->
 	<nav th:replace="fragments/nav" />
 	<div class="container">
-		<h2>Usuarios</h2>
-		<p>Los usuarios que actualmente figuran en el sistema son los
-			siguientes:</p>
+		<h2 th:text="#{listUsers.message}"></h2>
+		<p th:text="#{listUsersText.message}"></p>
 		<div class="table-responsive">
 			<table class="table table-hover">
 				<thead>
 					<tr>
-						<th>Email</th>
-						<th>Nombre</th>
+						<th th:text="#{listUsersEmail.message}"></th>
+						<th th:text="#{listUsersName.message}"></th>
 						<th class="col-md-1"></th>
 						<th class="col-md-1"></th>
 						<th class="col-md-1"></th>
