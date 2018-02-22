@@ -56,15 +56,6 @@ public class UsersController {
 		return "login";
 	}
 
-//	@RequestMapping(value = "/login", method = RequestMethod.POST)
-//	public String login(@ModelAttribute("user") @Validated User user, BindingResult result, Model model) {
-//		/*
-//		 * loginFormValidator.validate(user, result); if (result.hasErrors()) {
-//		 * return "signup"; }
-//		 */
-//		return "login";
-//	}
-
 	@RequestMapping(value = { "/home" }, method = RequestMethod.GET)
 	public String home(Model model) {
 		/*
