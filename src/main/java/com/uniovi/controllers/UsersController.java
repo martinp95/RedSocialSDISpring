@@ -1,7 +1,11 @@
 package com.uniovi.controllers;
 
+import java.util.LinkedList;
+
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageImpl;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -9,7 +13,6 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
 
 import com.uniovi.entities.User;
 import com.uniovi.services.SecurityService;
@@ -28,17 +31,18 @@ public class UsersController {
 	@Autowired
 	private SignUpFormValidator signUpFormValidator;
 
-	/*@RequestMapping("/user/listUsuarios")
-	public String getListado(Model model) {
-		model.addAttribute("usersList", usersService.getUsers());
-		return "user/listUsuarios";
-	}*/
-	
+	/*
+	 * @RequestMapping("/user/listUsuarios") public String getListado(Model model) {
+	 * model.addAttribute("usersList", usersService.getUsers()); return
+	 * "user/listUsuarios"; }
+	 */
+
 	@RequestMapping("/user/listUsuarios")
-	public String getListado(Model model, @RequestParam(defaultValue="0") int page) {
-		model.addAttribute("usersList", usersService.
-				findAll(new PageRequest(page, 5)));
-		model.addAttribute("currentPage", page);
+	public String getListado(Model model, Pageable pageable) {
+		Page<User> users = new PageImpl<User>(new LinkedList<User>());
+		users = usersService.findAll(pageable);
+		model.addAttribute("usersList", users.getContent());
+		model.addAttribute("page", users);
 		return "user/listUsuarios";
 	}
 
@@ -69,10 +73,10 @@ public class UsersController {
 	@RequestMapping(value = { "/home" }, method = RequestMethod.GET)
 	public String home(Model model) {
 		/*
-		 * Authentication auth =
-		 * SecurityContextHolder.getContext().getAuthentication(); String dni =
-		 * auth.getName(); User activeUser = usersService.getUserByDni(dni);
-		 * model.addAttribute("markList", activeUser.getMarks());
+		 * Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+		 * String dni = auth.getName(); User activeUser =
+		 * usersService.getUserByDni(dni); model.addAttribute("markList",
+		 * activeUser.getMarks());
 		 */
 		return "home";
 	}

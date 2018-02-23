@@ -28,13 +28,9 @@
 					</tr>
 				</tbody>
 			</table>
-			<hr/>
-			<ul class="nav nav-pills">
-				<li class="nav-item" th:each="i : ${#numbers.sequence(0, usersList.totalPages-1)}">  
-					<a th:href="@{listUsuarios/(page=${i})}" th:text="${i}" class="nav-link" th:classappend="${currentPage}==${i}?'active'"></a>  
-				</li>
-			</ul>
+			<hr />
 		</div>
+		<footer th:replace="fragments/pagination" />
 	</div>
 	<footer th:replace="fragments/footer" />
 </body>
