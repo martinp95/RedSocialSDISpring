@@ -11,26 +11,18 @@
 		</div>
 		<div class="collapse navbar-collapse" id="myNavbar">
 			<ul class="nav navbar-nav">
-				<li>
-					<a href="/">Home</a>
-				</li>
-				<li id="marks-menu" class="dropdown">
-					<a class="dropdown-toggle" data-toggle="dropdown" href="#">
-					<span th:text="#{notes.message}"></span>
-					<span class="caret"></span>
-					</a>
+				<li><a href="/">Home</a></li>
+				<li id="marks-menu" class="dropdown"><a class="dropdown-toggle"
+					data-toggle="dropdown" href="#"> <span
+						th:text="#{notes.message}"></span> <span class="caret"></span>
+				</a>
 					<ul class="dropdown-menu">
-						<li>
-							<a href="/mark/add" th:text="#{addnote.message}"></a></li>
-						<li>
-							<a href="/mark/list" th:text="#{listnote.message}"></a></li>
-					</ul>
-				</li>
-						<li id="users-menu" class="dropdown"><a class="dropdown-toggle"
-					data-toggle="dropdown" href="#">
-					<span th:text="#{users.message}"></span>
-					<span
-						class="caret"></span>
+						<li><a href="/mark/add" th:text="#{addnote.message}"></a></li>
+						<li><a href="/mark/list" th:text="#{listnote.message}"></a></li>
+					</ul></li>
+				<li id="users-menu" class="dropdown"><a class="dropdown-toggle"
+					data-toggle="dropdown" href="#"> <span
+						th:text="#{users.message}"></span> <span class="caret"></span>
 				</a>
 					<ul class="dropdown-menu">
 						<li><a href="/user/add" th:text="#{adduser.message}"></a></li>
@@ -64,7 +56,9 @@
 				<li><a href="/login" th:text="#{login.message}"> <span
 						class="glyphicon glyphicon-log-in"></span> Identifícate
 				</a></li>
-
+				<li sec:authorize="isAuthenticated()"><a href="/logout"> <span
+						class="glyphicon glyphicon-log-out"></span> Desconectar
+				</a></li>
 			</ul>
 		</div>
 	</div>
