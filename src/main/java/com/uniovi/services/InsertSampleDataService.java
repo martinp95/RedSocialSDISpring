@@ -35,7 +35,7 @@ public class InsertSampleDataService {
 		user9.setPassword("123456");
 		User user10 = new User("email10", "Marina");
 		user10.setPassword("123456");
-
+		
 		usersService.addUser(user1);
 		usersService.addUser(user2);
 		usersService.addUser(user3);
@@ -47,5 +47,6 @@ public class InsertSampleDataService {
 		usersService.addUser(user8);
 		usersService.addUser(user9);
 		usersService.addUser(user10);
+	
 	}
 }

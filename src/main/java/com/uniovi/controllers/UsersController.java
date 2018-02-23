@@ -13,6 +13,7 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.uniovi.entities.User;
 import com.uniovi.services.SecurityService;
@@ -38,9 +39,13 @@ public class UsersController {
 	 */
 
 	@RequestMapping("/user/listUsuarios")
-	public String getListado(Model model, Pageable pageable) {
+	public String getListado(Model model, @RequestParam(value = "", required=false) String searchText, Pageable pageable) {
 		Page<User> users = new PageImpl<User>(new LinkedList<User>());
-		users = usersService.findAll(pageable);
+		if(searchText != null && !searchText.isEmpty()) {
+			users = usersService.searchUsersByNameAndEmail(pageable, searchText);
+		} else {
+			users = usersService.findAll(pageable);
+		}
 		model.addAttribute("usersList", users.getContent());
 		model.addAttribute("page", users);
 		return "user/listUsuarios";
