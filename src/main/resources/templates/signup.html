@@ -33,7 +33,7 @@
 					th:text="#{signupPassword.message}"></label>
 				<div class="col-sm-10">
 					<input type="password" class="form-control" name="password"
-						placeholder="Entre el Password" /> <span class="text-danger"
+						placeholder="Entre el Password" required="true"/> <span class="text-danger"
 						th:if="${#fields.hasErrors('password')}" th:errors="*{password}" />
 				</div>
 			</div>
@@ -43,7 +43,7 @@
 					th:text="#{signupRPassword.message}"></label>
 				<div class="col-sm-10">
 					<input type="password" class="form-control" name="passwordConfirm"
-						placeholder="Repita el Password" /> <span class="text-danger"
+						placeholder="Repita el Password" required="true"/> <span class="text-danger"
 						th:if="${#fields.hasErrors('passwordConfirm')}"
 						th:errors="*{passwordConfirm}" />
 				</div>
