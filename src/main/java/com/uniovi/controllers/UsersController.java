@@ -59,7 +59,7 @@ public class UsersController {
 		}
 		usersService.addUser(user);
 		securityService.autoLogin(user.getEmail(), user.getPasswordConfirm());
-		return "redirect:home";
+		return "redirect: /user/listUsuarios";
 	}
 
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
@@ -69,10 +69,6 @@ public class UsersController {
 
 	@RequestMapping(value = { "/home" }, method = RequestMethod.GET)
 	public String home(Model model, Pageable pageable) {
-		Page<User> users = new PageImpl<User>(new LinkedList<User>());
-		users = usersService.findAll(pageable);
-		model.addAttribute("usersList", users.getContent());
-		model.addAttribute("page", users);
 		return "home";
 	}
 }
