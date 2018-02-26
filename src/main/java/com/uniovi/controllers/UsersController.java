@@ -59,7 +59,7 @@ public class UsersController {
 		}
 		usersService.addUser(user);
 		securityService.autoLogin(user.getEmail(), user.getPasswordConfirm());
-		return "redirect:user/listUsuarios";
+		return "redirect:home";
 	}
 
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
@@ -68,13 +68,11 @@ public class UsersController {
 	}
 
 	@RequestMapping(value = { "/home" }, method = RequestMethod.GET)
-	public String home(Model model) {
-		/*
-		 * Authentication auth = SecurityContextHolder.getContext().getAuthentication();
-		 * String dni = auth.getName(); User activeUser =
-		 * usersService.getUserByDni(dni); model.addAttribute("markList",
-		 * activeUser.getMarks());
-		 */
+	public String home(Model model, Pageable pageable) {
+		Page<User> users = new PageImpl<User>(new LinkedList<User>());
+		users = usersService.findAll(pageable);
+		model.addAttribute("usersList", users.getContent());
+		model.addAttribute("page", users);
 		return "home";
 	}
 }
