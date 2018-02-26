@@ -33,9 +33,10 @@ public class UsersController {
 	private SignUpFormValidator signUpFormValidator;
 
 	@RequestMapping("/user/listUsuarios")
-	public String getListado(Model model, @RequestParam(value = "", required=false) String searchText, Pageable pageable) {
+	public String getListado(Model model, @RequestParam(value = "", required = false) String searchText,
+			Pageable pageable) {
 		Page<User> users = new PageImpl<User>(new LinkedList<User>());
-		if(searchText != null && !searchText.isEmpty()) {
+		if (searchText != null && !searchText.isEmpty()) {
 			users = usersService.searchUsersByNameAndEmail(pageable, searchText);
 		} else {
 			users = usersService.findAll(pageable);
