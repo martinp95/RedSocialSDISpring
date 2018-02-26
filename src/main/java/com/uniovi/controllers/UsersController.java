@@ -32,12 +32,6 @@ public class UsersController {
 	@Autowired
 	private SignUpFormValidator signUpFormValidator;
 
-	/*
-	 * @RequestMapping("/user/listUsuarios") public String getListado(Model model) {
-	 * model.addAttribute("usersList", usersService.getUsers()); return
-	 * "user/listUsuarios"; }
-	 */
-
 	@RequestMapping("/user/listUsuarios")
 	public String getListado(Model model, @RequestParam(value = "", required=false) String searchText, Pageable pageable) {
 		Page<User> users = new PageImpl<User>(new LinkedList<User>());
