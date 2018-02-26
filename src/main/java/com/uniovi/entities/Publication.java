@@ -7,6 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -21,6 +22,7 @@ public class Publication {
 	private String texto;
 
 	@ManyToOne
+	@JoinColumn(name = "user_id")
 	private User user;
 
 	@Column(name = "fecha_creacion")
@@ -35,8 +37,8 @@ public class Publication {
 		this.title = title;
 		this.texto = texto;
 		this.user = user;
-
-		Association.Publish.link(user, this);
+		this.fechaCreacion = new Date();
+		//Association.Publish.link(user, this);
 	}
 
 	public String getTitle() {
@@ -60,6 +62,10 @@ public class Publication {
 	}
 
 	protected void _setUser(User user) {
+		this.user = user;
+	}
+	
+	public void setUser(User user) {
 		this.user = user;
 	}
 

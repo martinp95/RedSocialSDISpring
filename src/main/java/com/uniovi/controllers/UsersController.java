@@ -72,4 +72,5 @@ public class UsersController {
 	public String home(Model model, Pageable pageable) {
 		return "home";
 	}
+	
 }
