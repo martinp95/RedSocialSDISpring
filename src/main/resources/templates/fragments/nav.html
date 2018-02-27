@@ -13,15 +13,28 @@
 		<div class="collapse navbar-collapse" id="myNavbar">
 			<ul class="nav navbar-nav" sec:authorize="isAuthenticated()">
 				<li><a href="/home" th:text="#{home.message}"></a></li>
-			</ul>
 			
-			<ul class="nav navbar-nav" sec:authorize="isAuthenticated()">
+			
 				<li><a href="/user/listUsuarios" th:text="#{listaUsuarios.message}"></a></li>
-			</ul>
 			
-			<ul class="nav navbar-nav" sec:authorize="isAuthenticated()">
-				<li><a href="/publication/add" th:text="#{newPost.message}"></a></li>
+				<li id="publications-menu" class="dropdown" sec:authorize="isAuthenticated()">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#"> 
+						<span th:text="#{post.message}"></span> 
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="/publication/add" th:text="#{newPost.message}"></a>
+						</li>
+						<li>
+							<a href="/publication/listPosts" th:text="#{listPosts.message}"></a>
+						</li>
+					</ul>
+				</li>	
 			</ul>
+			<!-- <ul class="nav navbar-nav" sec:authorize="isAuthenticated()">
+				<li><a href="/publication/add" th:text="#{newPost.message}"></a></li>
+			</ul> -->
 			
 			<ul class="nav navbar-nav navbar-right">
 				<li class="dropdown"><a id="btnLanguage" href=" #"

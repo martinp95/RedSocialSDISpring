@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.uniovi.entities.Publication;
+import com.uniovi.entities.User;
 import com.uniovi.repositories.PublicationRepository;
 
 @Service
@@ -32,4 +33,10 @@ public class PublicationService {
 	public void deletePublication(Long id) {
 		publicationRepository.delete(id);
 	}
+
+	public List<Publication> getPublicationsForUser(User user) {
+		List<Publication> posts = publicationRepository.findAllByUser(user);
+		return posts;
+	}
+	
 }

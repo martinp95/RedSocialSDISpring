@@ -5,12 +5,16 @@ import javax.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.uniovi.entities.Publication;
 import com.uniovi.entities.User;
 
 @Service
 public class InsertSampleDataService {
 	@Autowired
 	private UsersService usersService;
+	
+	@Autowired
+	private PublicationService postsService;
 
 	@PostConstruct
 	public void init() {
@@ -47,6 +51,10 @@ public class InsertSampleDataService {
 		usersService.addUser(user8);
 		usersService.addUser(user9);
 		usersService.addUser(user10);
-	
+		
+		Publication post1 = new Publication("Publicación de prueba (user1)", "Esto es una prueba", user1);
+		Publication post2 = new Publication("Publicación de prueba (user2)", "Esto es una prueba", user2);
+		postsService.addPublication(post1);
+		postsService.addPublication(post2);
 	}
 }

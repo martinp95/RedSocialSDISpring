@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head th:replace="fragments/head" />
+<body>
+	<!-- Barra de Navegación superior -->
+	<nav th:replace="fragments/nav" />
+	<div class="container">
+		<h2 th:text="#{listPublicaciones.message}"></h2>
+		<form class="navbar-form" action="/publication/listPosts">
+		</form>
+		<div class="table-responsive">
+			<table class="table table-hover">
+				<thead>
+					<tr>
+						<th th:text="#{listPostDate.message}"></th>
+						<th th:text="#{listPostTitle.message}"></th>
+						<th class="col-md-1"></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr th:each="post : ${postsList}">
+						<td th:text="${post.fechaCreacion}"></td>
+						<td th:text="${post.title}"></td>
+					</tr>
+				</tbody>
+			</table>
+			<hr />
+		</div>
+	</div>
+	<footer th:replace="fragments/footer" />
+</body>
+</html>
