@@ -3,6 +3,7 @@ package com.uniovi.entities;
 import java.util.HashSet;
 import java.util.Set;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -23,11 +24,11 @@ public class User {
 	private String password;
 	private boolean admin;
 
-	@Transient // propiedad que no se almacena e la tabla.
+	@Transient 
 	private String passwordConfirm;
 
-	@OneToMany(mappedBy = "user")
-	private Set<Publication> publications = new HashSet<Publication>();
+	@OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
+	private Set<Publication> publications;
 
 	@OneToMany(mappedBy = "user1")
 	private Set<Friend> friends = new HashSet<Friend>();
