@@ -28,7 +28,7 @@ public class User {
 	private String passwordConfirm;
 
 	@OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
-	private Set<Publication> publications;
+	private Set<Publication> publications = new HashSet<Publication>();
 
 	@OneToMany(mappedBy = "user1")
 	private Set<Friend> friends = new HashSet<Friend>();

@@ -17,25 +17,28 @@ import com.uniovi.services.UsersService;
 
 @Controller
 public class PublicationController {
-	
+
 	@Autowired
 	private PublicationService publicationService;
-	
+
 	@Autowired
 	private UsersService usersService;
-	
+
 	@RequestMapping(value = "/publication/add", method = RequestMethod.POST)
-	public String setPublication(@ModelAttribute Publication publication) {
-		publicationService.addPublication(publication);
+	public String setPublication(@ModelAttribute Publication publication, Principal principal) {
+		String email = principal.getName();
+		User user = usersService.getUserByEmail(email);
+		Publication original = new Publication(publication.getTitle(), publication.getTexto(), user);
+		publicationService.addPublication(original);
 		return "redirect:/publication/listPosts";
 	}
 
 	@RequestMapping(value = "/publication/add")
-	public String getMark(Model model) {
+	public String getPublication(Model model) {
 		model.addAttribute("publicationList", publicationService.getPublications());
 		return "publication/add";
 	}
-	
+
 	@RequestMapping("/publication/listPosts")
 	public String getListado(Model model, Principal principal) {
 		String email = principal.getName();

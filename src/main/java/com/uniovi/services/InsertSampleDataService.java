@@ -12,7 +12,7 @@ import com.uniovi.entities.User;
 public class InsertSampleDataService {
 	@Autowired
 	private UsersService usersService;
-	
+
 	@Autowired
 	private PublicationService postsService;
 
@@ -30,7 +30,7 @@ public class InsertSampleDataService {
 		user5.setPassword("123456");
 		User user6 = new User("email6", "Edward");
 		user6.setPassword("123456");
-		
+
 		User user7 = new User("email7", "Luis");
 		user7.setPassword("123456");
 		User user8 = new User("email8", "Juan");
@@ -39,19 +39,19 @@ public class InsertSampleDataService {
 		user9.setPassword("123456");
 		User user10 = new User("email10", "Marina");
 		user10.setPassword("123456");
-		
+
 		usersService.addUser(user1);
 		usersService.addUser(user2);
 		usersService.addUser(user3);
 		usersService.addUser(user4);
 		usersService.addUser(user5);
 		usersService.addUser(user6);
-		
+
 		usersService.addUser(user7);
 		usersService.addUser(user8);
 		usersService.addUser(user9);
 		usersService.addUser(user10);
-		
+
 		Publication post1 = new Publication("Publicación de prueba (user1)", "Esto es una prueba", user1);
 		Publication post2 = new Publication("Publicación de prueba (user2)", "Esto es una prueba", user2);
 		postsService.addPublication(post1);
