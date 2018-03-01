@@ -1,5 +1,6 @@
 package com.uniovi.controllers;
 
+import java.security.Principal;
 import java.util.LinkedList;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,12 +35,16 @@ public class UsersController {
 
 	@RequestMapping("/user/listUsuarios")
 	public String getListado(Model model, @RequestParam(value = "", required = false) String searchText,
-			Pageable pageable) {
+			Pageable pageable, Principal principal) {
 		Page<User> users = new PageImpl<User>(new LinkedList<User>());
+		
+		String email = principal.getName();
+		User user = usersService.getUserByEmail(email);
+		
 		if (searchText != null && !searchText.isEmpty()) {
-			users = usersService.searchUsersByNameAndEmail(pageable, searchText);
+			users = usersService.searchUsersByNameAndEmail(pageable, searchText, user.getId());
 		} else {
-			users = usersService.findAll(pageable);
+			users = usersService.findAll(pageable, user.getId());
 		}
 		model.addAttribute("usersList", users.getContent());
 		model.addAttribute("page", users);
@@ -64,10 +69,7 @@ public class UsersController {
 	}
 
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
-	public String login(Model model, @RequestParam(value="", required=false) String error) {
-		/*if(error != null) {
-			model.addAttribute("error", "Usuario o contraseña incorrecto");
-		}*/
+	public String login(Model model) {
 		return "login";
 	}
 

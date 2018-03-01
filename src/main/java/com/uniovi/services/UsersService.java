@@ -47,14 +47,14 @@ public class UsersService {
 	}
 
 	
-	public Page<User> findAll(Pageable pageable) {
-		return usersRepository.findAll(pageable);
+	public Page<User> findAll(Pageable pageable, Long id) {
+		return usersRepository.findAll(pageable, id);
 	}
 	
-	public Page<User> searchUsersByNameAndEmail(Pageable pageable, String searchText){
+	public Page<User> searchUsersByNameAndEmail(Pageable pageable, String searchText, Long id){
 		Page<User> users = new PageImpl<User>(new LinkedList<User>());
 		searchText = "%"+searchText+"%";
-		users = usersRepository.searchByNameAndEmail(pageable, searchText);
+		users = usersRepository.searchByNameAndEmail(pageable, searchText, id);
 		return users;
 	}
 
