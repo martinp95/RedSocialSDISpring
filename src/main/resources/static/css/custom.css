@@ -21,4 +21,8 @@ footer {
   line-height:60px
 }
 
+.errorLogin{
+	color:#FF0000;
+}
+
 /* Sticky footer styles-------------------------------------------------- */

@@ -64,7 +64,10 @@ public class UsersController {
 	}
 
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
-	public String login(Model model) {
+	public String login(Model model, @RequestParam(value="", required=false) String error) {
+		/*if(error != null) {
+			model.addAttribute("error", "Usuario o contraseña incorrecto");
+		}*/
 		return "login";
 	}
 
