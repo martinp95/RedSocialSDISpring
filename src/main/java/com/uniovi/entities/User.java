@@ -9,6 +9,9 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
 import javax.persistence.Transient;
 
@@ -22,8 +25,6 @@ public class User {
 	private String email;
 	private String name;
 	private String password;
-	private boolean admin;
-
 	@Transient 
 	private String passwordConfirm;
 
@@ -35,6 +36,11 @@ public class User {
 
 	@OneToMany(mappedBy = "user1")
 	private Set<FriendshipRequest> friendsRequest = new HashSet<FriendshipRequest>();
+	
+	@ManyToMany
+	@JoinTable(name = "user_role", joinColumns = @JoinColumn(name = "user_id")
+	, inverseJoinColumns = @JoinColumn(name = "role_id"))
+	private Set<Role> roles = new HashSet<Role>();
 
 	public User() {
 	}
@@ -145,10 +151,6 @@ public class User {
 	@Override
 	public String toString() {
 		return "User [id=" + id + ", email=" + email + ", name=" + name + ", password=" + password + "]";
-	}
-
-	public boolean isAdmin() {
-		return admin;
 	}
 }
 
