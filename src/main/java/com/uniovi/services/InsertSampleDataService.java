@@ -6,7 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.uniovi.entities.Publication;
+import com.uniovi.entities.Role;
 import com.uniovi.entities.User;
+import com.uniovi.entities.types.RoleType;
 
 @Service
 public class InsertSampleDataService {
@@ -15,6 +17,9 @@ public class InsertSampleDataService {
 
 	@Autowired
 	private PublicationService postsService;
+	
+	@Autowired
+	private RoleService roleService;
 
 	@PostConstruct
 	public void init() {
@@ -39,6 +44,22 @@ public class InsertSampleDataService {
 		user9.setPassword("123456");
 		User user10 = new User("email10", "Marina");
 		user10.setPassword("123456");
+		
+		Role roleUser = new Role(RoleType.ROLE_USER.name());
+		Role roleAdmin = new Role(RoleType.ROLE_ADMIN.name());
+		roleService.addRole(roleUser);
+		roleService.addRole(roleAdmin);
+		
+		user1.getRoles().add(roleUser);
+		user2.getRoles().add(roleUser);
+		user3.getRoles().add(roleUser);
+		user4.getRoles().add(roleUser);
+		user5.getRoles().add(roleUser);
+		user6.getRoles().add(roleUser);
+		user7.getRoles().add(roleUser);
+		user8.getRoles().add(roleUser);
+		user9.getRoles().add(roleUser);
+		user10.getRoles().add(roleUser);
 
 		usersService.addUser(user1);
 		usersService.addUser(user2);
@@ -51,6 +72,8 @@ public class InsertSampleDataService {
 		usersService.addUser(user8);
 		usersService.addUser(user9);
 		usersService.addUser(user10);
+		
+		
 
 		Publication post1 = new Publication("Publicación de prueba (user1)", "Esto es una prueba", user1);
 		Publication post2 = new Publication("Publicación de prueba (user2)", "Esto es una prueba", user2);

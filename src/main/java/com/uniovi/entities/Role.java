@@ -2,6 +2,7 @@ package com.uniovi.entities;
 
 import java.util.Set;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -15,12 +16,17 @@ public class Role {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
+	@Column(unique = true)
 	private String name;
 
 	@ManyToMany(mappedBy = "roles")
 	private Set<User> users;	
 
 	Role() {
+	}
+	
+	public Role(String name){
+		this.name = name;
 	}
 
 	public String getName() {

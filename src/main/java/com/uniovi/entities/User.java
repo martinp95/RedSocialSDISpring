@@ -25,7 +25,7 @@ public class User {
 	private String email;
 	private String name;
 	private String password;
-	@Transient 
+	@Transient
 	private String passwordConfirm;
 
 	@OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
@@ -36,10 +36,9 @@ public class User {
 
 	@OneToMany(mappedBy = "user1")
 	private Set<FriendshipRequest> friendsRequest = new HashSet<FriendshipRequest>();
-	
+
 	@ManyToMany
-	@JoinTable(name = "user_role", joinColumns = @JoinColumn(name = "user_id")
-	, inverseJoinColumns = @JoinColumn(name = "role_id"))
+	@JoinTable(name = "user_role", joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "role_id"))
 	private Set<Role> roles = new HashSet<Role>();
 
 	public User() {
@@ -49,6 +48,14 @@ public class User {
 		super();
 		this.email = email;
 		this.name = name;
+	}
+
+	public Set<Role> getRoles() {
+		return roles;
+	}
+
+	public void setRoles(Set<Role> roles) {
+		this.roles = roles;
 	}
 
 	public String getEmail() {
@@ -153,4 +160,3 @@ public class User {
 		return "User [id=" + id + ", email=" + email + ", name=" + name + ", password=" + password + "]";
 	}
 }
-
