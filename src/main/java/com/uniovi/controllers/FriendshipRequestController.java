@@ -12,8 +12,10 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.uniovi.entities.Friend;
 import com.uniovi.entities.FriendshipRequest;
 import com.uniovi.entities.User;
+import com.uniovi.services.FriendsService;
 import com.uniovi.services.FriendshipRequestService;
 import com.uniovi.services.UsersService;
 
@@ -26,8 +28,11 @@ public class FriendshipRequestController {
 	@Autowired
 	private UsersService usersService;
 	
+	@Autowired
+	private FriendsService friendsService;
+	
 	@RequestMapping(value = "/friendshipRequest/add/{id}")
-	public String getMark(@PathVariable Long id, Principal principal) {
+	public String getFriendshipRequest(@PathVariable Long id, Principal principal) {
 		String email = principal.getName();
 		User user1 = usersService.getUserByEmail(email);
 		
@@ -37,6 +42,27 @@ public class FriendshipRequestController {
 				
 		friendshipRequestService.addFriendshipRequest(original);
 		return "redirect:/user/listUsuarios";
+	}
+	
+	@RequestMapping(value = "/friendshipRequest/accept/{id}")
+	public String acceptFriendshipRequest(@PathVariable Long id, Principal principal) {
+		String email = principal.getName();
+		User user2 = usersService.getUserByEmail(email);
+		
+		User user1 = usersService.getUser(id);
+		
+		FriendshipRequest request = friendshipRequestService.getFriendshipRequestByUsers(user1, user2);
+		
+		friendshipRequestService.deleteFriendshipRequest(request);
+		
+		Friend friendship1 = new Friend(user1, user2);
+		Friend friendship2 = new Friend(user2, user1);
+		
+		friendsService.addFriendship(friendship1);
+		friendsService.addFriendship(friendship2);
+		
+		
+		return "redirect:/friendshipRequest/listRequest";
 	}
 	
 	@RequestMapping("/friendshipRequest/listRequest")
@@ -52,5 +78,7 @@ public class FriendshipRequestController {
 		model.addAttribute("page", requests);
 		return "friendshipRequest/listRequest";
 	}
+	
+	
 	
 }

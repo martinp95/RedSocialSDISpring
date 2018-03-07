@@ -43,4 +43,12 @@ public class FriendshipRequestService {
 		return request;
 	}
 	
+	public void deleteFriendshipRequest(FriendshipRequest request) {
+		friendshipRequestRepository.delete(request);
+	}
+	
+	public FriendshipRequest getFriendshipRequestByUsers(User user1, User user2) {
+		return friendshipRequestRepository.findByUsers(user1, user2);
+	}
+	
 }
