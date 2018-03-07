@@ -61,7 +61,6 @@ public class FriendshipRequestController {
 		friendsService.addFriendship(friendship1);
 		friendsService.addFriendship(friendship2);
 		
-		
 		return "redirect:/friendshipRequest/listRequest";
 	}
 	
@@ -78,7 +77,5 @@ public class FriendshipRequestController {
 		model.addAttribute("page", requests);
 		return "friendshipRequest/listRequest";
 	}
-	
-	
 	
 }
