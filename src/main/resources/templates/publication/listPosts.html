@@ -20,7 +20,7 @@
 				<tbody>
 					<tr th:each="post : ${postsList}">
 						<td th:text="${post.fechaCreacion}"></td>
-						<td th:text="${post.title}"></td>
+						<td><a th:href="${'/publication/details/' + post.id}" th:text="${post.title}"></a></td>		 	
 					</tr>
 				</tbody>
 			</table>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head th:replace="fragments/head" />
+<body>
+	<nav th:replace="fragments/nav" />
+	<div class="container">
+		<h2 th:text="#{publicationDetails.message}"></h2>
+		<div class="panel panel-default">
+			<div class="panel-heading" th:text="#{titlePublication.message}"></div>
+			<div class="panel-body" th:text="${post.title}"></div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading" th:text="#{publicationDate.message}"></div>
+			<div class="panel-body" th:text="${post.fechaCreacion}"></div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading" th:text="#{publicationBy.message}"></div>
+			<div class="panel-body" th:text="${post.user.name}"></div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading" th:text="#{publicationText.message}"></div>
+			<div class="panel-body" th:text="${post.texto}"></div>
+		</div>
+	</div>
+	<footer th:replace="fragments/footer" />
+</body>
+
+</html>
