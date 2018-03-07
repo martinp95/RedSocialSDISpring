@@ -5,13 +5,13 @@
 	<!-- Barra de Navegación superior -->
 	<nav th:replace="fragments/nav" />
 	<div class="container">
-		<h2>Amigos</h2>
+		<h2 th:text="#{listFriendship.message}"></h2>
 		<div class="table-responsive">
 			<table class="table table-hover">
 				<thead>
 					<tr>
-						<th>Nombre</th>
-						<th>Email</th>
+						<th th:text="#{listFriendshipname.message}"></th>
+						<th th:text="#{listFriendshipemail.message}"></th>
 						<th class="col-md-1"></th>
 						<th class="col-md-1"></th>
 						<th class="col-md-1"></th>

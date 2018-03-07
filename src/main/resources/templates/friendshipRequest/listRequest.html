@@ -5,12 +5,12 @@
 	<!-- Barra de Navegación superior -->
 	<nav th:replace="fragments/nav" />
 	<div class="container">
-		<h2>Solicitudes de amistad recibidas</h2>
+		<h2 th:text="#{listRequest.message}"></h2>
 		<div class="table-responsive">
 			<table class="table table-hover">
 				<thead>
 					<tr>
-						<th>Usuarios que han solicitado amistad</th>
+						<th th:text="#{listRequestUsers.message}"></th>
 						<th class="col-md-1"></th>
 						<th class="col-md-1"></th>
 						<th class="col-md-1"></th>
@@ -21,7 +21,9 @@
 				<tbody>
 					<tr th:each="request : ${requestList}">
 						<td th:text="${request.user1.email}"></td>
-						<td><a th:href="${'/friendshipRequest/accept/' + request.user1.id}">Aceptar solicitud</a></td>		 	
+						<td><a
+							th:href="${'/friendshipRequest/accept/' + request.user1.id}"
+							th:text="#{listRequestAccept.message}"></a></td>
 					</tr>
 				</tbody>
 			</table>
