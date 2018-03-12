@@ -65,7 +65,7 @@ public class UsersController {
 		}
 		usersService.addUser(user);
 		securityService.autoLogin(user.getEmail(), user.getPasswordConfirm());
-		return "redirect: /user/listUsuarios";
+		return "redirect:/user/listUsuarios";
 	}
 
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
