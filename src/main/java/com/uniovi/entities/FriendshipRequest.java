@@ -3,6 +3,7 @@ package com.uniovi.entities;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.IdClass;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
 import com.uniovi.entities.types.FriendshipRequestKey;
@@ -13,17 +14,20 @@ public class FriendshipRequest {
 
 	@Id
 	@ManyToOne
+	@JoinColumn(name = "user1_id")
 	private User user1;
 
 	@Id
 	@ManyToOne
+	@JoinColumn(name = "user2_id")
 	private User user2;
 
 	protected FriendshipRequest() {
 	}
 
 	public FriendshipRequest(User user1, User user2) {
-		Association.SendFriendRequest.link(user1, this, user2);
+		this.user1 = user1;
+		this.user2 = user2;
 	}
 
 	public User getUser1() {
