@@ -2,20 +2,6 @@ package com.uniovi.entities;
 
 public class Association {
 
-	public static class Publish {
-
-		public static void link(User user, Publication publication) {
-			publication._setUser(user);
-			user._getPublications().add(publication);
-		}
-
-		public static void unlink(User user, Publication publication) {
-			user._getPublications().remove(publication);
-			publication._setUser(null);
-		}
-
-	}
-
 	public static class BecomeFriends {
 
 		public static void link(User user1, Friend friend, User user2) {

@@ -29,7 +29,7 @@ public class PublicationController {
 	public String setPublication(@ModelAttribute Publication publication, Principal principal) {
 		String email = principal.getName();
 		User user = usersService.getUserByEmail(email);
-		Publication original = new Publication(publication.getTitle(), publication.getTexto(), user);
+		Publication original = new Publication(publication.getTitle(), publication.getText(), user);
 		publicationService.addPublication(original);
 		return "redirect:/publication/listPosts";
 	}
