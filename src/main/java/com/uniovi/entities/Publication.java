@@ -6,6 +6,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -17,9 +18,10 @@ public class Publication {
 	@GeneratedValue
 	private Long id;
 	private String title;
-	private String texto;
+	private String text;
 
 	@ManyToOne
+	@JoinColumn(name = "user_id")
 	private User user;
 
 	@Column(name = "fecha_creacion")
@@ -30,13 +32,12 @@ public class Publication {
 		super();
 	}
 
-	public Publication(String title, String texto, User user) {
+	public Publication(String title, String text, User user) {
 		super();
 		this.title = title;
-		this.texto = texto;
+		this.text = text;
 		this.user = user;
 		this.fechaCreacion = new Date();
-		Association.Publish.link(user, this);
 	}
 
 	public String getTitle() {
@@ -47,12 +48,12 @@ public class Publication {
 		this.title = title;
 	}
 
-	public String getTexto() {
-		return texto;
+	public String getText() {
+		return text;
 	}
 
-	public void setTexto(String texto) {
-		this.texto = texto;
+	public void setText(String text) {
+		this.text = text;
 	}
 
 	public User getUser() {
@@ -77,7 +78,7 @@ public class Publication {
 
 	@Override
 	public String toString() {
-		return "Publication [id=" + id + ", title=" + title + ", texto=" + texto + ", user=" + user + ", fechaCreacion="
+		return "Publication [id=" + id + ", title=" + title + ", texto=" + text + ", user=" + user + ", fechaCreacion="
 				+ fechaCreacion + "]";
 	}
 
