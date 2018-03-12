@@ -3,6 +3,8 @@ package com.uniovi.controllers;
 import java.security.Principal;
 import java.util.LinkedList;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
@@ -37,6 +39,8 @@ public class UsersController {
 	
 	@Autowired
 	private RoleService roleService;
+	
+	private final Logger log = LoggerFactory.getLogger(this.getClass());
 
 	@RequestMapping("/user/listUsuarios")
 	public String getListado(Model model, @RequestParam(value = "", required = false) String searchText,
@@ -53,6 +57,7 @@ public class UsersController {
 		}
 		model.addAttribute("usersList", users.getContent());
 		model.addAttribute("page", users);
+		log.info("El usuario " + principal.getName() + " ha consultado la lista de usuarios");
 		return "user/listUsuarios";
 	}
 
@@ -66,14 +71,16 @@ public class UsersController {
 	public String signup(@ModelAttribute("user") @Validated User user, BindingResult result, Model model) {
 		signUpFormValidator.validate(user, result);
 		if (result.hasErrors()) {
+			log.info("Registro inválido");
 			return "signup";
 		}
 		user.getRoles().add(roleService.findRole(RoleType.ROLE_USER.name()));
 		usersService.addUser(user);
+		log.info("Se a añadido un nuevo usuario: " + user.getName() + " - " + user.getEmail());
 		securityService.autoLogin(user.getEmail(), user.getPasswordConfirm());
 		return "redirect:/user/listUsuarios";
 	}
-
+	
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
 	public String login(Model model) {
 		return "login";
