@@ -17,6 +17,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.uniovi.entities.User;
+import com.uniovi.entities.types.RoleType;
+import com.uniovi.services.RoleService;
 import com.uniovi.services.SecurityService;
 import com.uniovi.services.UsersService;
 import com.uniovi.validators.SignUpFormValidator;
@@ -32,6 +34,9 @@ public class UsersController {
 
 	@Autowired
 	private SignUpFormValidator signUpFormValidator;
+	
+	@Autowired
+	private RoleService roleService;
 
 	@RequestMapping("/user/listUsuarios")
 	public String getListado(Model model, @RequestParam(value = "", required = false) String searchText,
@@ -63,6 +68,7 @@ public class UsersController {
 		if (result.hasErrors()) {
 			return "signup";
 		}
+		user.getRoles().add(roleService.findRole(RoleType.ROLE_USER.name()));
 		usersService.addUser(user);
 		securityService.autoLogin(user.getEmail(), user.getPasswordConfirm());
 		return "redirect:/user/listUsuarios";
