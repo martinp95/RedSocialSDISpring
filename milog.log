@@ -3473,3 +3473,4 @@ org.springframework.expression.spel.SpelEvaluationException: EL1011E: Method cal
 2018-03-13 19:25:09.197  INFO 5976 --- [http-nio-8090-exec-10] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
 2018-03-13 19:25:10.181  INFO 5976 --- [http-nio-8090-exec-5] com.uniovi.controllers.UsersController   : El usuario email2 ha consultado la lista de usuarios
 2018-03-13 19:31:47.526  INFO 5976 --- [http-nio-8090-exec-8] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-13 19:31:48.750  INFO 5976 --- [http-nio-8090-exec-1] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
