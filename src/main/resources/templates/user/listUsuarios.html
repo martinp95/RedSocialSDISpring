@@ -31,7 +31,19 @@
 					<tr th:each="user : ${usersList}">
 						<td th:text="${user.email}">71888888X</td>
 						<td th:text="${user.name}">Nombre del alumno</td>
-						<td><a th:href="${'/friendshipRequest/add/' + user.id}" th:text="#{addFriend.message}"></a></td>		 	
+						<!--<td><a th:href="${'/friendshipRequest/add/' + user.id}" th:text="#{addFriend.message}"></a></td> -->
+						<td>
+							<button type="button" th:id="${'friendshipRequestButton' + user.id}"
+								class="btn btn-info" th:text="#{addFriend.message}"></button>
+								
+							<script th:inline="javascript">
+								/*<![CDATA[*/
+									$( "#friendshipRequestButton[[${user.id}]]").click(function(){
+										$.get("/friendshipRequest/add/[[${user.id}]]");
+									});
+								/*]]>*/
+							</script>
+						</td>		 	
 					</tr>
 				</tbody>
 			</table>
