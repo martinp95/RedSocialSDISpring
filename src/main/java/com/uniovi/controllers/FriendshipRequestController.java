@@ -32,7 +32,7 @@ public class FriendshipRequestController {
 	private FriendsService friendsService;
 	
 	@RequestMapping(value = "/friendshipRequest/add/{id}")
-	public String getFriendshipRequest(@PathVariable Long id, Principal principal) {
+	public String addFriendshipRequest(@PathVariable Long id, Principal principal) {
 		String email = principal.getName();
 		User user1 = usersService.getUserByEmail(email);
 		
@@ -76,6 +76,16 @@ public class FriendshipRequestController {
 		model.addAttribute("requestList", requests.getContent());
 		model.addAttribute("page", requests);
 		return "friendshipRequest/listRequest";
+	}
+	
+	@RequestMapping("/friendshipRequest/listRequest/update")
+	public String updateListado(Model model, Pageable pageable, Principal principal){
+		String email = principal.getName();
+		User user = usersService.getUserByEmail(email);
+		
+		Page<FriendshipRequest> requests = friendshipRequestService.getFriendshipRequestsForUser(pageable, user);
+		model.addAttribute("requestList", requests.getContent());
+		return "friendshipRequest/listRequest :: tableFriendshipRequest";
 	}
 	
 }
