@@ -141,35 +141,69 @@ public class RedSocialSDITests {
 	// 4.2 Intento de acceso con URL a la búsqueda de usuarios desde un usuario no
 	// identificado. Debe producirse un acceso no permitido a vistas privadas
 	@Test
-	public void BusUsrInVal() { 
+	public void BusUsrInVal() {
 		driver.navigate().to("http://localhost:8090/user/listUsuarios");
 		PO_View.checkElement(driver, "text", "Identificate");
 	}
 
-	// 5.1 [InvVal] Enviar una invitación de amistad a un usuario de forma valida
+	// 5.1 Enviar una invitación de amistad a un usuario de forma valida
 	@Test
 	public void InvVal() {
 		PO_HomeView.clickOption(driver, "login", "class", "btn btn-primary");
 		PO_LoginView.fillForm(driver, "email1", "123456");
 		PO_HomeView.clickOption(driver, "user/listUsuarios", "id", "friendshipRequestButton2");
-		
-		PO_HomeView.clickOption(driver, "logout", "class", "btn btn-primary");
-		
+
+		/*PO_HomeView.clickOption(driver, "logout", "class", "btn btn-primary");
+
 		PO_HomeView.clickOption(driver, "login", "class", "btn btn-primary");
 		PO_LoginView.fillForm(driver, "email2", "123456");
-		
+
 		PO_HomeView.clickOption(driver, "friendshipRequest/listRequest", "text", "Pedro");
-		PO_View.checkElement(driver, "text", "Solicitudes de amistad recibidas");	
+		PO_View.checkElement(driver, "text", "Solicitudes de amistad recibidas");*/
 	}
-	// 5.2 [InvInVal] Enviar una invitación de amistad a un usuario al que ya le
-	// habíamos invitado la invitación
-	// previamente. No debería dejarnos enviar la invitación, se podría ocultar el
-	// botón de enviar invitación o
-	// notificar que ya había sido enviada previamente.
-	// 6.1 [LisInvVal] Listar las invitaciones recibidas por un usuario, realizar la
-	// comprobación con una lista
-	// que al menos tenga una invitación recibida.
+
+	// 5.2 Enviar una invitación de amistad a un usuario al que ya le habíamos
+	// invitado la invitación previamente. No debería dejarnos enviar la invitación,
+	// se podría ocultar el
+	// botón de enviar invitación o notificar que ya había sido enviada previamente.
+	@Test
+	public void InvInval() {
+		//TODO
+	}
+
+	// 6.1 Listar las invitaciones recibidas por un usuario, realizar la
+	// comprobación con una lista que al menos tenga una invitación recibida.
+	@Test 
+	public void LisInvVal() {
+		PO_HomeView.clickOption(driver, "login", "class", "btn btn-primary");
+		PO_LoginView.fillForm(driver, "email1", "123456");
+		PO_HomeView.clickOption(driver, "user/listUsuarios", "id", "friendshipRequestButton2");
+
+		PO_HomeView.clickOption(driver, "logout", "class", "btn btn-primary");
+
+		PO_HomeView.clickOption(driver, "login", "class", "btn btn-primary");
+		PO_LoginView.fillForm(driver, "email2", "123456");
+
+		PO_HomeView.clickOption(driver, "friendshipRequest/listRequest", "text", "Pedro");
+		PO_View.checkElement(driver, "text", "Solicitudes de amistad recibidas");
+	}
+	
 	// 7.1 [AcepInvVal] Aceptar una invitación recibida.
+	@Test
+	public void AcepInvVal() {
+		PO_HomeView.clickOption(driver, "login", "class", "btn btn-primary");
+		PO_LoginView.fillForm(driver, "email1", "123456");
+		PO_HomeView.clickOption(driver, "user/listUsuarios", "id", "friendshipRequestButton2");
+
+		PO_HomeView.clickOption(driver, "logout", "class", "btn btn-primary");
+
+		PO_HomeView.clickOption(driver, "login", "class", "btn btn-primary");
+		PO_LoginView.fillForm(driver, "email2", "123456");
+
+		PO_HomeView.clickOption(driver, "friendshipRequest/listRequest", "id", "friendshipRequestAcceptButton1");
+		
+	}
+	
 	// 8.1 [ListAmiVal] Listar los amigos de un usuario, realizar la comprobación
 	// con una lista que al menos
 	// tenga un amigo.
