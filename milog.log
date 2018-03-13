@@ -3859,3 +3859,8 @@ org.springframework.expression.spel.SpelEvaluationException: EL1011E: Method cal
 2018-03-13 21:46:57.693  INFO 588 --- [http-nio-8090-exec-9] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
 2018-03-13 21:47:00.336  INFO 588 --- [http-nio-8090-exec-2] com.uniovi.controllers.UsersController   : Registro inválido
 2018-03-13 21:47:01.958  INFO 588 --- [http-nio-8090-exec-1] com.uniovi.controllers.UsersController   : Se a añadido un nuevo usuario: Josefo - example@example.com
+2018-03-13 21:47:02.083  INFO 588 --- [http-nio-8090-exec-5] com.uniovi.controllers.UsersController   : El usuario example@example.com ha consultado la lista de usuarios
+2018-03-13 21:50:05.102  INFO 588 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-03-13 21:50:05.103  INFO 588 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@60611244: startup date [Tue Mar 13 21:46:08 CET 2018]; root of context hierarchy
+2018-03-13 21:50:05.105  INFO 588 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-03-13 21:50:05.107  INFO 588 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
