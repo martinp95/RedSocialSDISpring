@@ -56,13 +56,12 @@
 						</a></li>
 					</ul></li>
 
-				<li sec:authorize="!isAuthenticated()"><a href="/signup"
-					th:text="#{signup.message}"> <span
-						class="glyphicon glyphicon-user"></span> 
-				</a></li>
+				<li sec:authorize="!isAuthenticated()"><a href
+						="/signup"  th:id="botonSignup" th:text="#{signup.message}"> <span
+						class="glyphicon glyphicon-user"></span> </a></li>
 				<li sec:authorize="!isAuthenticated()"><a href="/login"
 					th:text="#{login.message}"> <span
-						class="glyphicon glyphicon-log-in"></span> 
+						class="glyphicon glyphicon-log-in"></span>
 				</a></li>
 				<li sec:authorize="isAuthenticated()"><a href="/logout"
 					th:text="#{logout.message}"> <span

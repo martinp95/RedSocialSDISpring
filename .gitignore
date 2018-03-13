@@ -12,6 +12,7 @@ local.properties
 .loadpath
 .recommenders
 hsqldb-2.4.0
+milog.log
 
 # Eclipse Core
 .project
