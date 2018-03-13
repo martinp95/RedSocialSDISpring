@@ -3544,3 +3544,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1011E: Method cal
 2018-03-13 19:54:55.685  INFO 5976 --- [http-nio-8090-exec-5] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
 2018-03-13 19:54:56.014  INFO 5976 --- [http-nio-8090-exec-9] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
 2018-03-13 19:54:57.085  INFO 5976 --- [http-nio-8090-exec-9] com.uniovi.controllers.UsersController   : El usuario email2 ha consultado la lista de usuarios
+2018-03-13 19:59:54.920  INFO 5976 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-03-13 19:59:54.921  INFO 5976 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@60611244: startup date [Tue Mar 13 19:10:29 CET 2018]; root of context hierarchy
+2018-03-13 19:59:54.926  INFO 5976 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-03-13 19:59:54.931  INFO 5976 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
