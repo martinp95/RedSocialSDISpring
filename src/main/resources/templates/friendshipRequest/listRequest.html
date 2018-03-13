@@ -20,10 +20,25 @@
 				</thead>
 				<tbody>
 					<tr th:each="request : ${requestList}">
-						<td th:text="${request.user1.email}"></td>
-						<td><a
+						<td th:text="${request.user1.name}"></td>
+						<!-- <td><a
 							th:href="${'/friendshipRequest/accept/' + request.user1.id}"
-							th:text="#{listRequestAccept.message}"></a></td>
+							th:text="#{listRequestAccept.message}"></a>
+						</td> -->
+
+						<td>
+							<button type="button"
+								th:id="${'friendshipRequestAcceptButton' + request.user1.id}"
+								class="btn btn-info" th:text="#{listRequestAccept.message}"></button>
+								
+								<script th:inline="javascript">
+								/*<![CDATA[*/
+									$( "#friendshipRequestAcceptButton[[${request.user1.id}]]").click(function(){
+										$.get("/friendshipRequest/accept/[[${request.user1.id}]]");
+									});
+								/*]]>*/
+							</script>
+						</td>
 					</tr>
 				</tbody>
 			</table>
