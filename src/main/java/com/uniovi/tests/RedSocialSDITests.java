@@ -153,27 +153,30 @@ public class RedSocialSDITests {
 		PO_LoginView.fillForm(driver, "email1", "123456");
 		PO_HomeView.clickOption(driver, "user/listUsuarios", "id", "friendshipRequestButton2");
 
-		/*PO_HomeView.clickOption(driver, "logout", "class", "btn btn-primary");
-
-		PO_HomeView.clickOption(driver, "login", "class", "btn btn-primary");
-		PO_LoginView.fillForm(driver, "email2", "123456");
-
-		PO_HomeView.clickOption(driver, "friendshipRequest/listRequest", "text", "Pedro");
-		PO_View.checkElement(driver, "text", "Solicitudes de amistad recibidas");*/
+		/*
+		 * PO_HomeView.clickOption(driver, "logout", "class", "btn btn-primary");
+		 * 
+		 * PO_HomeView.clickOption(driver, "login", "class", "btn btn-primary");
+		 * PO_LoginView.fillForm(driver, "email2", "123456");
+		 * 
+		 * PO_HomeView.clickOption(driver, "friendshipRequest/listRequest", "text",
+		 * "Pedro"); PO_View.checkElement(driver, "text",
+		 * "Solicitudes de amistad recibidas");
+		 */
 	}
 
 	// 5.2 Enviar una invitación de amistad a un usuario al que ya le habíamos
 	// invitado la invitación previamente. No debería dejarnos enviar la invitación,
-	// se podría ocultar el
-	// botón de enviar invitación o notificar que ya había sido enviada previamente.
+	// se podría ocultar el botón de enviar invitación o notificar que ya había sido
+	// enviada previamente.
 	@Test
 	public void InvInval() {
-		//TODO
+		// TODO: faltar implementarlo
 	}
 
 	// 6.1 Listar las invitaciones recibidas por un usuario, realizar la
 	// comprobación con una lista que al menos tenga una invitación recibida.
-	@Test 
+	@Test
 	public void LisInvVal() {
 		PO_HomeView.clickOption(driver, "login", "class", "btn btn-primary");
 		PO_LoginView.fillForm(driver, "email1", "123456");
@@ -187,7 +190,7 @@ public class RedSocialSDITests {
 		PO_HomeView.clickOption(driver, "friendshipRequest/listRequest", "text", "Pedro");
 		PO_View.checkElement(driver, "text", "Solicitudes de amistad recibidas");
 	}
-	
+
 	// 7.1 [AcepInvVal] Aceptar una invitación recibida.
 	@Test
 	public void AcepInvVal() {
@@ -201,35 +204,123 @@ public class RedSocialSDITests {
 		PO_LoginView.fillForm(driver, "email2", "123456");
 
 		PO_HomeView.clickOption(driver, "friendshipRequest/listRequest", "id", "friendshipRequestAcceptButton1");
-		
+
+		List<WebElement> elementos = SeleniumUtils.EsperaCargaPagina(driver, "text", "email1", PO_View.getTimeout());
+		assertTrue(elementos.size() == 0);
 	}
-	
-	// 8.1 [ListAmiVal] Listar los amigos de un usuario, realizar la comprobación
-	// con una lista que al menos
-	// tenga un amigo.
-	// 9.1 [PubVal] Crear una publicación con datos válidos.
-	// 10.1 [LisPubVal] Acceso al listado de publicaciones desde un usuario en
+
+	// 8.1 Listar los amigos de un usuario, realizar la comprobación con una lista
+	// que al menos tenga un amigo.
+	@Test
+	public void ListAmiVal() {
+		PO_HomeView.clickOption(driver, "login", "class", "btn btn-primary");
+		PO_LoginView.fillForm(driver, "email1", "123456");
+		PO_HomeView.clickOption(driver, "user/listUsuarios", "id", "friendshipRequestButton2");
+
+		PO_HomeView.clickOption(driver, "logout", "class", "btn btn-primary");
+
+		PO_HomeView.clickOption(driver, "login", "class", "btn btn-primary");
+		PO_LoginView.fillForm(driver, "email2", "123456");
+
+		PO_HomeView.clickOption(driver, "friendshipRequest/listRequest", "id", "friendshipRequestAcceptButton1");
+
+		PO_HomeView.clickOption(driver, "friendship/listFriendship", "text", "Amigos");
+
+		PO_View.checkElement(driver, "text", "email1");
+	}
+
+	// 9.1 Crear una publicación con datos válidos.
+	@Test
+	public void PubVal() {
+		PO_HomeView.clickOption(driver, "login", "class", "btn btn-primary");
+		PO_LoginView.fillForm(driver, "email1", "123456");
+
+		List<WebElement> elementos = SeleniumUtils.EsperaCargaPagina(driver, "id", "btnPost", PO_View.getTimeout());
+		elementos.get(0).click();
+		elementos = SeleniumUtils.EsperaCargaPagina(driver, "id", "postDropdownMenuButton", PO_View.getTimeout());
+		elementos = SeleniumUtils.EsperaCargaPagina(driver, "id", "addPost", PO_View.getTimeout());
+		elementos.get(0).click();
+
+		WebElement title = driver.findElement(By.name("title"));
+		title.click();
+		title.clear();
+		title.sendKeys("Primera publicación");
+		WebElement text = driver.findElement(By.name("text"));
+		text.click();
+		text.clear();
+		text.sendKeys("Esto es una publicación de prueba");
+		By boton = By.className("btn");
+		driver.findElement(boton).click();
+
+		PO_View.checkElement(driver, "text", "Mis publicaciones");
+	}
+
+	// 10.1 Acceso al listado de publicaciones desde un usuario en
 	// sesión.
-	// 11.1 [LisPubAmiVal] Listar las publicaciones de un usuario amigo
-	// 11.2 [LisPubAmiInVal] Utilizando un acceso vía URL tratar de listar las
-	// publicaciones de un usuario que
-	// no sea amigo del usuario identificado en sesión.
-	// 12.1 [PubFot1Val] Crear una publicación con datos válidos y una foto adjunta.
-	// 12.1 [PubFot2Val] Crear una publicación con datos válidos y sin una foto
+	@Test
+	public void LisPubVal() {
+		PO_HomeView.clickOption(driver, "login", "class", "btn btn-primary");
+		PO_LoginView.fillForm(driver, "email1", "123456");
+
+		List<WebElement> elementos = SeleniumUtils.EsperaCargaPagina(driver, "id", "btnPost", PO_View.getTimeout());
+		elementos.get(0).click();
+		elementos = SeleniumUtils.EsperaCargaPagina(driver, "id", "postDropdownMenuButton", PO_View.getTimeout());
+		elementos = SeleniumUtils.EsperaCargaPagina(driver, "id", "listPost", PO_View.getTimeout());
+		elementos.get(0).click();
+
+		PO_View.checkElement(driver, "text", "Mis publicaciones");
+	}
+
+	// 11.1 Listar las publicaciones de un usuario amigo
+	@Test
+	public void LisPubAmiVal() {
+	}
+
+	// 11.2 Utilizando un acceso vía URL tratar de listar las publicaciones de un
+	// usuario que no sea amigo del usuario identificado en sesión.
+	@Test
+	public void LisPubAmiInVal() {
+	}
+
+	// 12.1 Crear una publicación con datos válidos y una foto adjunta.
+	@Test
+	public void PubFoto1Val() {
+	}
+
+	// 12.1 Crear una publicación con datos válidos y sin una foto
 	// adjunta.
-	// 13.1 [AdInVal] Inicio de sesión como administrador con datos válidos.
-	// 13.2 [AdInInVal] Inicio de sesión como administrador con datos inválidos
-	// (usar los datos de un usuario
-	// que no tenga perfil administrador).
-	// 14.1 [AdLisUsrVal] Desde un usuario identificado en sesión como administrador
-	// listar a todos los
-	// usuarios de la aplicación.
-	// 15.1 [AdBorUsrVal] Desde un usuario identificado en sesión como administrador
-	// eliminar un usuario
-	// existente en la aplicación.
-	// 15.2 [AdBorUsrInVal] Intento de acceso vía URL al borrado de un usuario
-	// existente en la aplicación.
-	// Debe utilizarse un usuario identificado en sesión pero que no tenga perfil de
-	// administrador.
+	@Test
+	public void PubFot2Val() {
+	}
+
+	// 13.1 Inicio de sesión como administrador con datos válidos.
+	@Test
+	public void AdInVal() {
+	}
+
+	// 13.2 Inicio de sesión como administrador con datos inválidos (usar los datos
+	// de un usuario que no tenga perfil administrador).
+	@Test
+	public void AdInInVal() {
+	}
+
+	// 14.1 Desde un usuario identificado en sesión como administrador listar a
+	// todos los usuarios de la aplicación.
+	@Test
+	public void AdLisUsrVal() {
+	}
+
+	// 15.1 Desde un usuario identificado en sesión como administrador eliminar un
+	// usuario existente en la aplicación.
+	@Test
+	public void AdBorUsrVal() {
+	}
+
+	// 15.2 Intento de acceso vía URL al borrado de un usuario existente en la
+	// aplicación. Debe utilizarse un usuario identificado en sesión pero que no
+	// tenga perfil de administrador.
+	@Test
+	public void AdBorUsrInVal() {
+	}
 
 }
