@@ -19,14 +19,14 @@
 					th:text="#{listaUsuarios.message}"></a></li>
 
 				<li id="publications-menu" class="dropdown"
-					sec:authorize="isAuthenticated()"><a class="dropdown-toggle"
-					data-toggle="dropdown" href="#"> <span
+					sec:authorize="isAuthenticated()"><a class="dropdown-toggle" 
+					th:id = "btnPost" data-toggle="dropdown" href="#"> <span
 						th:text="#{post.message}"></span> <span class="caret"></span>
 				</a>
-					<ul class="dropdown-menu">
-						<li><a href="/publication/add" th:text="#{newPost.message}"></a>
+					<ul id="postDropdownMenuButton" class="dropdown-menu">
+						<li><a href="/publication/add" th:id = "addPost" th:text="#{newPost.message}"></a>
 						</li>
-						<li><a href="/publication/listPosts"
+						<li><a href="/publication/listPosts"  th:id = "listPost"
 							th:text="#{listPosts.message}"></a></li>
 					</ul></li>
 
