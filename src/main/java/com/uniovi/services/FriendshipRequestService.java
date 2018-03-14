@@ -18,7 +18,7 @@ import com.uniovi.repositories.FriendshipRequestRepository;
 public class FriendshipRequestService {
 	@Autowired
 	private FriendshipRequestRepository friendshipRequestRepository;
-	
+
 	public List<FriendshipRequest> getFriendshipsRequests() {
 		List<FriendshipRequest> request = new ArrayList<FriendshipRequest>();
 		friendshipRequestRepository.findAll().forEach(request::add);
@@ -39,16 +39,16 @@ public class FriendshipRequestService {
 
 	public Page<FriendshipRequest> getFriendshipRequestsForUser(Pageable pageable, User user) {
 		Page<FriendshipRequest> request = new PageImpl<FriendshipRequest>(new LinkedList<FriendshipRequest>());
-		request =  friendshipRequestRepository.findAllByUser(pageable, user);
+		request = friendshipRequestRepository.findAllByUser(pageable, user);
 		return request;
 	}
-	
+
 	public void deleteFriendshipRequest(FriendshipRequest request) {
 		friendshipRequestRepository.delete(request);
 	}
-	
+
 	public FriendshipRequest getFriendshipRequestByUsers(User user1, User user2) {
 		return friendshipRequestRepository.findByUsers(user1, user2);
 	}
-	
+
 }
