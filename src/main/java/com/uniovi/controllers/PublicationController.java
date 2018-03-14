@@ -69,5 +69,13 @@ public class PublicationController {
 		model.addAttribute("post", publicationService.getPublication(id));
 		return "publication/details";
 	}
+	
+	@RequestMapping("listFriendPublications/{id}")
+	public String getFriendPublications(Model model, @PathVariable Long id){
+		User user = usersService.getUser(id);
+		List<Publication> posts = publicationService.getPublicationsForUser(user);
+		model.addAttribute("postsList", posts);
+		return "/publication/listPosts";
+	}
 
 }

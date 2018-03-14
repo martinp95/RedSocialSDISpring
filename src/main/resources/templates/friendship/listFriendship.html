@@ -23,6 +23,7 @@
 					<tr th:each="friendship : ${friendships}">
 						<td th:text="${friendship.user1.name}"></td>
 						<td th:text="${friendship.user1.email}"></td>
+						<td><a th:href="${'/listFriendPublications/' + friendship.user1.id}" th:text="#{listFriendPublications.message}"></a></td>
 					</tr>
 				</tbody>
 			</table>
