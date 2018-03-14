@@ -45,6 +45,7 @@ public class UsersController {
 	@RequestMapping("/user/listUsuarios")
 	public String getListado(Model model, @RequestParam(value = "", required = false) String searchText,
 			Pageable pageable, Principal principal) {
+		
 		Page<User> users = new PageImpl<User>(new LinkedList<User>());
 		
 		String email = principal.getName();
