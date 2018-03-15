@@ -21,6 +21,7 @@
 				<tbody>
 					<tr th:each="request : ${requestList}">
 						<td th:text="${request.user1.name}"></td>
+						<td th:text="${request.user1.email}"></td>
 						<!-- <td><a
 							th:href="${'/friendshipRequest/accept/' + request.user1.id}"
 							th:text="#{listRequestAccept.message}"></a>
