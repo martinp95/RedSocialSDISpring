@@ -71,7 +71,8 @@ public class RedSocialSDITests {
 		assertTrue(elementos.size() == 1);
 		elementos.get(0).click();
 		PO_NavView.clickOption(driver, "signup", "id", "botonSignup");
-		PO_RegisterView.fillForm(driver, "example@example.com", "Josefo", "123456", "123456");
+		PO_RegisterView.fillForm(driver, Math.floor(Math.random() * 50000 + 1) + "@example.com", "Josefo", "123456",
+				"123456");
 		PO_View.checkElement(driver, "text", "Los usuarios que actualmente figuran en el sistema son los siguientes:");
 	}
 
@@ -171,7 +172,11 @@ public class RedSocialSDITests {
 	// enviada previamente.
 	@Test
 	public void InvInval() {
-		// TODO: faltar implementarlo
+		PO_HomeView.clickOption(driver, "login", "class", "btn btn-primary");
+		PO_LoginView.fillForm(driver, "email1", "123456");
+		PO_HomeView.clickOption(driver, "user/listUsuarios", "id", "friendshipRequestButton2");
+
+		PO_View.checkElement(driver, "text", "La solicitud de amistad ya ha sido enviada");
 	}
 
 	// 6.1 Listar las invitaciones recibidas por un usuario, realizar la
@@ -182,13 +187,20 @@ public class RedSocialSDITests {
 		PO_LoginView.fillForm(driver, "email1", "123456");
 		PO_HomeView.clickOption(driver, "user/listUsuarios", "id", "friendshipRequestButton2");
 
+		List<WebElement> elementos = SeleniumUtils.EsperaCargaPagina(driver, "id", "friendshipRequestButton2",
+				PO_View.getTimeout());
+		elementos.get(0).click();
+
 		PO_HomeView.clickOption(driver, "logout", "class", "btn btn-primary");
 
 		PO_HomeView.clickOption(driver, "login", "class", "btn btn-primary");
 		PO_LoginView.fillForm(driver, "email2", "123456");
 
-		PO_HomeView.clickOption(driver, "friendshipRequest/listRequest", "text", "Pedro");
-		PO_View.checkElement(driver, "text", "Solicitudes de amistad recibidas");
+		PO_HomeView.clickOption(driver, "friendshipRequest/listRequest", "id", "friendshipRequestAcceptButton1");
+		elementos = SeleniumUtils.EsperaCargaPagina(driver, "id", "friendshipRequestAcceptButton1",
+				PO_View.getTimeout());
+		PO_View.checkElement(driver, "text", "Pedro");
+
 	}
 
 	// 7.1 [AcepInvVal] Aceptar una invitación recibida.
@@ -198,15 +210,24 @@ public class RedSocialSDITests {
 		PO_LoginView.fillForm(driver, "email1", "123456");
 		PO_HomeView.clickOption(driver, "user/listUsuarios", "id", "friendshipRequestButton2");
 
+		List<WebElement> elementos = SeleniumUtils.EsperaCargaPagina(driver, "id", "friendshipRequestButton2",
+				PO_View.getTimeout());
+		elementos.get(0).click();
+
 		PO_HomeView.clickOption(driver, "logout", "class", "btn btn-primary");
 
 		PO_HomeView.clickOption(driver, "login", "class", "btn btn-primary");
 		PO_LoginView.fillForm(driver, "email2", "123456");
 
 		PO_HomeView.clickOption(driver, "friendshipRequest/listRequest", "id", "friendshipRequestAcceptButton1");
+		elementos = SeleniumUtils.EsperaCargaPagina(driver, "id", "friendshipRequestAcceptButton1",
+				PO_View.getTimeout());
+		PO_View.checkElement(driver, "text", "Pedro");
+		elementos.get(0).click();
 
-		List<WebElement> elementos = SeleniumUtils.EsperaCargaPagina(driver, "text", "email1", PO_View.getTimeout());
-		assertTrue(elementos.size() == 0);
+		PO_View.checkElement(driver, "text", "SDI - Red social");
+		PO_View.checkElement(driver, "text", "Solicitudes de amistad recibidas");
+		SeleniumUtils.textoNoPresentePagina(driver, "email1");
 	}
 
 	// 8.1 Listar los amigos de un usuario, realizar la comprobación con una lista
@@ -224,9 +245,8 @@ public class RedSocialSDITests {
 
 		PO_HomeView.clickOption(driver, "friendshipRequest/listRequest", "id", "friendshipRequestAcceptButton1");
 
-		PO_HomeView.clickOption(driver, "friendship/listFriendship", "text", "Amigos");
+		PO_HomeView.clickOption(driver, "friendship/listFriendship", "text", "Pedro");
 
-		PO_View.checkElement(driver, "text", "email1");
 	}
 
 	// 9.1 Crear una publicación con datos válidos.
@@ -274,12 +294,36 @@ public class RedSocialSDITests {
 	// 11.1 Listar las publicaciones de un usuario amigo
 	@Test
 	public void LisPubAmiVal() {
+		PO_HomeView.clickOption(driver, "login", "class", "btn btn-primary");
+		PO_LoginView.fillForm(driver, "email1", "123456");
+		PO_HomeView.clickOption(driver, "user/listUsuarios", "id", "friendshipRequestButton2");
+
+		PO_HomeView.clickOption(driver, "logout", "class", "btn btn-primary");
+
+		PO_HomeView.clickOption(driver, "login", "class", "btn btn-primary");
+		PO_LoginView.fillForm(driver, "email2", "123456");
+
+		PO_HomeView.clickOption(driver, "friendshipRequest/listRequest", "id", "friendshipRequestAcceptButton1");
+
+		PO_HomeView.clickOption(driver, "friendship/listFriendship", "@href", "listFriendPublications/1");
+
+		List<WebElement> elementos = SeleniumUtils.EsperaCargaPagina(driver, "@href", "listFriendPublications/1",
+				PO_View.getTimeout());
+		elementos.get(0).click();
+
+		PO_View.checkElement(driver, "text", "Publicación de prueba (user1)");
+
 	}
 
 	// 11.2 Utilizando un acceso vía URL tratar de listar las publicaciones de un
 	// usuario que no sea amigo del usuario identificado en sesión.
 	@Test
 	public void LisPubAmiInVal() {
+		driver.navigate().to("http://localhost:8090/listFriendPublications/4");
+		PO_View.checkElement(driver, "text", "Identificate");
+		PO_HomeView.clickOption(driver, "login", "class", "btn btn-primary");
+		PO_LoginView.fillForm(driver, "email1", "123456");
+		SeleniumUtils.textoNoPresentePagina(driver, "2018");
 	}
 
 	// 12.1 Crear una publicación con datos válidos y una foto adjunta.
