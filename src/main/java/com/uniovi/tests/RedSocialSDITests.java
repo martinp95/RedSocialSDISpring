@@ -272,7 +272,7 @@ public class RedSocialSDITests {
 		By boton = By.className("btn");
 		driver.findElement(boton).click();
 
-		PO_View.checkElement(driver, "text", "Mis publicaciones");
+		PO_View.checkElement(driver, "text", "Publicaciones");
 	}
 
 	// 10.1 Acceso al listado de publicaciones desde un usuario en
@@ -288,7 +288,7 @@ public class RedSocialSDITests {
 		elementos = SeleniumUtils.EsperaCargaPagina(driver, "id", "listPost", PO_View.getTimeout());
 		elementos.get(0).click();
 
-		PO_View.checkElement(driver, "text", "Mis publicaciones");
+		PO_View.checkElement(driver, "text", "Publicaciones");
 	}
 
 	// 11.1 Listar las publicaciones de un usuario amigo
