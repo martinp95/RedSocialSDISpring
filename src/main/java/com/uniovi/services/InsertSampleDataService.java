@@ -1,10 +1,14 @@
 package com.uniovi.services;
 
+import java.util.HashSet;
+import java.util.Set;
+
 import javax.annotation.PostConstruct;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.uniovi.entities.Friend;
 import com.uniovi.entities.Publication;
 import com.uniovi.entities.Role;
 import com.uniovi.entities.User;
@@ -17,6 +21,9 @@ public class InsertSampleDataService {
 
 	@Autowired
 	private PublicationService postsService;
+
+	@Autowired
+	private FriendsService friendsService;
 
 	@Autowired
 	private RoleService roleService;
@@ -61,13 +68,27 @@ public class InsertSampleDataService {
 		user9.getRoles().add(roleUser);
 		user10.getRoles().add(roleUser);
 
+		Set<Friend> friend = new HashSet<Friend>() {
+			/**
+			 * 
+			 */
+			private static final long serialVersionUID = 1L;
+
+			{
+				add(new Friend(user3, user4));
+				add(new Friend(user4, user3));
+			}
+		};
+		user3.setFriends(friend);
+		//user4.setFriends(friend);
+
+		
 		usersService.addUser(user1);
 		usersService.addUser(user2);
 		usersService.addUser(user3);
 		usersService.addUser(user4);
 		usersService.addUser(user5);
 		usersService.addUser(user6);
-
 		usersService.addUser(user7);
 		usersService.addUser(user8);
 		usersService.addUser(user9);
@@ -77,5 +98,6 @@ public class InsertSampleDataService {
 		Publication post2 = new Publication("Publicación de prueba (user2)", "Esto es una prueba", user2);
 		postsService.addPublication(post1);
 		postsService.addPublication(post2);
+
 	}
 }

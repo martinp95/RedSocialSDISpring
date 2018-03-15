@@ -187,6 +187,7 @@ public class RedSocialSDITests {
 		PO_HomeView.clickOption(driver, "login", "class", "btn btn-primary");
 		PO_LoginView.fillForm(driver, "email2", "123456");
 
+		//TODO: ARREGLAR!! NO HACE CLICK EN EL BOTÓN (creo que es por el javascript)
 		PO_HomeView.clickOption(driver, "friendshipRequest/listRequest", "text", "Pedro");
 		PO_View.checkElement(driver, "text", "Solicitudes de amistad recibidas");
 	}
@@ -197,15 +198,21 @@ public class RedSocialSDITests {
 		PO_HomeView.clickOption(driver, "login", "class", "btn btn-primary");
 		PO_LoginView.fillForm(driver, "email1", "123456");
 		PO_HomeView.clickOption(driver, "user/listUsuarios", "id", "friendshipRequestButton2");
-
+		
+		List<WebElement> elementos = SeleniumUtils.EsperaCargaPagina(driver, "id", "friendshipRequestButton2", PO_View.getTimeout());
+		elementos.get(0).click();
+		
 		PO_HomeView.clickOption(driver, "logout", "class", "btn btn-primary");
 
 		PO_HomeView.clickOption(driver, "login", "class", "btn btn-primary");
 		PO_LoginView.fillForm(driver, "email2", "123456");
 
 		PO_HomeView.clickOption(driver, "friendshipRequest/listRequest", "id", "friendshipRequestAcceptButton1");
-
-		List<WebElement> elementos = SeleniumUtils.EsperaCargaPagina(driver, "text", "email1", PO_View.getTimeout());
+		elementos = SeleniumUtils.EsperaCargaPagina(driver, "id", "friendshipRequestAcceptButton1", PO_View.getTimeout());
+		PO_View.checkElement(driver, "text", "Pedro");
+		elementos.get(0).click();
+		
+		elementos = SeleniumUtils.EsperaCargaPagina(driver, "id", "friendshipRequestAcceptButton1", PO_View.getTimeout());
 		assertTrue(elementos.size() == 0);
 	}
 
@@ -222,11 +229,11 @@ public class RedSocialSDITests {
 		PO_HomeView.clickOption(driver, "login", "class", "btn btn-primary");
 		PO_LoginView.fillForm(driver, "email2", "123456");
 
+		//TODO: ARREGLAR!! NO HACE CLICK EN EL BOTÓN (creo que es por el javascript)
 		PO_HomeView.clickOption(driver, "friendshipRequest/listRequest", "id", "friendshipRequestAcceptButton1");
 
-		PO_HomeView.clickOption(driver, "friendship/listFriendship", "text", "Amigos");
+		PO_HomeView.clickOption(driver, "friendship/listFriendship", "text", "Pedro");
 
-		PO_View.checkElement(driver, "text", "email1");
 	}
 
 	// 9.1 Crear una publicación con datos válidos.
