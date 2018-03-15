@@ -19,7 +19,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.uniovi.entities.User;
-import com.uniovi.entities.types.RoleType;
 import com.uniovi.services.RoleService;
 import com.uniovi.services.SecurityService;
 import com.uniovi.services.UsersService;
@@ -75,7 +74,7 @@ public class UsersController {
 			log.info("Registro inválido");
 			return "signup";
 		}
-		user.getRoles().add(roleService.findRole(RoleType.ROLE_USER.name()));
+		user.setRole(roleService.getRoles()[0]);
 		usersService.addUser(user);
 		log.info("Se a añadido un nuevo usuario: " + user.getName() + " - " + user.getEmail());
 		securityService.autoLogin(user.getEmail(), user.getPasswordConfirm());
