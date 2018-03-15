@@ -2,11 +2,14 @@ package com.uniovi.entities;
 
 import java.util.Date;
 
+import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.Lob;
 import javax.persistence.ManyToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -28,8 +31,12 @@ public class Publication {
 	@Temporal(TemporalType.DATE)
 	private Date fechaCreacion;
 
+	@Lob
+	@Basic(fetch = FetchType.LAZY)
+	@Column(name = "photo", nullable = true)
+	private byte[] photo;
+
 	public Publication() {
-		super();
 	}
 
 	public Publication(String title, String text, User user) {
@@ -74,6 +81,14 @@ public class Publication {
 
 	public Long getId() {
 		return id;
+	}
+
+	public byte[] getPhoto() {
+		return photo;
+	}
+
+	public void setPhoto(byte[] photo) {
+		this.photo = photo;
 	}
 
 	@Override

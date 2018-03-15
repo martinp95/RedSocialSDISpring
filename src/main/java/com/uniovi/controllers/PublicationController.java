@@ -13,6 +13,8 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.multipart.MultipartFile;
 
 import com.uniovi.entities.Publication;
 import com.uniovi.entities.User;
@@ -28,14 +30,15 @@ public class PublicationController {
 
 	@Autowired
 	private UsersService usersService;
-	
+
 	@Autowired
 	private PublishFormValidator publishFormValidator;
 
 	private final Logger log = LoggerFactory.getLogger(this.getClass());
 
 	@RequestMapping(value = "/publication/add", method = RequestMethod.POST)
-	public String setPublication(@ModelAttribute Publication publication, BindingResult result, Principal principal) {
+	public String setPublication(@ModelAttribute Publication publication, BindingResult result, Principal principal,
+			@RequestParam(value = "photo", required = false) MultipartFile photo) {
 		publishFormValidator.validate(publication, result);
 		if (result.hasErrors()) {
 			log.info("La publicacion no es valida");
@@ -44,6 +47,7 @@ public class PublicationController {
 		String email = principal.getName();
 		User user = usersService.getUserByEmail(email);
 		Publication original = new Publication(publication.getTitle(), publication.getText(), user);
+		// meter photo
 		publicationService.addPublication(original);
 		return "redirect:/publication/listPosts";
 	}
@@ -69,9 +73,9 @@ public class PublicationController {
 		model.addAttribute("post", publicationService.getPublication(id));
 		return "publication/details";
 	}
-	
+
 	@RequestMapping("listFriendPublications/{id}")
-	public String getFriendPublications(Model model, @PathVariable Long id){
+	public String getFriendPublications(Model model, @PathVariable Long id) {
 		User user = usersService.getUser(id);
 		List<Publication> posts = publicationService.getPublicationsForUser(user);
 		model.addAttribute("postsList", posts);
