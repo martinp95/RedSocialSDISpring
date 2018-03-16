@@ -176,6 +176,14 @@ public class RedSocialSDITests {
 		PO_LoginView.fillForm(driver, "email1", "123456");
 		PO_HomeView.clickOption(driver, "user/listUsuarios", "id", "friendshipRequestButton2");
 
+		List<WebElement> elementos = SeleniumUtils.EsperaCargaPagina(driver, "id", "friendshipRequestButton2",
+				PO_View.getTimeout());
+		elementos.get(0).click();
+		elementos = SeleniumUtils.EsperaCargaPagina(driver, "id", "friendshipRequestButton2", PO_View.getTimeout());
+		elementos.get(0).click();
+
+		PO_View.checkElement(driver, "text", "SDI - Red social");
+		PO_View.checkElement(driver, "text", "Usuarios");
 		PO_View.checkElement(driver, "text", "La solicitud de amistad ya ha sido enviada");
 	}
 
