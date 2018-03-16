@@ -29,7 +29,7 @@ public class RedSocialSDITests {
 
 	// En Windows (Debe ser la versión 46.0 y desactivar las actualizacioens
 	// automáticas)):
-	static String PathFirefox = "C:\\Users\\gemma\\Desktop\\RedSocialSDI\\Firefox46.win\\FirefoxPortable.exe";
+	static String PathFirefox = "C:\\Firefox46.win\\FirefoxPortable.exe";
 	// Común a Windows y a MACOSX
 	static WebDriver driver = getDriver(PathFirefox);
 	static String URL = "http://localhost:8090";
@@ -175,7 +175,8 @@ public class RedSocialSDITests {
 		PO_HomeView.clickOption(driver, "login", "class", "btn btn-primary");
 		PO_LoginView.fillForm(driver, "email1", "123456");
 		PO_HomeView.clickOption(driver, "user/listUsuarios", "id", "friendshipRequestButton2");
-
+		
+		PO_View.checkElement(driver, "text", "SDI - Red social");
 		PO_View.checkElement(driver, "text", "La solicitud de amistad ya ha sido enviada");
 	}
 

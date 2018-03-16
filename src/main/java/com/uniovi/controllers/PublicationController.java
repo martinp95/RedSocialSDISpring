@@ -1,5 +1,6 @@
 package com.uniovi.controllers;
 
+import java.io.IOException;
 import java.security.Principal;
 import java.util.List;
 
@@ -38,7 +39,7 @@ public class PublicationController {
 
 	@RequestMapping(value = "/publication/add", method = RequestMethod.POST)
 	public String setPublication(@ModelAttribute Publication publication, BindingResult result, Principal principal,
-			@RequestParam(value = "photo", required = false) MultipartFile photo) {
+			@RequestParam(value = "picture", required = false) MultipartFile photo) {
 		publishFormValidator.validate(publication, result);
 		if (result.hasErrors()) {
 			log.info("La publicacion no es valida");
@@ -47,7 +48,12 @@ public class PublicationController {
 		String email = principal.getName();
 		User user = usersService.getUserByEmail(email);
 		Publication original = new Publication(publication.getTitle(), publication.getText(), user);
-		// meter photo
+		try {
+			if (!photo.isEmpty())
+				original.setPhoto(photo.getBytes());
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 		publicationService.addPublication(original);
 		return "redirect:/publication/listPosts";
 	}
@@ -70,7 +76,9 @@ public class PublicationController {
 
 	@RequestMapping("/publication/details/{id}")
 	public String getDetail(Model model, @PathVariable Long id) {
-		model.addAttribute("post", publicationService.getPublication(id));
+		Publication post = publicationService.getPublication(id);
+		model.addAttribute("post", post);
+
 		return "publication/details";
 	}
 

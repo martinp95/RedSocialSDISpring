@@ -21,6 +21,11 @@
 			<div class="panel-heading" th:text="#{publicationText.message}"></div>
 			<div class="panel-body" th:text="${post.text}"></div>
 		</div>
+
+		<div class="panel panel-default" th:if="*{post.photo != null}">
+			<div class="panel-heading" th:text="#{publicationPhoto.message}"></div>
+			<img th:src="@{'data:image/jpg;base64,' + *{T(org.springframework.util.Base64Utils).encodeToString(post.photo)}}" />
+		</div>
 	</div>
 	<footer th:replace="fragments/footer" />
 </body>
