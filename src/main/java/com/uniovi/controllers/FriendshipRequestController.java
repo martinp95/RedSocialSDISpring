@@ -21,71 +21,73 @@ import com.uniovi.services.UsersService;
 
 @Controller
 public class FriendshipRequestController {
-	
+
 	@Autowired
 	private FriendshipRequestService friendshipRequestService;
-	
+
 	@Autowired
 	private UsersService usersService;
-	
+
 	@Autowired
 	private FriendsService friendsService;
-	
+
 	@RequestMapping(value = "/friendshipRequest/add/{id}")
-	public String addFriendshipRequest(@PathVariable Long id, Principal principal) {
+	public String addFriendshipRequest(Model model, @PathVariable Long id, Principal principal) {
 		String email = principal.getName();
 		User user1 = usersService.getUserByEmail(email);
-		
 		User user2 = usersService.getUser(id);
-		
 		FriendshipRequest original = new FriendshipRequest(user1, user2);
-				
-		friendshipRequestService.addFriendshipRequest(original);
+
+		if (user1.getFriends().contains(new Friend(user1, user2)) || user1.getFriendsRequest().contains(original)) {
+			model.addAttribute("errorEnviado", "error");
+		} else {
+			friendshipRequestService.addFriendshipRequest(original);
+		}
 		return "redirect:/user/listUsuarios";
 	}
-	
+
 	@RequestMapping(value = "/friendshipRequest/accept/{id}")
 	public String acceptFriendshipRequest(@PathVariable Long id, Principal principal) {
 		String email = principal.getName();
 		User user2 = usersService.getUserByEmail(email);
-		
+
 		User user1 = usersService.getUser(id);
-		
+
 		FriendshipRequest request = friendshipRequestService.getFriendshipRequestByUsers(user1, user2);
-		
+
 		friendshipRequestService.deleteFriendshipRequest(request);
-		
+
 		Friend friendship1 = new Friend(user1, user2);
 		Friend friendship2 = new Friend(user2, user1);
-		
+
 		friendsService.addFriendship(friendship1);
 		friendsService.addFriendship(friendship2);
-		
+
 		return "redirect:/friendshipRequest/listRequest";
 	}
-	
+
 	@RequestMapping("/friendshipRequest/listRequest")
 	public String getListado(Model model, Pageable pageable, Principal principal) {
 		Page<FriendshipRequest> requests = new PageImpl<FriendshipRequest>(new LinkedList<FriendshipRequest>());
-		
+
 		String email = principal.getName();
 		User user = usersService.getUserByEmail(email);
-		
+
 		requests = friendshipRequestService.getFriendshipRequestsForUser(pageable, user);
-		
+
 		model.addAttribute("requestList", requests.getContent());
 		model.addAttribute("page", requests);
 		return "friendshipRequest/listRequest";
 	}
-	
+
 	@RequestMapping("/friendshipRequest/listRequest/update")
-	public String updateListado(Model model, Pageable pageable, Principal principal){
+	public String updateListado(Model model, Pageable pageable, Principal principal) {
 		String email = principal.getName();
 		User user = usersService.getUserByEmail(email);
-		
+
 		Page<FriendshipRequest> requests = friendshipRequestService.getFriendshipRequestsForUser(pageable, user);
 		model.addAttribute("requestList", requests.getContent());
 		return "friendshipRequest/listRequest :: tableFriendshipRequest";
 	}
-	
+
 }
