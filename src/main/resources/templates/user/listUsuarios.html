@@ -15,7 +15,7 @@
 		</form>
 		<p th:text="#{listUsersText.message}"></p>
 		<div class="table-responsive">
-			<table class="table table-hover">
+			<table class="table table-hover" th:fragment="tableListUsers" id="tableListUsers">
 				<thead>
 					<tr>
 						<th th:text="#{listUsersEmail.message}"></th>
@@ -39,12 +39,12 @@
 							<script th:inline="javascript">
 								/*<![CDATA[*/
 									$( "#friendshipRequestButton[[${user.id}]]").click(function(){
-										$.get("/friendshipRequest/add/[[${user.id}]]");
+										$("#tableListUsers").load('/friendshipRequest/add/[[${user.id}]]');
 									});
 								/*]]>*/
 							</script>
 						</td>
-						<td th:if="${errorEnviado == 'error'}" th:text="${alreadySend.message}">asdasdasdasd</td>								 	
+						<td th:if="${errorEnviado == user.id}" th:text="#{alreadySend.message}"></td>								 	
 					</tr>
 				</tbody>
 			</table>

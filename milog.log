@@ -17179,3 +17179,1051 @@ Caused by: java.sql.SQLSyntaxErrorException: usuario no tiene privilegios sufici
 2018-03-16 12:18:39.884  INFO 3384 --- [http-nio-8090-exec-1] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
 2018-03-16 12:18:40.035  INFO 3384 --- [http-nio-8090-exec-5] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
 2018-03-16 12:18:40.207  INFO 3384 --- [http-nio-8090-exec-3] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-16 12:21:53.907  INFO 6696 --- [main] com.uniovi.RedSocialSdiApplication       : Starting RedSocialSdiApplication on Martin-PC with PID 6696 (started by Martin in D:\Universidad\Tercero\Segundo Semestre\Sistemas distribuidos e internet\Trabajos Practicas\RedSocialSDI)
+2018-03-16 12:21:53.910  INFO 6696 --- [main] com.uniovi.RedSocialSdiApplication       : No active profile set, falling back to default profiles: default
+2018-03-16 12:21:54.191  INFO 6696 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@770c2e6b: startup date [Fri Mar 16 12:21:54 CET 2018]; root of context hierarchy
+2018-03-16 12:21:55.348  INFO 6696 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b15145f4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-16 12:21:55.841  INFO 6696 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8090 (http)
+2018-03-16 12:21:55.852  INFO 6696 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-16 12:21:55.853  INFO 6696 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-03-16 12:21:55.944  INFO 6696 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-16 12:21:55.944  INFO 6696 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1756 ms
+2018-03-16 12:21:56.094  INFO 6696 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-16 12:21:56.094  INFO 6696 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-16 12:21:56.094  INFO 6696 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-16 12:21:56.095  INFO 6696 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-16 12:21:56.096  INFO 6696 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-03-16 12:21:56.096  INFO 6696 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-16 12:21:57.528  INFO 6696 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-16 12:21:57.544  INFO 6696 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-16 12:21:57.607  INFO 6696 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-03-16 12:21:57.608  INFO 6696 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-03-16 12:21:57.609  INFO 6696 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-03-16 12:21:57.646  INFO 6696 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-16 12:21:57.832  INFO 6696 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2018-03-16 12:21:58.251  INFO 6696 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2018-03-16 12:21:58.261  INFO 6696 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2018-03-16 12:21:58.294  INFO 6696 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-16 12:21:58.482  INFO 6696 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-03-16 12:22:00.241  INFO 6696 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1999149e, org.springframework.security.web.context.SecurityContextPersistenceFilter@a9a8ec3, org.springframework.security.web.header.HeaderWriterFilter@75527e36, org.springframework.security.web.authentication.logout.LogoutFilter@3386c206, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3303e89e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@40016ce1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3b39e79b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@65d73bd, org.springframework.security.web.session.SessionManagementFilter@6d815fb7, org.springframework.security.web.access.ExceptionTranslationFilter@45e7bb79, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6e5f5478]
+2018-03-16 12:22:00.473  INFO 6696 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@770c2e6b: startup date [Fri Mar 16 12:21:54 CET 2018]; root of context hierarchy
+2018-03-16 12:22:00.547  INFO 6696 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendship/listFriendship]}" onto public java.lang.String com.uniovi.controllers.FriendshipController.getListado(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-16 12:22:00.549  INFO 6696 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/listRequest]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.getListado(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-16 12:22:00.549  INFO 6696 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/listRequest/update]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.updateListado(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-16 12:22:00.549  INFO 6696 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/add/{id}]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.addFriendshipRequest(org.springframework.ui.Model,java.lang.Long,java.security.Principal)
+2018-03-16 12:22:00.550  INFO 6696 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/accept/{id}]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.acceptFriendshipRequest(java.lang.Long,java.security.Principal)
+2018-03-16 12:22:00.550  INFO 6696 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.uniovi.controllers.HomeController.index()
+2018-03-16 12:22:00.551  INFO 6696 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/listPosts]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getListado(org.springframework.ui.Model,java.security.Principal)
+2018-03-16 12:22:00.551  INFO 6696 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/add],methods=[POST]}" onto public java.lang.String com.uniovi.controllers.PublicationController.setPublication(com.uniovi.entities.Publication,org.springframework.validation.BindingResult,java.security.Principal,org.springframework.web.multipart.MultipartFile)
+2018-03-16 12:22:00.551  INFO 6696 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/add]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getPublication(org.springframework.ui.Model)
+2018-03-16 12:22:00.552  INFO 6696 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/details/{id}]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getDetail(org.springframework.ui.Model,java.lang.Long)
+2018-03-16 12:22:00.552  INFO 6696 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/listFriendPublications/{id}]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getFriendPublications(org.springframework.ui.Model,java.lang.Long)
+2018-03-16 12:22:00.554  INFO 6696 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/listUsuarios]}" onto public java.lang.String com.uniovi.controllers.UsersController.getListado(org.springframework.ui.Model,java.lang.String,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-16 12:22:00.555  INFO 6696 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[POST]}" onto public java.lang.String com.uniovi.controllers.UsersController.signup(com.uniovi.entities.User,org.springframework.validation.BindingResult,org.springframework.ui.Model)
+2018-03-16 12:22:00.555  INFO 6696 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[GET]}" onto public java.lang.String com.uniovi.controllers.UsersController.signup(org.springframework.ui.Model)
+2018-03-16 12:22:00.555  INFO 6696 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[GET]}" onto public java.lang.String com.uniovi.controllers.UsersController.login(org.springframework.ui.Model)
+2018-03-16 12:22:00.556  INFO 6696 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/home],methods=[GET]}" onto public java.lang.String com.uniovi.controllers.UsersController.home(org.springframework.ui.Model,org.springframework.data.domain.Pageable)
+2018-03-16 12:22:00.559  INFO 6696 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-16 12:22:00.560  INFO 6696 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-16 12:22:00.596  INFO 6696 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-16 12:22:00.596  INFO 6696 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-16 12:22:00.639  INFO 6696 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-16 12:22:01.287  INFO 6696 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-16 12:22:01.362  INFO 6696 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8090 (http)
+2018-03-16 12:22:01.366  INFO 6696 --- [main] com.uniovi.RedSocialSdiApplication       : Started RedSocialSdiApplication in 7.705 seconds (JVM running for 8.018)
+2018-03-16 12:22:15.967  INFO 6696 --- [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-16 12:22:15.968  INFO 6696 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-16 12:22:15.979  INFO 6696 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 11 ms
+2018-03-16 12:22:21.744  INFO 6696 --- [http-nio-8090-exec-9] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-16 12:22:24.483 ERROR 6696 --- [http-nio-8090-exec-5] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8090-exec-5] Exception processing template "user/listUsuarios": Exception evaluating SpringEL expression: "page.getNumber()-1 >= 0" (fragments/pagination)
+2018-03-16 12:22:24.488 ERROR 6696 --- [http-nio-8090-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "page.getNumber()-1 >= 0" (fragments/pagination)] with root cause
+
+org.springframework.expression.spel.SpelEvaluationException: EL1011E: Method call: Attempted to call method getNumber() on null context object
+	at org.springframework.expression.spel.ast.MethodReference.throwIfNotNullSafe(MethodReference.java:145) ~[spring-expression-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.expression.spel.ast.MethodReference.getValueRef(MethodReference.java:74) ~[spring-expression-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueRef(CompoundExpression.java:66) ~[spring-expression-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:87) ~[spring-expression-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.expression.spel.ast.OpMinus.getValueInternal(OpMinus.java:98) ~[spring-expression-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.expression.spel.ast.OpGE.getValueInternal(OpGE.java:47) ~[spring-expression-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.expression.spel.ast.OpGE.getValueInternal(OpGE.java:37) ~[spring-expression-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:121) ~[spring-expression-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:324) ~[spring-expression-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.thymeleaf.spring4.expression.SpelVariableExpressionEvaluator.evaluate(SpelVariableExpressionEvaluator.java:140) ~[thymeleaf-spring4-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariable(VariableExpression.java:154) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:59) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:103) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:133) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:120) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.standard.processor.attr.AbstractStandardConditionalVisibilityAttrProcessor.isVisible(AbstractStandardConditionalVisibilityAttrProcessor.java:66) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.processor.attr.AbstractConditionalVisibilityAttrProcessor.processAttribute(AbstractConditionalVisibilityAttrProcessor.java:59) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.processor.attr.AbstractAttrProcessor.doProcess(AbstractAttrProcessor.java:87) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.processor.AbstractProcessor.process(AbstractProcessor.java:212) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.Node.applyNextProcessor(Node.java:1017) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.Node.processNode(Node.java:972) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.Node.processNode(Node.java:990) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.Node.processNode(Node.java:990) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.Node.processNode(Node.java:990) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.Node.processNode(Node.java:990) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.Node.processNode(Node.java:990) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.Node.processNode(Node.java:990) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.Document.process(Document.java:93) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1155) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1060) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1011) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.spring4.view.ThymeleafView.renderFragment(ThymeleafView.java:335) ~[thymeleaf-spring4-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.spring4.view.ThymeleafView.render(ThymeleafView.java:190) ~[thymeleaf-spring4-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1286) ~[spring-webmvc-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1041) ~[spring-webmvc-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:984) ~[spring-webmvc-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) ~[spring-webmvc-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) ~[spring-webmvc-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687) ~[selenium-server-standalone-2.53.0.jar:na]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) ~[selenium-server-standalone-2.53.0.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.27.jar:8.5.27]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:317) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:114) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:64) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:347) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:263) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504) [tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) [tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) [tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.27.jar:8.5.27]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_161]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_161]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.27.jar:8.5.27]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_161]
+
+2018-03-16 12:27:09.419  INFO 4168 --- [main] com.uniovi.RedSocialSdiApplication       : Starting RedSocialSdiApplication on Martin-PC with PID 4168 (started by Martin in D:\Universidad\Tercero\Segundo Semestre\Sistemas distribuidos e internet\Trabajos Practicas\RedSocialSDI)
+2018-03-16 12:27:09.422  INFO 4168 --- [main] com.uniovi.RedSocialSdiApplication       : No active profile set, falling back to default profiles: default
+2018-03-16 12:27:09.619  INFO 4168 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@770c2e6b: startup date [Fri Mar 16 12:27:09 CET 2018]; root of context hierarchy
+2018-03-16 12:27:10.605  INFO 4168 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$12e05ec4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-16 12:27:11.084  INFO 4168 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8090 (http)
+2018-03-16 12:27:11.094  INFO 4168 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-16 12:27:11.096  INFO 4168 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-03-16 12:27:11.188  INFO 4168 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-16 12:27:11.188  INFO 4168 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1572 ms
+2018-03-16 12:27:11.325  INFO 4168 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-16 12:27:11.326  INFO 4168 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-16 12:27:11.326  INFO 4168 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-16 12:27:11.326  INFO 4168 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-16 12:27:11.327  INFO 4168 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-03-16 12:27:11.327  INFO 4168 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-16 12:27:12.683  INFO 4168 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-16 12:27:12.697  INFO 4168 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-16 12:27:12.756  INFO 4168 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-03-16 12:27:12.757  INFO 4168 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-03-16 12:27:12.759  INFO 4168 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-03-16 12:27:12.799  INFO 4168 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-16 12:27:12.973  INFO 4168 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2018-03-16 12:27:13.399  INFO 4168 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2018-03-16 12:27:13.408  INFO 4168 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2018-03-16 12:27:13.441  INFO 4168 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-16 12:27:13.647  INFO 4168 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-03-16 12:27:15.263  INFO 4168 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@d62472f, org.springframework.security.web.context.SecurityContextPersistenceFilter@6d815fb7, org.springframework.security.web.header.HeaderWriterFilter@605c7a9e, org.springframework.security.web.authentication.logout.LogoutFilter@7e2bd5e6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7d284f15, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@376af784, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@506aa618, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@63a84bb6, org.springframework.security.web.session.SessionManagementFilter@d16209e, org.springframework.security.web.access.ExceptionTranslationFilter@1426370c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@467ef400]
+2018-03-16 12:27:15.478  INFO 4168 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@770c2e6b: startup date [Fri Mar 16 12:27:09 CET 2018]; root of context hierarchy
+2018-03-16 12:27:15.538  INFO 4168 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendship/listFriendship]}" onto public java.lang.String com.uniovi.controllers.FriendshipController.getListado(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-16 12:27:15.539  INFO 4168 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/listRequest]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.getListado(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-16 12:27:15.539  INFO 4168 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/listRequest/update]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.updateListado(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-16 12:27:15.540  INFO 4168 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/add/{id}]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.addFriendshipRequest(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.lang.Long,java.security.Principal)
+2018-03-16 12:27:15.540  INFO 4168 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/accept/{id}]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.acceptFriendshipRequest(java.lang.Long,java.security.Principal)
+2018-03-16 12:27:15.540  INFO 4168 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.uniovi.controllers.HomeController.index()
+2018-03-16 12:27:15.541  INFO 4168 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/listPosts]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getListado(org.springframework.ui.Model,java.security.Principal)
+2018-03-16 12:27:15.541  INFO 4168 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/add],methods=[POST]}" onto public java.lang.String com.uniovi.controllers.PublicationController.setPublication(com.uniovi.entities.Publication,org.springframework.validation.BindingResult,java.security.Principal,org.springframework.web.multipart.MultipartFile)
+2018-03-16 12:27:15.541  INFO 4168 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/add]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getPublication(org.springframework.ui.Model)
+2018-03-16 12:27:15.541  INFO 4168 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/details/{id}]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getDetail(org.springframework.ui.Model,java.lang.Long)
+2018-03-16 12:27:15.542  INFO 4168 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/listFriendPublications/{id}]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getFriendPublications(org.springframework.ui.Model,java.lang.Long)
+2018-03-16 12:27:15.543  INFO 4168 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/home],methods=[GET]}" onto public java.lang.String com.uniovi.controllers.UsersController.home(org.springframework.ui.Model,org.springframework.data.domain.Pageable)
+2018-03-16 12:27:15.544  INFO 4168 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/listUsuarios]}" onto public java.lang.String com.uniovi.controllers.UsersController.getListado(org.springframework.ui.Model,java.lang.String,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-16 12:27:15.544  INFO 4168 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[POST]}" onto public java.lang.String com.uniovi.controllers.UsersController.signup(com.uniovi.entities.User,org.springframework.validation.BindingResult,org.springframework.ui.Model)
+2018-03-16 12:27:15.544  INFO 4168 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[GET]}" onto public java.lang.String com.uniovi.controllers.UsersController.signup(org.springframework.ui.Model)
+2018-03-16 12:27:15.544  INFO 4168 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[GET]}" onto public java.lang.String com.uniovi.controllers.UsersController.login(org.springframework.ui.Model)
+2018-03-16 12:27:15.547  INFO 4168 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-16 12:27:15.548  INFO 4168 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-16 12:27:15.572  INFO 4168 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-16 12:27:15.572  INFO 4168 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-16 12:27:15.605  INFO 4168 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-16 12:27:16.182  INFO 4168 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-16 12:27:16.242  INFO 4168 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8090 (http)
+2018-03-16 12:27:16.247  INFO 4168 --- [main] com.uniovi.RedSocialSdiApplication       : Started RedSocialSdiApplication in 7.072 seconds (JVM running for 7.382)
+2018-03-16 12:27:19.450  INFO 4168 --- [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-16 12:27:19.451  INFO 4168 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-16 12:27:19.462  INFO 4168 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 11 ms
+2018-03-16 12:27:25.626  INFO 4168 --- [http-nio-8090-exec-9] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-16 12:27:29.511 ERROR 4168 --- [http-nio-8090-exec-5] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8090-exec-5] Exception processing template "user/listUsuarios": Exception evaluating SpringEL expression: "alreadySend.message" (user/listUsuarios)
+2018-03-16 12:27:29.515 ERROR 4168 --- [http-nio-8090-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "alreadySend.message" (user/listUsuarios)] with root cause
+
+org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property or field 'message' cannot be found on null
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:222) ~[spring-expression-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:94) ~[spring-expression-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.access$000(PropertyOrFieldReference.java:46) ~[spring-expression-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorLValue.getValue(PropertyOrFieldReference.java:379) ~[spring-expression-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:88) ~[spring-expression-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:121) ~[spring-expression-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:324) ~[spring-expression-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.thymeleaf.spring4.expression.SpelVariableExpressionEvaluator.evaluate(SpelVariableExpressionEvaluator.java:140) ~[thymeleaf-spring4-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariable(VariableExpression.java:154) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:59) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:103) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:133) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:120) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.standard.processor.attr.AbstractStandardTextChildModifierAttrProcessor.getText(AbstractStandardTextChildModifierAttrProcessor.java:68) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.processor.attr.AbstractTextChildModifierAttrProcessor.getModifiedChildren(AbstractTextChildModifierAttrProcessor.java:59) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.processor.attr.AbstractChildrenModifierAttrProcessor.processAttribute(AbstractChildrenModifierAttrProcessor.java:59) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.processor.attr.AbstractAttrProcessor.doProcess(AbstractAttrProcessor.java:87) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.processor.AbstractProcessor.process(AbstractProcessor.java:212) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.Node.applyNextProcessor(Node.java:1017) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.Node.processNode(Node.java:972) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.Node.processNode(Node.java:990) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.Node.processNode(Node.java:990) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.Node.processNode(Node.java:990) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.Node.processNode(Node.java:990) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.Document.process(Document.java:93) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1155) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1060) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1011) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.spring4.view.ThymeleafView.renderFragment(ThymeleafView.java:335) ~[thymeleaf-spring4-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.spring4.view.ThymeleafView.render(ThymeleafView.java:190) ~[thymeleaf-spring4-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1286) ~[spring-webmvc-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1041) ~[spring-webmvc-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:984) ~[spring-webmvc-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) ~[spring-webmvc-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) ~[spring-webmvc-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687) ~[selenium-server-standalone-2.53.0.jar:na]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) ~[selenium-server-standalone-2.53.0.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.27.jar:8.5.27]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:317) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:114) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:64) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:347) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:263) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504) [tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) [tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) [tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.27.jar:8.5.27]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_161]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_161]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.27.jar:8.5.27]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_161]
+
+2018-03-16 12:30:50.463  INFO 6176 --- [main] com.uniovi.RedSocialSdiApplication       : Starting RedSocialSdiApplication on Martin-PC with PID 6176 (started by Martin in D:\Universidad\Tercero\Segundo Semestre\Sistemas distribuidos e internet\Trabajos Practicas\RedSocialSDI)
+2018-03-16 12:30:50.466  INFO 6176 --- [main] com.uniovi.RedSocialSdiApplication       : No active profile set, falling back to default profiles: default
+2018-03-16 12:30:50.655  INFO 6176 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@770c2e6b: startup date [Fri Mar 16 12:30:50 CET 2018]; root of context hierarchy
+2018-03-16 12:30:51.647  INFO 6176 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5297f374] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-16 12:30:52.102  INFO 6176 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8090 (http)
+2018-03-16 12:30:52.115  INFO 6176 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-16 12:30:52.116  INFO 6176 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-03-16 12:30:52.210  INFO 6176 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-16 12:30:52.210  INFO 6176 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1558 ms
+2018-03-16 12:30:52.354  INFO 6176 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-16 12:30:52.354  INFO 6176 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-16 12:30:52.354  INFO 6176 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-16 12:30:52.354  INFO 6176 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-16 12:30:52.355  INFO 6176 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-03-16 12:30:52.355  INFO 6176 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-16 12:30:53.694  INFO 6176 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-16 12:30:53.708  INFO 6176 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-16 12:30:53.771  INFO 6176 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-03-16 12:30:53.773  INFO 6176 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-03-16 12:30:53.774  INFO 6176 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-03-16 12:30:53.812  INFO 6176 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-16 12:30:54.001  INFO 6176 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2018-03-16 12:30:54.434  INFO 6176 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2018-03-16 12:30:54.451  INFO 6176 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2018-03-16 12:30:54.487  INFO 6176 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-16 12:30:54.677  INFO 6176 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-03-16 12:30:56.227  INFO 6176 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3dde5f38, org.springframework.security.web.context.SecurityContextPersistenceFilter@1322b575, org.springframework.security.web.header.HeaderWriterFilter@adafe19, org.springframework.security.web.authentication.logout.LogoutFilter@3a16984c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@579846cc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@d504137, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7eee6c13, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@79ad1774, org.springframework.security.web.session.SessionManagementFilter@76a1146d, org.springframework.security.web.access.ExceptionTranslationFilter@1d6713dd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@701d2b59]
+2018-03-16 12:30:56.456  INFO 6176 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@770c2e6b: startup date [Fri Mar 16 12:30:50 CET 2018]; root of context hierarchy
+2018-03-16 12:30:56.524  INFO 6176 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendship/listFriendship]}" onto public java.lang.String com.uniovi.controllers.FriendshipController.getListado(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-16 12:30:56.526  INFO 6176 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/add/{id}]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.addFriendshipRequest(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.lang.Long,java.security.Principal)
+2018-03-16 12:30:56.526  INFO 6176 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/accept/{id}]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.acceptFriendshipRequest(java.lang.Long,java.security.Principal)
+2018-03-16 12:30:56.526  INFO 6176 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/listRequest]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.getListado(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-16 12:30:56.526  INFO 6176 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/listRequest/update]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.updateListado(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-16 12:30:56.526  INFO 6176 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.uniovi.controllers.HomeController.index()
+2018-03-16 12:30:56.527  INFO 6176 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/listFriendPublications/{id}]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getFriendPublications(org.springframework.ui.Model,java.lang.Long)
+2018-03-16 12:30:56.527  INFO 6176 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/listPosts]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getListado(org.springframework.ui.Model,java.security.Principal)
+2018-03-16 12:30:56.527  INFO 6176 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/add],methods=[POST]}" onto public java.lang.String com.uniovi.controllers.PublicationController.setPublication(com.uniovi.entities.Publication,org.springframework.validation.BindingResult,java.security.Principal,org.springframework.web.multipart.MultipartFile)
+2018-03-16 12:30:56.527  INFO 6176 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/add]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getPublication(org.springframework.ui.Model)
+2018-03-16 12:30:56.528  INFO 6176 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/details/{id}]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getDetail(org.springframework.ui.Model,java.lang.Long)
+2018-03-16 12:30:56.530  INFO 6176 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/home],methods=[GET]}" onto public java.lang.String com.uniovi.controllers.UsersController.home(org.springframework.ui.Model,org.springframework.data.domain.Pageable)
+2018-03-16 12:30:56.530  INFO 6176 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/listUsuarios]}" onto public java.lang.String com.uniovi.controllers.UsersController.getListado(org.springframework.ui.Model,java.lang.String,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-16 12:30:56.530  INFO 6176 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[POST]}" onto public java.lang.String com.uniovi.controllers.UsersController.signup(com.uniovi.entities.User,org.springframework.validation.BindingResult,org.springframework.ui.Model)
+2018-03-16 12:30:56.530  INFO 6176 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[GET]}" onto public java.lang.String com.uniovi.controllers.UsersController.signup(org.springframework.ui.Model)
+2018-03-16 12:30:56.531  INFO 6176 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[GET]}" onto public java.lang.String com.uniovi.controllers.UsersController.login(org.springframework.ui.Model)
+2018-03-16 12:30:56.533  INFO 6176 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-16 12:30:56.533  INFO 6176 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-16 12:30:56.561  INFO 6176 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-16 12:30:56.562  INFO 6176 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-16 12:30:56.606  INFO 6176 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-16 12:30:57.157  INFO 6176 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-16 12:30:57.216  INFO 6176 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8090 (http)
+2018-03-16 12:30:57.220  INFO 6176 --- [main] com.uniovi.RedSocialSdiApplication       : Started RedSocialSdiApplication in 6.995 seconds (JVM running for 7.32)
+2018-03-16 12:31:23.073  INFO 8140 --- [main] com.uniovi.RedSocialSdiApplication       : Starting RedSocialSdiApplication on Martin-PC with PID 8140 (started by Martin in D:\Universidad\Tercero\Segundo Semestre\Sistemas distribuidos e internet\Trabajos Practicas\RedSocialSDI)
+2018-03-16 12:31:23.075  INFO 8140 --- [main] com.uniovi.RedSocialSdiApplication       : No active profile set, falling back to default profiles: default
+2018-03-16 12:31:23.276  INFO 8140 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@770c2e6b: startup date [Fri Mar 16 12:31:23 CET 2018]; root of context hierarchy
+2018-03-16 12:31:24.345  INFO 8140 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$79a6d613] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-16 12:31:24.826  INFO 8140 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8090 (http)
+2018-03-16 12:31:24.861  INFO 8140 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-16 12:31:24.863  INFO 8140 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-03-16 12:31:24.963  INFO 8140 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-16 12:31:24.963  INFO 8140 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1691 ms
+2018-03-16 12:31:25.123  INFO 8140 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-16 12:31:25.123  INFO 8140 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-16 12:31:25.123  INFO 8140 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-16 12:31:25.123  INFO 8140 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-16 12:31:25.124  INFO 8140 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-03-16 12:31:25.125  INFO 8140 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-16 12:31:26.471  INFO 8140 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-16 12:31:26.485  INFO 8140 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-16 12:31:26.547  INFO 8140 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-03-16 12:31:26.548  INFO 8140 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-03-16 12:31:26.549  INFO 8140 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-03-16 12:31:26.584  INFO 8140 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-16 12:31:26.764  INFO 8140 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2018-03-16 12:31:27.184  INFO 8140 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2018-03-16 12:31:27.195  INFO 8140 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2018-03-16 12:31:27.228  INFO 8140 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-16 12:31:27.427  INFO 8140 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-03-16 12:31:29.126  INFO 8140 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@27896d3b, org.springframework.security.web.context.SecurityContextPersistenceFilter@40016ce1, org.springframework.security.web.header.HeaderWriterFilter@6d815fb7, org.springframework.security.web.authentication.logout.LogoutFilter@6dded900, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1570cad0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7e050be1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2f86f9cf, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3ed7dd70, org.springframework.security.web.session.SessionManagementFilter@376af784, org.springframework.security.web.access.ExceptionTranslationFilter@21c75084, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3ef2b8e5]
+2018-03-16 12:31:29.341  INFO 8140 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@770c2e6b: startup date [Fri Mar 16 12:31:23 CET 2018]; root of context hierarchy
+2018-03-16 12:31:29.410  INFO 8140 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendship/listFriendship]}" onto public java.lang.String com.uniovi.controllers.FriendshipController.getListado(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-16 12:31:29.411  INFO 8140 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/listRequest]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.getListado(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-16 12:31:29.411  INFO 8140 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/listRequest/update]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.updateListado(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-16 12:31:29.411  INFO 8140 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/add/{id}]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.addFriendshipRequest(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.lang.Long,java.security.Principal)
+2018-03-16 12:31:29.412  INFO 8140 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/accept/{id}]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.acceptFriendshipRequest(java.lang.Long,java.security.Principal)
+2018-03-16 12:31:29.412  INFO 8140 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.uniovi.controllers.HomeController.index()
+2018-03-16 12:31:29.413  INFO 8140 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/listFriendPublications/{id}]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getFriendPublications(org.springframework.ui.Model,java.lang.Long)
+2018-03-16 12:31:29.413  INFO 8140 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/listPosts]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getListado(org.springframework.ui.Model,java.security.Principal)
+2018-03-16 12:31:29.413  INFO 8140 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/add],methods=[POST]}" onto public java.lang.String com.uniovi.controllers.PublicationController.setPublication(com.uniovi.entities.Publication,org.springframework.validation.BindingResult,java.security.Principal,org.springframework.web.multipart.MultipartFile)
+2018-03-16 12:31:29.413  INFO 8140 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/add]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getPublication(org.springframework.ui.Model)
+2018-03-16 12:31:29.414  INFO 8140 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/details/{id}]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getDetail(org.springframework.ui.Model,java.lang.Long)
+2018-03-16 12:31:29.416  INFO 8140 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/listUsuarios]}" onto public java.lang.String com.uniovi.controllers.UsersController.getListado(org.springframework.ui.Model,java.lang.String,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-16 12:31:29.417  INFO 8140 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[POST]}" onto public java.lang.String com.uniovi.controllers.UsersController.signup(com.uniovi.entities.User,org.springframework.validation.BindingResult,org.springframework.ui.Model)
+2018-03-16 12:31:29.417  INFO 8140 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[GET]}" onto public java.lang.String com.uniovi.controllers.UsersController.signup(org.springframework.ui.Model)
+2018-03-16 12:31:29.417  INFO 8140 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[GET]}" onto public java.lang.String com.uniovi.controllers.UsersController.login(org.springframework.ui.Model)
+2018-03-16 12:31:29.417  INFO 8140 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/home],methods=[GET]}" onto public java.lang.String com.uniovi.controllers.UsersController.home(org.springframework.ui.Model,org.springframework.data.domain.Pageable)
+2018-03-16 12:31:29.420  INFO 8140 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-16 12:31:29.421  INFO 8140 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-16 12:31:29.448  INFO 8140 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-16 12:31:29.449  INFO 8140 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-16 12:31:29.487  INFO 8140 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-16 12:31:30.050  INFO 8140 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-16 12:31:30.115  INFO 8140 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8090 (http)
+2018-03-16 12:31:30.119  INFO 8140 --- [main] com.uniovi.RedSocialSdiApplication       : Started RedSocialSdiApplication in 7.28 seconds (JVM running for 7.597)
+2018-03-16 12:31:33.230  INFO 8140 --- [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-16 12:31:33.230  INFO 8140 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-16 12:31:33.242  INFO 8140 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 11 ms
+2018-03-16 12:31:39.230  INFO 8140 --- [http-nio-8090-exec-9] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-16 12:32:00.495  INFO 8140 --- [http-nio-8090-exec-10] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-16 12:35:03.748  INFO 5604 --- [main] com.uniovi.RedSocialSdiApplication       : Starting RedSocialSdiApplication on Martin-PC with PID 5604 (started by Martin in D:\Universidad\Tercero\Segundo Semestre\Sistemas distribuidos e internet\Trabajos Practicas\RedSocialSDI)
+2018-03-16 12:35:03.750  INFO 5604 --- [main] com.uniovi.RedSocialSdiApplication       : No active profile set, falling back to default profiles: default
+2018-03-16 12:35:03.941  INFO 5604 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@770c2e6b: startup date [Fri Mar 16 12:35:03 CET 2018]; root of context hierarchy
+2018-03-16 12:35:05.209  INFO 5604 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$81caf27d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-16 12:35:05.718  INFO 5604 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8090 (http)
+2018-03-16 12:35:05.728  INFO 5604 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-16 12:35:05.729  INFO 5604 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-03-16 12:35:05.827  INFO 5604 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-16 12:35:05.828  INFO 5604 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1890 ms
+2018-03-16 12:35:05.969  INFO 5604 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-16 12:35:05.969  INFO 5604 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-16 12:35:05.969  INFO 5604 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-16 12:35:05.970  INFO 5604 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-16 12:35:05.971  INFO 5604 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-03-16 12:35:05.971  INFO 5604 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-16 12:35:07.312  INFO 5604 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-16 12:35:07.328  INFO 5604 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-16 12:35:07.387  INFO 5604 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-03-16 12:35:07.388  INFO 5604 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-03-16 12:35:07.389  INFO 5604 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-03-16 12:35:07.422  INFO 5604 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-16 12:35:07.586  INFO 5604 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2018-03-16 12:35:08.004  INFO 5604 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2018-03-16 12:35:08.014  INFO 5604 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2018-03-16 12:35:08.049  INFO 5604 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-16 12:35:08.271  INFO 5604 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-03-16 12:35:09.948  INFO 5604 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@65d73bd, org.springframework.security.web.context.SecurityContextPersistenceFilter@6d0114c0, org.springframework.security.web.header.HeaderWriterFilter@76596288, org.springframework.security.web.authentication.logout.LogoutFilter@1322b575, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@cec590c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@203765b2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3ee6dc82, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@27896d3b, org.springframework.security.web.session.SessionManagementFilter@51af8049, org.springframework.security.web.access.ExceptionTranslationFilter@605c7a9e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5fb07347]
+2018-03-16 12:35:10.177  INFO 5604 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@770c2e6b: startup date [Fri Mar 16 12:35:03 CET 2018]; root of context hierarchy
+2018-03-16 12:35:10.256  INFO 5604 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendship/listFriendship]}" onto public java.lang.String com.uniovi.controllers.FriendshipController.getListado(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-16 12:35:10.258  INFO 5604 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/listRequest]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.getListado(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-16 12:35:10.259  INFO 5604 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/listRequest/update]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.updateListado(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-16 12:35:10.259  INFO 5604 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/add/{id}]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.addFriendshipRequest(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.lang.Long,java.security.Principal)
+2018-03-16 12:35:10.260  INFO 5604 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/accept/{id}]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.acceptFriendshipRequest(java.lang.Long,java.security.Principal)
+2018-03-16 12:35:10.260  INFO 5604 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.uniovi.controllers.HomeController.index()
+2018-03-16 12:35:10.261  INFO 5604 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/listPosts]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getListado(org.springframework.ui.Model,java.security.Principal)
+2018-03-16 12:35:10.261  INFO 5604 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/add],methods=[POST]}" onto public java.lang.String com.uniovi.controllers.PublicationController.setPublication(com.uniovi.entities.Publication,org.springframework.validation.BindingResult,java.security.Principal,org.springframework.web.multipart.MultipartFile)
+2018-03-16 12:35:10.262  INFO 5604 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/add]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getPublication(org.springframework.ui.Model)
+2018-03-16 12:35:10.262  INFO 5604 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/details/{id}]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getDetail(org.springframework.ui.Model,java.lang.Long)
+2018-03-16 12:35:10.262  INFO 5604 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/listFriendPublications/{id}]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getFriendPublications(org.springframework.ui.Model,java.lang.Long)
+2018-03-16 12:35:10.265  INFO 5604 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/home],methods=[GET]}" onto public java.lang.String com.uniovi.controllers.UsersController.home(org.springframework.ui.Model,org.springframework.data.domain.Pageable)
+2018-03-16 12:35:10.265  INFO 5604 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/listUsuarios]}" onto public java.lang.String com.uniovi.controllers.UsersController.getListado(org.springframework.ui.Model,java.lang.String,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-16 12:35:10.266  INFO 5604 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[POST]}" onto public java.lang.String com.uniovi.controllers.UsersController.signup(com.uniovi.entities.User,org.springframework.validation.BindingResult,org.springframework.ui.Model)
+2018-03-16 12:35:10.266  INFO 5604 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[GET]}" onto public java.lang.String com.uniovi.controllers.UsersController.signup(org.springframework.ui.Model)
+2018-03-16 12:35:10.266  INFO 5604 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[GET]}" onto public java.lang.String com.uniovi.controllers.UsersController.login(org.springframework.ui.Model)
+2018-03-16 12:35:10.269  INFO 5604 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-16 12:35:10.269  INFO 5604 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-16 12:35:10.302  INFO 5604 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-16 12:35:10.302  INFO 5604 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-16 12:35:10.344  INFO 5604 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-16 12:35:10.893  INFO 5604 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-16 12:35:10.959  INFO 5604 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8090 (http)
+2018-03-16 12:35:10.963  INFO 5604 --- [main] com.uniovi.RedSocialSdiApplication       : Started RedSocialSdiApplication in 7.456 seconds (JVM running for 7.775)
+2018-03-16 12:35:14.535  INFO 5604 --- [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-16 12:35:14.536  INFO 5604 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-16 12:35:14.549  INFO 5604 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 12 ms
+2018-03-16 12:35:20.808  INFO 5604 --- [http-nio-8090-exec-9] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-16 12:38:09.868  INFO 5604 --- [http-nio-8090-exec-10] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-16 12:38:20.674  INFO 5604 --- [http-nio-8090-exec-5] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-16 12:45:59.489  INFO 4744 --- [main] com.uniovi.RedSocialSdiApplication       : Starting RedSocialSdiApplication on Martin-PC with PID 4744 (started by Martin in D:\Universidad\Tercero\Segundo Semestre\Sistemas distribuidos e internet\Trabajos Practicas\RedSocialSDI)
+2018-03-16 12:45:59.492  INFO 4744 --- [main] com.uniovi.RedSocialSdiApplication       : No active profile set, falling back to default profiles: default
+2018-03-16 12:45:59.715  INFO 4744 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@770c2e6b: startup date [Fri Mar 16 12:45:59 CET 2018]; root of context hierarchy
+2018-03-16 12:46:00.877  INFO 4744 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$be4bf604] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-16 12:46:01.432  INFO 4744 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8090 (http)
+2018-03-16 12:46:01.443  INFO 4744 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-16 12:46:01.444  INFO 4744 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-03-16 12:46:01.552  INFO 4744 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-16 12:46:01.552  INFO 4744 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1841 ms
+2018-03-16 12:46:01.715  INFO 4744 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-16 12:46:01.716  INFO 4744 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-16 12:46:01.716  INFO 4744 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-16 12:46:01.716  INFO 4744 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-16 12:46:01.718  INFO 4744 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-03-16 12:46:01.718  INFO 4744 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-16 12:46:03.106  INFO 4744 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-16 12:46:03.129  INFO 4744 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-16 12:46:03.204  INFO 4744 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-03-16 12:46:03.205  INFO 4744 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-03-16 12:46:03.207  INFO 4744 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-03-16 12:46:03.245  INFO 4744 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-16 12:46:03.450  INFO 4744 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2018-03-16 12:46:03.918  INFO 4744 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2018-03-16 12:46:03.928  INFO 4744 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2018-03-16 12:46:03.960  INFO 4744 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-16 12:46:04.204  INFO 4744 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-03-16 12:46:06.035  INFO 4744 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@63a84bb6, org.springframework.security.web.context.SecurityContextPersistenceFilter@51af8049, org.springframework.security.web.header.HeaderWriterFilter@21c75084, org.springframework.security.web.authentication.logout.LogoutFilter@76a1146d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@44bbb7c6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@a9a8ec3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4b6b5352, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@701d2b59, org.springframework.security.web.session.SessionManagementFilter@75527e36, org.springframework.security.web.access.ExceptionTranslationFilter@9f9146d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@13fe5bb7]
+2018-03-16 12:46:06.260  INFO 4744 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@770c2e6b: startup date [Fri Mar 16 12:45:59 CET 2018]; root of context hierarchy
+2018-03-16 12:46:06.338  INFO 4744 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendship/listFriendship]}" onto public java.lang.String com.uniovi.controllers.FriendshipController.getListado(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-16 12:46:06.340  INFO 4744 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/add/{id}]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.addFriendshipRequest(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.lang.Long,java.security.Principal)
+2018-03-16 12:46:06.340  INFO 4744 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/accept/{id}]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.acceptFriendshipRequest(java.lang.Long,java.security.Principal)
+2018-03-16 12:46:06.340  INFO 4744 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/listRequest]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.getListado(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-16 12:46:06.340  INFO 4744 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/listRequest/update]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.updateListado(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-16 12:46:06.341  INFO 4744 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.uniovi.controllers.HomeController.index()
+2018-03-16 12:46:06.342  INFO 4744 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/listFriendPublications/{id}]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getFriendPublications(org.springframework.ui.Model,java.lang.Long)
+2018-03-16 12:46:06.342  INFO 4744 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/listPosts]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getListado(org.springframework.ui.Model,java.security.Principal)
+2018-03-16 12:46:06.342  INFO 4744 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/add]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getPublication(org.springframework.ui.Model)
+2018-03-16 12:46:06.343  INFO 4744 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/add],methods=[POST]}" onto public java.lang.String com.uniovi.controllers.PublicationController.setPublication(com.uniovi.entities.Publication,org.springframework.validation.BindingResult,java.security.Principal,org.springframework.web.multipart.MultipartFile)
+2018-03-16 12:46:06.343  INFO 4744 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/details/{id}]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getDetail(org.springframework.ui.Model,java.lang.Long)
+2018-03-16 12:46:06.346  INFO 4744 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/home],methods=[GET]}" onto public java.lang.String com.uniovi.controllers.UsersController.home(org.springframework.ui.Model,org.springframework.data.domain.Pageable)
+2018-03-16 12:46:06.346  INFO 4744 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/listUsuarios]}" onto public java.lang.String com.uniovi.controllers.UsersController.getListado(org.springframework.ui.Model,java.lang.String,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-16 12:46:06.346  INFO 4744 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[POST]}" onto public java.lang.String com.uniovi.controllers.UsersController.signup(com.uniovi.entities.User,org.springframework.validation.BindingResult,org.springframework.ui.Model)
+2018-03-16 12:46:06.347  INFO 4744 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[GET]}" onto public java.lang.String com.uniovi.controllers.UsersController.signup(org.springframework.ui.Model)
+2018-03-16 12:46:06.347  INFO 4744 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[GET]}" onto public java.lang.String com.uniovi.controllers.UsersController.login(org.springframework.ui.Model)
+2018-03-16 12:46:06.350  INFO 4744 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-16 12:46:06.351  INFO 4744 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-16 12:46:06.387  INFO 4744 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-16 12:46:06.387  INFO 4744 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-16 12:46:06.427  INFO 4744 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-16 12:46:07.037  INFO 4744 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-16 12:46:07.111  INFO 4744 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8090 (http)
+2018-03-16 12:46:07.116  INFO 4744 --- [main] com.uniovi.RedSocialSdiApplication       : Started RedSocialSdiApplication in 7.887 seconds (JVM running for 8.244)
+2018-03-16 12:46:09.899  INFO 4744 --- [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-16 12:46:09.899  INFO 4744 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-16 12:46:09.912  INFO 4744 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2018-03-16 12:46:16.325  INFO 4744 --- [http-nio-8090-exec-9] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-16 12:46:16.347 ERROR 4744 --- [http-nio-8090-exec-9] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8090-exec-9] Exception processing template "user/listUsuarios": Exception evaluating SpringEL expression: "(errorEnviado + user.id) == 'error'" (user/listUsuarios)
+2018-03-16 12:46:16.351 ERROR 4744 --- [http-nio-8090-exec-9] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "(errorEnviado + user.id) == 'error'" (user/listUsuarios)] with root cause
+
+org.springframework.expression.spel.SpelEvaluationException: EL1030E: The operator 'ADD' is not supported between objects of type 'null' and 'java.lang.Long'
+	at org.springframework.expression.spel.ExpressionState.operate(ExpressionState.java:223) ~[spring-expression-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.expression.spel.ast.OpPlus.getValueInternal(OpPlus.java:139) ~[spring-expression-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.expression.spel.ast.OpEQ.getValueInternal(OpEQ.java:42) ~[spring-expression-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.expression.spel.ast.OpEQ.getValueInternal(OpEQ.java:32) ~[spring-expression-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:121) ~[spring-expression-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:324) ~[spring-expression-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.thymeleaf.spring4.expression.SpelVariableExpressionEvaluator.evaluate(SpelVariableExpressionEvaluator.java:140) ~[thymeleaf-spring4-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariable(VariableExpression.java:154) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:59) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:103) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:133) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:120) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.standard.processor.attr.AbstractStandardConditionalVisibilityAttrProcessor.isVisible(AbstractStandardConditionalVisibilityAttrProcessor.java:66) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.processor.attr.AbstractConditionalVisibilityAttrProcessor.processAttribute(AbstractConditionalVisibilityAttrProcessor.java:59) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.processor.attr.AbstractAttrProcessor.doProcess(AbstractAttrProcessor.java:87) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.processor.AbstractProcessor.process(AbstractProcessor.java:212) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.Node.applyNextProcessor(Node.java:1017) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.Node.processNode(Node.java:972) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.Node.processNode(Node.java:990) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.Node.processNode(Node.java:990) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.Node.processNode(Node.java:990) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.Node.processNode(Node.java:990) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.Node.processNode(Node.java:990) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.Node.processNode(Node.java:990) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.Node.processNode(Node.java:990) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.Node.processNode(Node.java:990) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.dom.Document.process(Document.java:93) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1155) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1060) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1011) ~[thymeleaf-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.spring4.view.ThymeleafView.renderFragment(ThymeleafView.java:335) ~[thymeleaf-spring4-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.thymeleaf.spring4.view.ThymeleafView.render(ThymeleafView.java:190) ~[thymeleaf-spring4-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1286) ~[spring-webmvc-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1041) ~[spring-webmvc-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:984) ~[spring-webmvc-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) ~[spring-webmvc-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) ~[spring-webmvc-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687) ~[selenium-server-standalone-2.53.0.jar:na]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) ~[selenium-server-standalone-2.53.0.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.27.jar:8.5.27]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:317) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:114) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:64) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:347) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:263) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504) [tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) [tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) [tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.27.jar:8.5.27]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_161]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_161]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.27.jar:8.5.27]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_161]
+
+2018-03-16 12:47:13.066  INFO 9108 --- [main] com.uniovi.RedSocialSdiApplication       : Starting RedSocialSdiApplication on Martin-PC with PID 9108 (started by Martin in D:\Universidad\Tercero\Segundo Semestre\Sistemas distribuidos e internet\Trabajos Practicas\RedSocialSDI)
+2018-03-16 12:47:13.068  INFO 9108 --- [main] com.uniovi.RedSocialSdiApplication       : No active profile set, falling back to default profiles: default
+2018-03-16 12:47:13.277  INFO 9108 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@770c2e6b: startup date [Fri Mar 16 12:47:13 CET 2018]; root of context hierarchy
+2018-03-16 12:47:14.449  INFO 9108 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3376fa5e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-16 12:47:14.962  INFO 9108 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8090 (http)
+2018-03-16 12:47:14.975  INFO 9108 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-16 12:47:14.977  INFO 9108 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-03-16 12:47:15.119  INFO 9108 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-16 12:47:15.119  INFO 9108 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1845 ms
+2018-03-16 12:47:15.311  INFO 9108 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-16 12:47:15.312  INFO 9108 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-16 12:47:15.312  INFO 9108 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-16 12:47:15.312  INFO 9108 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-16 12:47:15.313  INFO 9108 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-03-16 12:47:15.313  INFO 9108 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-16 12:47:16.730  INFO 9108 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-16 12:47:16.759  INFO 9108 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-16 12:47:16.859  INFO 9108 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-03-16 12:47:16.861  INFO 9108 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-03-16 12:47:16.863  INFO 9108 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-03-16 12:47:16.915  INFO 9108 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-16 12:47:17.138  INFO 9108 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2018-03-16 12:47:17.623  INFO 9108 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2018-03-16 12:47:17.636  INFO 9108 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2018-03-16 12:47:17.676  INFO 9108 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-16 12:47:17.923  INFO 9108 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-03-16 12:47:19.760  INFO 9108 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6e9a10cd, org.springframework.security.web.context.SecurityContextPersistenceFilter@506aa618, org.springframework.security.web.header.HeaderWriterFilter@6d0114c0, org.springframework.security.web.authentication.logout.LogoutFilter@15c16f19, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@701d2b59, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1d6713dd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6ef1c3f7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6ea66c33, org.springframework.security.web.session.SessionManagementFilter@203765b2, org.springframework.security.web.access.ExceptionTranslationFilter@6d815fb7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2a19a0fe]
+2018-03-16 12:47:20.038  INFO 9108 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@770c2e6b: startup date [Fri Mar 16 12:47:13 CET 2018]; root of context hierarchy
+2018-03-16 12:47:20.116  INFO 9108 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendship/listFriendship]}" onto public java.lang.String com.uniovi.controllers.FriendshipController.getListado(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-16 12:47:20.118  INFO 9108 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/add/{id}]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.addFriendshipRequest(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.lang.Long,java.security.Principal)
+2018-03-16 12:47:20.118  INFO 9108 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/accept/{id}]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.acceptFriendshipRequest(java.lang.Long,java.security.Principal)
+2018-03-16 12:47:20.118  INFO 9108 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/listRequest]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.getListado(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-16 12:47:20.118  INFO 9108 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/listRequest/update]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.updateListado(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-16 12:47:20.119  INFO 9108 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.uniovi.controllers.HomeController.index()
+2018-03-16 12:47:20.119  INFO 9108 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/listPosts]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getListado(org.springframework.ui.Model,java.security.Principal)
+2018-03-16 12:47:20.119  INFO 9108 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/add]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getPublication(org.springframework.ui.Model)
+2018-03-16 12:47:20.120  INFO 9108 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/add],methods=[POST]}" onto public java.lang.String com.uniovi.controllers.PublicationController.setPublication(com.uniovi.entities.Publication,org.springframework.validation.BindingResult,java.security.Principal,org.springframework.web.multipart.MultipartFile)
+2018-03-16 12:47:20.120  INFO 9108 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/details/{id}]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getDetail(org.springframework.ui.Model,java.lang.Long)
+2018-03-16 12:47:20.120  INFO 9108 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/listFriendPublications/{id}]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getFriendPublications(org.springframework.ui.Model,java.lang.Long)
+2018-03-16 12:47:20.123  INFO 9108 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/home],methods=[GET]}" onto public java.lang.String com.uniovi.controllers.UsersController.home(org.springframework.ui.Model,org.springframework.data.domain.Pageable)
+2018-03-16 12:47:20.123  INFO 9108 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/listUsuarios]}" onto public java.lang.String com.uniovi.controllers.UsersController.getListado(org.springframework.ui.Model,java.lang.String,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-16 12:47:20.123  INFO 9108 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[POST]}" onto public java.lang.String com.uniovi.controllers.UsersController.signup(com.uniovi.entities.User,org.springframework.validation.BindingResult,org.springframework.ui.Model)
+2018-03-16 12:47:20.123  INFO 9108 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[GET]}" onto public java.lang.String com.uniovi.controllers.UsersController.signup(org.springframework.ui.Model)
+2018-03-16 12:47:20.124  INFO 9108 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[GET]}" onto public java.lang.String com.uniovi.controllers.UsersController.login(org.springframework.ui.Model)
+2018-03-16 12:47:20.127  INFO 9108 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-16 12:47:20.127  INFO 9108 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-16 12:47:20.158  INFO 9108 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-16 12:47:20.158  INFO 9108 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-16 12:47:20.201  INFO 9108 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-16 12:47:20.810  INFO 9108 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-16 12:47:20.887  INFO 9108 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8090 (http)
+2018-03-16 12:47:20.891  INFO 9108 --- [main] com.uniovi.RedSocialSdiApplication       : Started RedSocialSdiApplication in 8.084 seconds (JVM running for 8.418)
+2018-03-16 12:47:21.641  INFO 9108 --- [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-16 12:47:21.641  INFO 9108 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-16 12:47:21.658  INFO 9108 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2018-03-16 12:47:27.555  INFO 9108 --- [http-nio-8090-exec-8] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-16 12:47:50.709  INFO 8752 --- [main] com.uniovi.RedSocialSdiApplication       : Starting RedSocialSdiApplication on Martin-PC with PID 8752 (started by Martin in D:\Universidad\Tercero\Segundo Semestre\Sistemas distribuidos e internet\Trabajos Practicas\RedSocialSDI)
+2018-03-16 12:47:50.712  INFO 8752 --- [main] com.uniovi.RedSocialSdiApplication       : No active profile set, falling back to default profiles: default
+2018-03-16 12:47:50.936  INFO 8752 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@770c2e6b: startup date [Fri Mar 16 12:47:50 CET 2018]; root of context hierarchy
+2018-03-16 12:47:52.162  INFO 8752 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3376fa5e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-16 12:47:52.688  INFO 8752 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8090 (http)
+2018-03-16 12:47:52.698  INFO 8752 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-16 12:47:52.699  INFO 8752 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-03-16 12:47:52.804  INFO 8752 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-16 12:47:52.804  INFO 8752 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1871 ms
+2018-03-16 12:47:52.968  INFO 8752 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-16 12:47:52.968  INFO 8752 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-16 12:47:52.969  INFO 8752 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-16 12:47:52.969  INFO 8752 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-16 12:47:52.970  INFO 8752 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-03-16 12:47:52.970  INFO 8752 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-16 12:47:54.347  INFO 8752 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-16 12:47:54.368  INFO 8752 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-16 12:47:54.432  INFO 8752 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-03-16 12:47:54.433  INFO 8752 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-03-16 12:47:54.434  INFO 8752 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-03-16 12:47:54.569  INFO 8752 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-16 12:47:54.673  INFO 8752 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2018-03-16 12:47:55.156  INFO 8752 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2018-03-16 12:47:55.169  INFO 8752 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2018-03-16 12:47:55.205  INFO 8752 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-16 12:47:55.440  INFO 8752 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-03-16 12:47:57.197  INFO 8752 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6e9a10cd, org.springframework.security.web.context.SecurityContextPersistenceFilter@506aa618, org.springframework.security.web.header.HeaderWriterFilter@6d0114c0, org.springframework.security.web.authentication.logout.LogoutFilter@15c16f19, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@701d2b59, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1d6713dd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6ef1c3f7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6ea66c33, org.springframework.security.web.session.SessionManagementFilter@203765b2, org.springframework.security.web.access.ExceptionTranslationFilter@6d815fb7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2a19a0fe]
+2018-03-16 12:47:58.210  INFO 7240 --- [main] com.uniovi.RedSocialSdiApplication       : Starting RedSocialSdiApplication on Martin-PC with PID 7240 (started by Martin in D:\Universidad\Tercero\Segundo Semestre\Sistemas distribuidos e internet\Trabajos Practicas\RedSocialSDI)
+2018-03-16 12:47:58.212  INFO 7240 --- [main] com.uniovi.RedSocialSdiApplication       : No active profile set, falling back to default profiles: default
+2018-03-16 12:47:58.432  INFO 7240 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@770c2e6b: startup date [Fri Mar 16 12:47:58 CET 2018]; root of context hierarchy
+2018-03-16 12:47:59.624  INFO 7240 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5d1ec701] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-16 12:48:00.207  INFO 7240 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8090 (http)
+2018-03-16 12:48:00.223  INFO 7240 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-16 12:48:00.224  INFO 7240 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-03-16 12:48:00.352  INFO 7240 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-16 12:48:00.352  INFO 7240 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1923 ms
+2018-03-16 12:48:00.549  INFO 7240 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-16 12:48:00.550  INFO 7240 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-16 12:48:00.550  INFO 7240 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-16 12:48:00.550  INFO 7240 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-16 12:48:00.551  INFO 7240 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-03-16 12:48:00.552  INFO 7240 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-16 12:48:01.937  INFO 7240 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-16 12:48:01.957  INFO 7240 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-16 12:48:02.038  INFO 7240 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-03-16 12:48:02.040  INFO 7240 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-03-16 12:48:02.043  INFO 7240 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-03-16 12:48:02.104  INFO 7240 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-16 12:48:02.299  INFO 7240 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2018-03-16 12:48:02.761  INFO 7240 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2018-03-16 12:48:02.771  INFO 7240 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2018-03-16 12:48:02.807  INFO 7240 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-16 12:48:03.023  INFO 7240 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-03-16 12:48:04.757  INFO 7240 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@579846cc, org.springframework.security.web.context.SecurityContextPersistenceFilter@3ee6dc82, org.springframework.security.web.header.HeaderWriterFilter@1b47b7f5, org.springframework.security.web.authentication.logout.LogoutFilter@7eee6c13, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3ed7dd70, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@adafe19, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@d504137, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@a826ff8, org.springframework.security.web.session.SessionManagementFilter@4b6b5352, org.springframework.security.web.access.ExceptionTranslationFilter@6d0114c0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2342f1ff]
+2018-03-16 12:48:04.975  INFO 7240 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@770c2e6b: startup date [Fri Mar 16 12:47:58 CET 2018]; root of context hierarchy
+2018-03-16 12:48:05.051  INFO 7240 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendship/listFriendship]}" onto public java.lang.String com.uniovi.controllers.FriendshipController.getListado(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-16 12:48:05.052  INFO 7240 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/add/{id}]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.addFriendshipRequest(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.lang.Long,java.security.Principal)
+2018-03-16 12:48:05.053  INFO 7240 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/accept/{id}]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.acceptFriendshipRequest(java.lang.Long,java.security.Principal)
+2018-03-16 12:48:05.053  INFO 7240 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/listRequest]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.getListado(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-16 12:48:05.053  INFO 7240 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/listRequest/update]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.updateListado(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-16 12:48:05.054  INFO 7240 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.uniovi.controllers.HomeController.index()
+2018-03-16 12:48:05.055  INFO 7240 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/listFriendPublications/{id}]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getFriendPublications(org.springframework.ui.Model,java.lang.Long)
+2018-03-16 12:48:05.055  INFO 7240 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/add],methods=[POST]}" onto public java.lang.String com.uniovi.controllers.PublicationController.setPublication(com.uniovi.entities.Publication,org.springframework.validation.BindingResult,java.security.Principal,org.springframework.web.multipart.MultipartFile)
+2018-03-16 12:48:05.056  INFO 7240 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/add]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getPublication(org.springframework.ui.Model)
+2018-03-16 12:48:05.056  INFO 7240 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/listPosts]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getListado(org.springframework.ui.Model,java.security.Principal)
+2018-03-16 12:48:05.056  INFO 7240 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/details/{id}]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getDetail(org.springframework.ui.Model,java.lang.Long)
+2018-03-16 12:48:05.059  INFO 7240 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/home],methods=[GET]}" onto public java.lang.String com.uniovi.controllers.UsersController.home(org.springframework.ui.Model,org.springframework.data.domain.Pageable)
+2018-03-16 12:48:05.060  INFO 7240 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/listUsuarios]}" onto public java.lang.String com.uniovi.controllers.UsersController.getListado(org.springframework.ui.Model,java.lang.String,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-16 12:48:05.060  INFO 7240 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[POST]}" onto public java.lang.String com.uniovi.controllers.UsersController.signup(com.uniovi.entities.User,org.springframework.validation.BindingResult,org.springframework.ui.Model)
+2018-03-16 12:48:05.060  INFO 7240 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[GET]}" onto public java.lang.String com.uniovi.controllers.UsersController.signup(org.springframework.ui.Model)
+2018-03-16 12:48:05.060  INFO 7240 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[GET]}" onto public java.lang.String com.uniovi.controllers.UsersController.login(org.springframework.ui.Model)
+2018-03-16 12:48:05.064  INFO 7240 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-16 12:48:05.064  INFO 7240 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-16 12:48:05.101  INFO 7240 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-16 12:48:05.101  INFO 7240 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-16 12:48:05.144  INFO 7240 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-16 12:48:05.734  INFO 7240 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-16 12:48:05.809  INFO 7240 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8090 (http)
+2018-03-16 12:48:05.814  INFO 7240 --- [main] com.uniovi.RedSocialSdiApplication       : Started RedSocialSdiApplication in 7.873 seconds (JVM running for 8.225)
+2018-03-16 12:48:06.954  INFO 7240 --- [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-16 12:48:06.955  INFO 7240 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-16 12:48:06.967  INFO 7240 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 12 ms
+2018-03-16 12:48:12.578  INFO 7240 --- [http-nio-8090-exec-9] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-16 12:48:21.232  INFO 7240 --- [http-nio-8090-exec-5] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-16 12:48:44.546  INFO 244 --- [main] com.uniovi.RedSocialSdiApplication       : Starting RedSocialSdiApplication on Martin-PC with PID 244 (started by Martin in D:\Universidad\Tercero\Segundo Semestre\Sistemas distribuidos e internet\Trabajos Practicas\RedSocialSDI)
+2018-03-16 12:48:44.548  INFO 244 --- [main] com.uniovi.RedSocialSdiApplication       : No active profile set, falling back to default profiles: default
+2018-03-16 12:48:44.770  INFO 244 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@770c2e6b: startup date [Fri Mar 16 12:48:44 CET 2018]; root of context hierarchy
+2018-03-16 12:48:46.000  INFO 244 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6d244ef0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-16 12:48:46.611  INFO 244 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8090 (http)
+2018-03-16 12:48:46.624  INFO 244 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-16 12:48:46.626  INFO 244 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-03-16 12:48:46.734  INFO 244 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-16 12:48:46.734  INFO 244 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1967 ms
+2018-03-16 12:48:46.905  INFO 244 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-16 12:48:46.906  INFO 244 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-16 12:48:46.907  INFO 244 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-16 12:48:46.907  INFO 244 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-16 12:48:46.908  INFO 244 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-03-16 12:48:46.908  INFO 244 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-16 12:48:48.297  INFO 244 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-16 12:48:48.314  INFO 244 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-16 12:48:48.388  INFO 244 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-03-16 12:48:48.389  INFO 244 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-03-16 12:48:48.391  INFO 244 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-03-16 12:48:48.434  INFO 244 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-16 12:48:48.622  INFO 244 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2018-03-16 12:48:49.094  INFO 244 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2018-03-16 12:48:49.105  INFO 244 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2018-03-16 12:48:49.140  INFO 244 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-16 12:48:49.378  INFO 244 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-03-16 12:48:51.216  INFO 244 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2964511, org.springframework.security.web.context.SecurityContextPersistenceFilter@1b47b7f5, org.springframework.security.web.header.HeaderWriterFilter@a9a8ec3, org.springframework.security.web.authentication.logout.LogoutFilter@e4ca109, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@63a84bb6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4b6b5352, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@76a1146d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6e9a10cd, org.springframework.security.web.session.SessionManagementFilter@40016ce1, org.springframework.security.web.access.ExceptionTranslationFilter@76596288, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@18715bb]
+2018-03-16 12:48:51.476  INFO 244 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@770c2e6b: startup date [Fri Mar 16 12:48:44 CET 2018]; root of context hierarchy
+2018-03-16 12:48:51.559  INFO 244 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendship/listFriendship]}" onto public java.lang.String com.uniovi.controllers.FriendshipController.getListado(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-16 12:48:51.560  INFO 244 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/listRequest]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.getListado(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-16 12:48:51.561  INFO 244 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/listRequest/update]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.updateListado(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-16 12:48:51.561  INFO 244 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/add/{id}]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.addFriendshipRequest(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.lang.Long,java.security.Principal)
+2018-03-16 12:48:51.561  INFO 244 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/accept/{id}]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.acceptFriendshipRequest(java.lang.Long,java.security.Principal)
+2018-03-16 12:48:51.562  INFO 244 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.uniovi.controllers.HomeController.index()
+2018-03-16 12:48:51.563  INFO 244 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/listPosts]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getListado(org.springframework.ui.Model,java.security.Principal)
+2018-03-16 12:48:51.563  INFO 244 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/add]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getPublication(org.springframework.ui.Model)
+2018-03-16 12:48:51.563  INFO 244 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/add],methods=[POST]}" onto public java.lang.String com.uniovi.controllers.PublicationController.setPublication(com.uniovi.entities.Publication,org.springframework.validation.BindingResult,java.security.Principal,org.springframework.web.multipart.MultipartFile)
+2018-03-16 12:48:51.563  INFO 244 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/details/{id}]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getDetail(org.springframework.ui.Model,java.lang.Long)
+2018-03-16 12:48:51.564  INFO 244 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/listFriendPublications/{id}]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getFriendPublications(org.springframework.ui.Model,java.lang.Long)
+2018-03-16 12:48:51.566  INFO 244 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/home],methods=[GET]}" onto public java.lang.String com.uniovi.controllers.UsersController.home(org.springframework.ui.Model,org.springframework.data.domain.Pageable)
+2018-03-16 12:48:51.567  INFO 244 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/listUsuarios]}" onto public java.lang.String com.uniovi.controllers.UsersController.getListado(org.springframework.ui.Model,java.lang.String,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-16 12:48:51.567  INFO 244 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[POST]}" onto public java.lang.String com.uniovi.controllers.UsersController.signup(com.uniovi.entities.User,org.springframework.validation.BindingResult,org.springframework.ui.Model)
+2018-03-16 12:48:51.567  INFO 244 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[GET]}" onto public java.lang.String com.uniovi.controllers.UsersController.signup(org.springframework.ui.Model)
+2018-03-16 12:48:51.568  INFO 244 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[GET]}" onto public java.lang.String com.uniovi.controllers.UsersController.login(org.springframework.ui.Model)
+2018-03-16 12:48:51.570  INFO 244 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-16 12:48:51.570  INFO 244 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-16 12:48:51.601  INFO 244 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-16 12:48:51.601  INFO 244 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-16 12:48:51.646  INFO 244 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-16 12:48:52.320  INFO 244 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-16 12:48:52.396  INFO 244 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8090 (http)
+2018-03-16 12:48:52.401  INFO 244 --- [main] com.uniovi.RedSocialSdiApplication       : Started RedSocialSdiApplication in 8.117 seconds (JVM running for 8.45)
+2018-03-16 12:48:52.559  INFO 244 --- [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-16 12:48:52.559  INFO 244 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-16 12:48:52.576  INFO 244 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2018-03-16 12:48:57.775  INFO 244 --- [http-nio-8090-exec-9] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-16 12:49:04.933  INFO 244 --- [http-nio-8090-exec-7] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-16 12:49:30.851  INFO 8672 --- [main] com.uniovi.RedSocialSdiApplication       : Starting RedSocialSdiApplication on Martin-PC with PID 8672 (started by Martin in D:\Universidad\Tercero\Segundo Semestre\Sistemas distribuidos e internet\Trabajos Practicas\RedSocialSDI)
+2018-03-16 12:49:30.856  INFO 8672 --- [main] com.uniovi.RedSocialSdiApplication       : No active profile set, falling back to default profiles: default
+2018-03-16 12:49:31.104  INFO 8672 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@d5b810e: startup date [Fri Mar 16 12:49:31 CET 2018]; root of context hierarchy
+2018-03-16 12:49:32.445  INFO 8672 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c4eecc9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-16 12:49:33.097  INFO 8672 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8090 (http)
+2018-03-16 12:49:33.112  INFO 8672 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-16 12:49:33.114  INFO 8672 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-03-16 12:49:33.223  INFO 8672 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-16 12:49:33.223  INFO 8672 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2122 ms
+2018-03-16 12:49:33.452  INFO 8672 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-16 12:49:33.453  INFO 8672 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-16 12:49:33.453  INFO 8672 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-16 12:49:33.454  INFO 8672 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-16 12:49:33.455  INFO 8672 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-03-16 12:49:33.455  INFO 8672 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-16 12:49:34.912  INFO 8672 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-16 12:49:34.932  INFO 8672 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-16 12:49:35.029  INFO 8672 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-03-16 12:49:35.031  INFO 8672 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-03-16 12:49:35.033  INFO 8672 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-03-16 12:49:35.186  INFO 8672 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-16 12:49:35.321  INFO 8672 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2018-03-16 12:49:35.879  INFO 8672 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2018-03-16 12:49:35.889  INFO 8672 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2018-03-16 12:49:35.927  INFO 8672 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-16 12:49:36.213  INFO 8672 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-03-16 12:49:38.093  INFO 8672 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@291028d7, org.springframework.security.web.context.SecurityContextPersistenceFilter@22105c76, org.springframework.security.web.header.HeaderWriterFilter@3945886e, org.springframework.security.web.authentication.logout.LogoutFilter@1e14b269, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@284b487f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7f5ecada, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5c7e55a4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2b4954a4, org.springframework.security.web.session.SessionManagementFilter@1dac0784, org.springframework.security.web.access.ExceptionTranslationFilter@3966c679, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@8ee1404]
+2018-03-16 12:49:38.485  INFO 8672 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@d5b810e: startup date [Fri Mar 16 12:49:31 CET 2018]; root of context hierarchy
+2018-03-16 12:49:38.583  INFO 8672 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendship/listFriendship]}" onto public java.lang.String com.uniovi.controllers.FriendshipController.getListado(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-16 12:49:38.585  INFO 8672 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/add/{id}]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.addFriendshipRequest(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.lang.Long,java.security.Principal)
+2018-03-16 12:49:38.585  INFO 8672 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/accept/{id}]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.acceptFriendshipRequest(java.lang.Long,java.security.Principal)
+2018-03-16 12:49:38.586  INFO 8672 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/listRequest]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.getListado(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-16 12:49:38.586  INFO 8672 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/listRequest/update]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.updateListado(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-16 12:49:38.586  INFO 8672 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.uniovi.controllers.HomeController.index()
+2018-03-16 12:49:38.587  INFO 8672 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/listFriendPublications/{id}]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getFriendPublications(org.springframework.ui.Model,java.lang.Long)
+2018-03-16 12:49:38.588  INFO 8672 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/listPosts]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getListado(org.springframework.ui.Model,java.security.Principal)
+2018-03-16 12:49:38.588  INFO 8672 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/add],methods=[POST]}" onto public java.lang.String com.uniovi.controllers.PublicationController.setPublication(com.uniovi.entities.Publication,org.springframework.validation.BindingResult,java.security.Principal,org.springframework.web.multipart.MultipartFile)
+2018-03-16 12:49:38.589  INFO 8672 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/add]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getPublication(org.springframework.ui.Model)
+2018-03-16 12:49:38.589  INFO 8672 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/details/{id}]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getDetail(org.springframework.ui.Model,java.lang.Long)
+2018-03-16 12:49:38.592  INFO 8672 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/home],methods=[GET]}" onto public java.lang.String com.uniovi.controllers.UsersController.home(org.springframework.ui.Model,org.springframework.data.domain.Pageable)
+2018-03-16 12:49:38.592  INFO 8672 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/listUsuarios]}" onto public java.lang.String com.uniovi.controllers.UsersController.getListado(org.springframework.ui.Model,java.lang.String,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-16 12:49:38.592  INFO 8672 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[POST]}" onto public java.lang.String com.uniovi.controllers.UsersController.signup(com.uniovi.entities.User,org.springframework.validation.BindingResult,org.springframework.ui.Model)
+2018-03-16 12:49:38.592  INFO 8672 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[GET]}" onto public java.lang.String com.uniovi.controllers.UsersController.signup(org.springframework.ui.Model)
+2018-03-16 12:49:38.593  INFO 8672 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[GET]}" onto public java.lang.String com.uniovi.controllers.UsersController.login(org.springframework.ui.Model)
+2018-03-16 12:49:38.596  INFO 8672 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-16 12:49:38.597  INFO 8672 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-16 12:49:38.642  INFO 8672 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-16 12:49:38.642  INFO 8672 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-16 12:49:38.696  INFO 8672 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-16 12:49:39.675  INFO 8672 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-16 12:49:39.767  INFO 8672 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8090 (http)
+2018-03-16 12:49:39.774  INFO 8672 --- [main] com.uniovi.RedSocialSdiApplication       : Started RedSocialSdiApplication in 9.222 seconds (JVM running for 9.613)
+2018-03-16 12:49:46.809  INFO 8672 --- [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-16 12:49:46.809  INFO 8672 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-16 12:49:46.824  INFO 8672 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+2018-03-16 12:49:51.646  INFO 8672 --- [http-nio-8090-exec-3] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-16 12:51:46.083  INFO 8924 --- [main] com.uniovi.RedSocialSdiApplication       : Starting RedSocialSdiApplication on Martin-PC with PID 8924 (started by Martin in D:\Universidad\Tercero\Segundo Semestre\Sistemas distribuidos e internet\Trabajos Practicas\RedSocialSDI)
+2018-03-16 12:51:46.086  INFO 8924 --- [main] com.uniovi.RedSocialSdiApplication       : No active profile set, falling back to default profiles: default
+2018-03-16 12:51:46.294  INFO 8924 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@770c2e6b: startup date [Fri Mar 16 12:51:46 CET 2018]; root of context hierarchy
+2018-03-16 12:51:47.452  INFO 8924 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b15145f4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-16 12:51:48.019  INFO 8924 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8090 (http)
+2018-03-16 12:51:48.030  INFO 8924 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-16 12:51:48.031  INFO 8924 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-03-16 12:51:48.143  INFO 8924 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-16 12:51:48.143  INFO 8924 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1852 ms
+2018-03-16 12:51:48.322  INFO 8924 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-16 12:51:48.323  INFO 8924 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-16 12:51:48.323  INFO 8924 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-16 12:51:48.323  INFO 8924 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-16 12:51:48.325  INFO 8924 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-03-16 12:51:48.325  INFO 8924 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-16 12:51:49.686  INFO 8924 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-16 12:51:49.706  INFO 8924 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-16 12:51:49.779  INFO 8924 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-03-16 12:51:49.780  INFO 8924 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-03-16 12:51:49.782  INFO 8924 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-03-16 12:51:49.816  INFO 8924 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-16 12:51:49.978  INFO 8924 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2018-03-16 12:51:50.409  INFO 8924 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2018-03-16 12:51:50.420  INFO 8924 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2018-03-16 12:51:50.454  INFO 8924 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-16 12:51:50.676  INFO 8924 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-03-16 12:51:52.328  INFO 8924 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1999149e, org.springframework.security.web.context.SecurityContextPersistenceFilter@a9a8ec3, org.springframework.security.web.header.HeaderWriterFilter@75527e36, org.springframework.security.web.authentication.logout.LogoutFilter@3386c206, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3303e89e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@40016ce1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3b39e79b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@65d73bd, org.springframework.security.web.session.SessionManagementFilter@6d815fb7, org.springframework.security.web.access.ExceptionTranslationFilter@45e7bb79, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6e5f5478]
+2018-03-16 12:51:52.580  INFO 8924 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@770c2e6b: startup date [Fri Mar 16 12:51:46 CET 2018]; root of context hierarchy
+2018-03-16 12:51:52.659  INFO 8924 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendship/listFriendship]}" onto public java.lang.String com.uniovi.controllers.FriendshipController.getListado(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-16 12:51:52.660  INFO 8924 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/listRequest]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.getListado(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-16 12:51:52.661  INFO 8924 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/listRequest/update]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.updateListado(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-16 12:51:52.661  INFO 8924 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/add/{id}]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.addFriendshipRequest(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.lang.Long,java.security.Principal)
+2018-03-16 12:51:52.661  INFO 8924 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/accept/{id}]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.acceptFriendshipRequest(java.lang.Long,java.security.Principal)
+2018-03-16 12:51:52.662  INFO 8924 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.uniovi.controllers.HomeController.index()
+2018-03-16 12:51:52.662  INFO 8924 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/listPosts]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getListado(org.springframework.ui.Model,java.security.Principal)
+2018-03-16 12:51:52.663  INFO 8924 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/add],methods=[POST]}" onto public java.lang.String com.uniovi.controllers.PublicationController.setPublication(com.uniovi.entities.Publication,org.springframework.validation.BindingResult,java.security.Principal,org.springframework.web.multipart.MultipartFile)
+2018-03-16 12:51:52.663  INFO 8924 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/add]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getPublication(org.springframework.ui.Model)
+2018-03-16 12:51:52.663  INFO 8924 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/details/{id}]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getDetail(org.springframework.ui.Model,java.lang.Long)
+2018-03-16 12:51:52.663  INFO 8924 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/listFriendPublications/{id}]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getFriendPublications(org.springframework.ui.Model,java.lang.Long)
+2018-03-16 12:51:52.666  INFO 8924 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/home],methods=[GET]}" onto public java.lang.String com.uniovi.controllers.UsersController.home(org.springframework.ui.Model,org.springframework.data.domain.Pageable)
+2018-03-16 12:51:52.666  INFO 8924 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/listUsuarios]}" onto public java.lang.String com.uniovi.controllers.UsersController.getListado(org.springframework.ui.Model,java.lang.String,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-16 12:51:52.666  INFO 8924 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[POST]}" onto public java.lang.String com.uniovi.controllers.UsersController.signup(com.uniovi.entities.User,org.springframework.validation.BindingResult,org.springframework.ui.Model)
+2018-03-16 12:51:52.667  INFO 8924 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[GET]}" onto public java.lang.String com.uniovi.controllers.UsersController.signup(org.springframework.ui.Model)
+2018-03-16 12:51:52.667  INFO 8924 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[GET]}" onto public java.lang.String com.uniovi.controllers.UsersController.login(org.springframework.ui.Model)
+2018-03-16 12:51:52.670  INFO 8924 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-16 12:51:52.670  INFO 8924 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-16 12:51:52.700  INFO 8924 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-16 12:51:52.701  INFO 8924 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-16 12:51:52.745  INFO 8924 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-16 12:51:53.407  INFO 8924 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-16 12:51:53.489  INFO 8924 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8090 (http)
+2018-03-16 12:51:53.495  INFO 8924 --- [main] com.uniovi.RedSocialSdiApplication       : Started RedSocialSdiApplication in 7.677 seconds (JVM running for 8.006)
+2018-03-16 12:51:53.602  INFO 8924 --- [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-16 12:51:53.603  INFO 8924 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-16 12:51:53.619  INFO 8924 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2018-03-16 12:51:58.993  INFO 8924 --- [http-nio-8090-exec-9] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios

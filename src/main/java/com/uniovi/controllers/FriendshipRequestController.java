@@ -32,18 +32,21 @@ public class FriendshipRequestController {
 	private FriendsService friendsService;
 
 	@RequestMapping(value = "/friendshipRequest/add/{id}")
-	public String addFriendshipRequest(Model model, @PathVariable Long id, Principal principal) {
+	public String addFriendshipRequest(Model model, Pageable pageable, @PathVariable Long id, Principal principal) {
 		String email = principal.getName();
 		User user1 = usersService.getUserByEmail(email);
 		User user2 = usersService.getUser(id);
 		FriendshipRequest original = new FriendshipRequest(user1, user2);
 
-		if (user1.getFriends().contains(new Friend(user1, user2)) || user1.getFriendsRequest().contains(original)) {
-			model.addAttribute("errorEnviado", "error");
+		if (user1.getFriendsRequest().contains(original)) {
+			model.addAttribute("errorEnviado", user2.getId());
 		} else {
 			friendshipRequestService.addFriendshipRequest(original);
 		}
-		return "redirect:/user/listUsuarios";
+
+		Page<User> users = usersService.findAll(pageable, user1.getId());
+		model.addAttribute("usersList", users.getContent());
+		return "user/listUsuarios ::  tableListUsers";
 	}
 
 	@RequestMapping(value = "/friendshipRequest/accept/{id}")
