@@ -22,6 +22,7 @@ import com.uniovi.entities.User;
 import com.uniovi.services.RoleService;
 import com.uniovi.services.SecurityService;
 import com.uniovi.services.UsersService;
+import com.uniovi.validators.AdminLoginFormValidator;
 import com.uniovi.validators.SignUpFormValidator;
 
 @Controller
@@ -35,21 +36,24 @@ public class UsersController {
 
 	@Autowired
 	private SignUpFormValidator signUpFormValidator;
-	
+
+	@Autowired
+	private AdminLoginFormValidator adminLoginValidator;
+
 	@Autowired
 	private RoleService roleService;
-	
+
 	private final Logger log = LoggerFactory.getLogger(this.getClass());
 
 	@RequestMapping("/user/listUsuarios")
 	public String getListado(Model model, @RequestParam(value = "", required = false) String searchText,
 			Pageable pageable, Principal principal) {
-		
+
 		Page<User> users = new PageImpl<User>(new LinkedList<User>());
-		
+
 		String email = principal.getName();
 		User user = usersService.getUserByEmail(email);
-		
+
 		if (searchText != null && !searchText.isEmpty()) {
 			users = usersService.searchUsersByNameAndEmail(pageable, searchText, user.getId());
 		} else {
@@ -80,15 +84,36 @@ public class UsersController {
 		securityService.autoLogin(user.getEmail(), user.getPasswordConfirm());
 		return "redirect:/user/listUsuarios";
 	}
-	
+
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
 	public String login(Model model) {
 		return "login";
+	}
+
+	@RequestMapping(value = "/admin/login", method = RequestMethod.GET)
+	public String adminLogin(Model model) {
+		return "adminLogin";
+	}
+
+	@RequestMapping(value = "/admin/login", method = RequestMethod.POST)
+	public String adminLogin(@ModelAttribute("user") @Validated User user, BindingResult result, Model model) {
+		adminLoginValidator.validate(user, result);
+		if (result.hasErrors()) {
+			log.info("Login inválido");
+			return "adminLogin";
+			//mostrar por pantalla los mensajes que me falten por mostrar
+			//y poner en las vistas las cosas que pueda ver el admin y cuales son solo para los usuarios
+		}
+		User admin = usersService.getUserByEmail(user.getEmail());
+		if (admin.getRole().equals("ROLE_ADMIN")) {
+			securityService.autoLogin(admin.getEmail(), user.getPassword());
+		}
+		return "redirect:/user/listUsuarios";
 	}
 
 	@RequestMapping(value = { "/home" }, method = RequestMethod.GET)
 	public String home(Model model, Pageable pageable) {
 		return "home";
 	}
-	
+
 }

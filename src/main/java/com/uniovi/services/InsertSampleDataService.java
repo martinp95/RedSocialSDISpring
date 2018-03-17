@@ -50,7 +50,10 @@ public class InsertSampleDataService {
 		user9.setRole(roleService.getRoles()[0]);
 		User user10 = new User("email10", "Marina");
 		user10.setPassword("123456");
-		user10.setRole(roleService.getRoles()[0]);
+		user10.setRole(roleService.getRoles()[0]);		
+		User user11 = new User("email11", "Marina");
+		user11.setPassword("123456");
+		user11.setRole(roleService.getRoles()[1]);
 
 		usersService.addUser(user1);
 		usersService.addUser(user2);
@@ -63,6 +66,7 @@ public class InsertSampleDataService {
 		usersService.addUser(user8);
 		usersService.addUser(user9);
 		usersService.addUser(user10);
+		usersService.addUser(user11);
 
 		Publication post1 = new Publication("Publicación de prueba (user1)", "Esto es una prueba", user1);
 		Publication post2 = new Publication("Publicación de prueba (user2)", "Esto es una prueba", user2);
