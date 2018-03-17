@@ -57,5 +57,4 @@ public class UsersService {
 		users = usersRepository.searchByNameAndEmail(pageable, searchText, id);
 		return users;
 	}
-
 }

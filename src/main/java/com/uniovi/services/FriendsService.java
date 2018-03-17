@@ -16,7 +16,7 @@ import com.uniovi.repositories.FriendsRepository;
 
 @Service
 public class FriendsService {
-	
+
 	@Autowired
 	private FriendsRepository friendshipsRepository;
 
@@ -47,6 +47,4 @@ public class FriendsService {
 		request = friendshipsRepository.findAllByUser(pageable, user);
 		return request;
 	}
-	
-
 }

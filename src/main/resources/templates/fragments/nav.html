@@ -16,26 +16,36 @@
 				<li><a href="/home" th:text="#{home.message}"></a></li>
 
 
-				<li><a href="/user/listUsuarios"
-					th:text="#{listaUsuarios.message}"></a></li>
+				<li id="listUsers-menu">
+					<a href="/user/listUsuarios"
+					th:text="#{listaUsuarios.message}"></a>
+				</li>
 
 				<li id="publications-menu" class="dropdown"
-					sec:authorize="isAuthenticated()"><a class="dropdown-toggle" 
+					sec:authorize="hasRole('ROLE_USER')"><a class="dropdown-toggle" 
 					th:id = "btnPost" data-toggle="dropdown" href="#"> <span
 						th:text="#{post.message}"></span> <span class="caret"></span>
-				</a>
-					<ul id="postDropdownMenuButton" class="dropdown-menu">
-						<li><a href="/publication/add" th:id = "addPost" th:text="#{newPost.message}"></a>
-						</li>
-						<li><a href="/publication/listPosts"  th:id = "listPost"
-							th:text="#{listPosts.message}"></a></li>
-					</ul></li>
+					</a>
+						<ul id="postDropdownMenuButton" class="dropdown-menu">
+							<li>
+								<a href="/publication/add" th:id = "addPost" th:text="#{newPost.message}"></a>
+							</li>
+							<li>
+								<a href="/publication/listPosts"  th:id = "listPost"
+								th:text="#{listPosts.message}"></a>
+							</li>
+						</ul>
+				</li>
 
-				<li><a href="/friendshipRequest/listRequest"
-					th:text="#{friendshipRequest.message}"></a></li>
+				<li id="listFriendShipRequest-menu" sec:authorize="hasRole('ROLE_USER')">
+					<a href="/friendshipRequest/listRequest"
+					th:text="#{friendshipRequest.message}"></a>
+				</li>
 
-				<li><a href="/friendship/listFriendship"
-					th:text="#{friends.message}"></a></li>
+				<li id="listFriendShip-menu" sec:authorize="hasRole('ROLE_USER')">
+					<a href="/friendship/listFriendship"
+					th:text="#{friends.message}"></a>
+				</li>
 			</ul>
 
 			<ul class="nav navbar-nav navbar-right">

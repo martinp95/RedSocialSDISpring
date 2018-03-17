@@ -20,15 +20,13 @@
 					<tr>
 						<th th:text="#{listUsersEmail.message}"></th>
 						<th th:text="#{listUsersName.message}"></th>
-						<th class="col-md-3"></th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr th:each="user : ${usersList}">
 						<td th:text="${user.email}"></td>
 						<td th:text="${user.name}"></td>
-						<!--<td><a th:href="${'/friendshipRequest/add/' + user.id}" th:text="#{addFriend.message}"></a></td> -->
-						<td>
+						<td sec:authorize="hasRole('ROLE_USER')">
 							<button type="button" th:id="${'friendshipRequestButton' + user.id}"
 								class="btn btn-info" th:text="#{addFriend.message}"></button>
 								
@@ -36,6 +34,18 @@
 								/*<![CDATA[*/
 									$( "#friendshipRequestButton[[${user.id}]]").click(function(){
 										$("#tableListUsers").load('/friendshipRequest/add/[[${user.id}]]');
+									});
+								/*]]>*/
+							</script>
+						</td>
+						<td sec:authorize="hasRole('ROLE_ADMIN')">
+							<button type="button" th:id="${'deleteUserButton' + user.id}"
+								class="btn btn-info" th:text="#{deleteUser.message}"></button>
+								
+							<script th:inline="javascript">
+								/*<![CDATA[*/
+									$( "#deleteUserButton[[${user.id}]]").click(function(){
+										$("#tableListUsers").load('/deleteUser/[[${user.id}]]');
 									});
 								/*]]>*/
 							</script>
