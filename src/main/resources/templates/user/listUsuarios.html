@@ -33,7 +33,12 @@
 							<script th:inline="javascript">
 								/*<![CDATA[*/
 									$( "#friendshipRequestButton[[${user.id}]]").click(function(){
-										$("#tableListUsers").load('/friendshipRequest/add/[[${user.id}]]');
+										var numberPage = [[${param.page}]];
+										var url = '/friendshipRequest/add/[[${user.id}]]';
+										if(numberPage != null){
+											url+="?page=" + numberPage[0];
+										}
+										$("#tableListUsers").load(url);
 									});
 								/*]]>*/
 							</script>
@@ -45,7 +50,12 @@
 							<script th:inline="javascript">
 								/*<![CDATA[*/
 									$( "#deleteUserButton[[${user.id}]]").click(function(){
-										$("#tableListUsers").load('/deleteUser/[[${user.id}]]');
+										var numberPage = [[${param.page}]];
+										var url = '/deleteUser/[[${user.id}]]';
+										if(numberPage != null){
+											url+="?page=" + numberPage[0];
+										}
+										$("#tableListUsers").load(url);
 									});
 								/*]]>*/
 							</script>

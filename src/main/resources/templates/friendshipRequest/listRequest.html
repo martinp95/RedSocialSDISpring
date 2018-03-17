@@ -34,9 +34,14 @@
 								
 								<script th:inline="javascript">
 								/*<![CDATA[*/
-									$( "#friendshipRequestAcceptButton[[${request.user1.id}]]").click(function(){
+									$( "#friendshipRequestAcceptButton[[${request.user1.id}]]").click(function(){										
 										$.get("/friendshipRequest/accept/[[${request.user1.id}]]" , function(data){
-											$("#tableFriendshipRequest").load('/friendshipRequest/listRequest/update');
+											var numberPage = [[${param.page}]];
+											var url = '/friendshipRequest/listRequest/update';
+											if(numberPage != null){
+												url+="?page=" + numberPage[0];
+											}
+											$("#tableFriendshipRequest").load(url);
 										});
 									});
 								/*]]>*/

@@ -46,6 +46,7 @@ public class FriendshipRequestController {
 
 		Page<User> users = usersService.findAll(pageable, user1.getId());
 		model.addAttribute("usersList", users.getContent());
+		model.addAttribute("page", users);
 		return "user/listUsuarios ::  tableListUsers";
 	}
 
@@ -90,6 +91,7 @@ public class FriendshipRequestController {
 
 		Page<FriendshipRequest> requests = friendshipRequestService.getFriendshipRequestsForUser(pageable, user);
 		model.addAttribute("requestList", requests.getContent());
+		model.addAttribute("page", requests);
 		return "friendshipRequest/listRequest :: tableFriendshipRequest";
 	}
 
