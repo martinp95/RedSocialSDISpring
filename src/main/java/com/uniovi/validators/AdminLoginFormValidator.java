@@ -26,8 +26,12 @@ public class AdminLoginFormValidator implements Validator {
 		ValidationUtils.rejectIfEmptyOrWhitespace(errors, "email", "Error.empty");
 		ValidationUtils.rejectIfEmptyOrWhitespace(errors, "password", "Error.empty");
 		User admin = usersService.getUserByEmail(user.getEmail());
-		if (!admin.getRole().equals("ROLE_ADMIN")) {
-			errors.rejectValue("role", "Error.adminLogin.adminRole");
+		if (admin == null) {
+			errors.rejectValue("email", "Error.adminLogin.usuarioContrasenaIncorrectos");
+		} else {
+			if (!admin.getRole().equals("ROLE_ADMIN")) {
+				errors.rejectValue("role", "Error.adminLogin.adminRole");
+			}
 		}
 	}
 }
