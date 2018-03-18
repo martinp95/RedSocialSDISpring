@@ -269,6 +269,7 @@ public class RedSocialSDITests {
 		elementos = SeleniumUtils.EsperaCargaPagina(driver, "id", "addPost", PO_View.getTimeout());
 		elementos.get(0).click();
 
+		PO_View.checkElement(driver, "text", "SDI - Red social");
 		WebElement title = driver.findElement(By.name("title"));
 		title.click();
 		title.clear();
@@ -277,7 +278,7 @@ public class RedSocialSDITests {
 		text.click();
 		text.clear();
 		text.sendKeys("Esto es una publicación de prueba");
-		By boton = By.className("btn");
+		By boton = By.id("submit");
 		driver.findElement(boton).click();
 
 		PO_View.checkElement(driver, "text", "Publicaciones");
@@ -343,6 +344,28 @@ public class RedSocialSDITests {
 	// adjunta.
 	@Test
 	public void PubFot2Val() {
+		PO_HomeView.clickOption(driver, "login", "class", "btn btn-primary");
+		PO_LoginView.fillForm(driver, "email1", "123456");
+
+		List<WebElement> elementos = SeleniumUtils.EsperaCargaPagina(driver, "id", "btnPost", PO_View.getTimeout());
+		elementos.get(0).click();
+		elementos = SeleniumUtils.EsperaCargaPagina(driver, "id", "postDropdownMenuButton", PO_View.getTimeout());
+		elementos = SeleniumUtils.EsperaCargaPagina(driver, "id", "addPost", PO_View.getTimeout());
+		elementos.get(0).click();
+
+		PO_View.checkElement(driver, "text", "SDI - Red social");
+		WebElement title = driver.findElement(By.name("title"));
+		title.click();
+		title.clear();
+		title.sendKeys("Primera publicación");
+		WebElement text = driver.findElement(By.name("text"));
+		text.click();
+		text.clear();
+		text.sendKeys("Esto es una publicación de prueba");
+		By boton = By.id("submit");
+		driver.findElement(boton).click();
+
+		PO_View.checkElement(driver, "text", "Publicaciones");
 	}
 
 	// 13.1 Inicio de sesión como administrador con datos válidos.
