@@ -393,12 +393,41 @@ public class RedSocialSDITests {
 	// 13.1 Inicio de sesión como administrador con datos válidos.
 	@Test
 	public void AdInVal() {
+		driver.navigate().to("http://localhost:8090/admin/login");
+
+		WebElement email = driver.findElement(By.name("email"));
+		email.click();
+		email.clear();
+		email.sendKeys("email11");
+		WebElement password = driver.findElement(By.name("password"));
+		password.click();
+		password.clear();
+		password.sendKeys("123456");
+		By boton = By.className("btn");
+		driver.findElement(boton).click();
+
+		PO_View.checkElement(driver, "text", "Usuarios");
+
 	}
 
 	// 13.2 Inicio de sesión como administrador con datos inválidos (usar los datos
 	// de un usuario que no tenga perfil administrador).
 	@Test
 	public void AdInInVal() {
+		driver.navigate().to("http://localhost:8090/admin/login");
+
+		WebElement email = driver.findElement(By.name("email"));
+		email.click();
+		email.clear();
+		email.sendKeys("email1");
+		WebElement password = driver.findElement(By.name("password"));
+		password.click();
+		password.clear();
+		password.sendKeys("123456");
+		By boton = By.className("btn");
+		driver.findElement(boton).click();
+
+		PO_View.checkElement(driver, "text", "No es administrador");
 	}
 
 	// 14.1 Desde un usuario identificado en sesión como administrador listar a
