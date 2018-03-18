@@ -79,7 +79,6 @@ public class RedSocialSDITests {
 		List<WebElement> elementos = SeleniumUtils.EsperaCargaPagina(driver, "id", "botonSignup", PO_View.getTimeout());
 		assertTrue(elementos.size() == 1);
 		elementos.get(0).click();
-		PO_NavView.clickOption(driver, "signup", "id", "botonSignup");
 		PO_RegisterView.fillForm(driver, "example@example.com", "Josefo", "123456", "1234567");
 		PO_View.checkElement(driver, "text", "Las contraseñas no coinciden.");
 	}
@@ -434,12 +433,52 @@ public class RedSocialSDITests {
 	// todos los usuarios de la aplicación.
 	@Test
 	public void AdLisUsrVal() {
+		driver.navigate().to("http://localhost:8090/admin/login");
+
+		WebElement email = driver.findElement(By.name("email"));
+		email.click();
+		email.clear();
+		email.sendKeys("email11");
+		WebElement password = driver.findElement(By.name("password"));
+		password.click();
+		password.clear();
+		password.sendKeys("123456");
+		By boton = By.className("btn");
+		driver.findElement(boton).click();
+
+		PO_View.checkElement(driver, "text", "Usuarios");
+
+		PO_View.checkElement(driver, "text", "Los usuarios que actualmente figuran en el sistema son los siguientes:");
+
 	}
 
 	// 15.1 Desde un usuario identificado en sesión como administrador eliminar un
 	// usuario existente en la aplicación.
 	@Test
 	public void AdBorUsrVal() {
+
+		driver.navigate().to("http://localhost:8090/admin/login");
+
+		WebElement email = driver.findElement(By.name("email"));
+		email.click();
+		email.clear();
+		email.sendKeys("email11");
+		WebElement password = driver.findElement(By.name("password"));
+		password.click();
+		password.clear();
+		password.sendKeys("123456");
+		By boton = By.className("btn");
+		driver.findElement(boton).click();
+
+		List<WebElement> elementos = SeleniumUtils.EsperaCargaPagina(driver, "id", "deleteUserButton1",
+				PO_View.getTimeout());
+		elementos.get(0).click();
+		PO_View.checkElement(driver, "text", "Usuarios");
+		PO_View.checkElement(driver, "text", "Los usuarios que actualmente figuran en el sistema son los siguientes:");
+		PO_View.checkElement(driver, "text", "SDI - Red social");
+		elementos = SeleniumUtils.EsperaCargaPagina(driver, "id", "deleteUserButton1", PO_View.getTimeout());
+		assertTrue(elementos.size() == 0);
+		SeleniumUtils.textoNoPresentePagina(driver, "email1");
 	}
 
 	// 15.2 Intento de acceso vía URL al borrado de un usuario existente en la
@@ -447,6 +486,12 @@ public class RedSocialSDITests {
 	// tenga perfil de administrador.
 	@Test
 	public void AdBorUsrInVal() {
+		PO_HomeView.clickOption(driver, "login", "class", "btn btn-primary");
+		PO_LoginView.fillForm(driver, "email1", "123456");
+
+		driver.navigate().to("http://localhost:8090/deleteUser/2");
+
+		PO_View.checkElement(driver, "text", "Whitelabel Error Page");
 	}
 
 }
