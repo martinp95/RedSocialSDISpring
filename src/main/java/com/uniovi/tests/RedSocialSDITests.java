@@ -453,9 +453,7 @@ public class RedSocialSDITests {
 	// usuario existente en la aplicación.
 	@Test
 	public void AdBorUsrVal() {
-
 		driver.navigate().to("http://localhost:8090/admin/login");
-
 		WebElement email = driver.findElement(By.name("email"));
 		email.click();
 		email.clear();
@@ -466,13 +464,13 @@ public class RedSocialSDITests {
 		password.sendKeys("123456");
 		By boton = By.className("btn");
 		driver.findElement(boton).click();
-		
-		PO_View.checkElement(driver, "text", "SDI - Red social");
+
 		List<WebElement> elementos = SeleniumUtils.EsperaCargaPagina(driver, "id", "deleteUserButton5",
 				PO_View.getTimeout());
 		elementos.get(0).click();
 		PO_View.checkElement(driver, "text", "Usuarios");
 		PO_View.checkElement(driver, "text", "Los usuarios que actualmente figuran en el sistema son los siguientes:");
+		PO_View.checkElement(driver, "text", "SDI - Red social");
 		SeleniumUtils.textoNoPresentePagina(driver, "email5");
 	}
 
