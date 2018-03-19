@@ -36,10 +36,6 @@ public class PublicationService {
 		publicationRepository.save(publication);
 	}
 
-	public void deletePublication(Long id) {
-		publicationRepository.delete(id);
-	}
-
 	public List<Publication> getPublicationsForUser(User user) {
 		List<Publication> posts = null;
 		Authentication auth = SecurityContextHolder.getContext().getAuthentication();

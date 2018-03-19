@@ -5,9 +5,10 @@ import org.springframework.stereotype.Service;
 @Service
 public class RoleService {
 
-	String[] roles = {"ROLE_USER","ROLE_ADMIN"};
+	String[] roles = { "ROLE_USER", "ROLE_ADMIN" };
+
 	public String[] getRoles() {
-	return roles;
+		return roles;
 	}
 
 }

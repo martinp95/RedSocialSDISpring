@@ -1,8 +1,6 @@
 package com.uniovi.services;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
-import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -18,12 +16,6 @@ import com.uniovi.repositories.FriendshipRequestRepository;
 public class FriendshipRequestService {
 	@Autowired
 	private FriendshipRequestRepository friendshipRequestRepository;
-
-	public List<FriendshipRequest> getFriendshipsRequests() {
-		List<FriendshipRequest> request = new ArrayList<FriendshipRequest>();
-		friendshipRequestRepository.findAll().forEach(request::add);
-		return request;
-	}
 
 	public void addFriendshipRequest(FriendshipRequest request) {
 		friendshipRequestRepository.save(request);

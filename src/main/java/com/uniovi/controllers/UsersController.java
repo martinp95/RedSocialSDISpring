@@ -2,7 +2,6 @@ package com.uniovi.controllers;
 
 import java.security.Principal;
 import java.util.LinkedList;
-import java.util.List;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,10 +19,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.uniovi.entities.FriendshipRequest;
 import com.uniovi.entities.User;
-import com.uniovi.services.FriendsService;
-import com.uniovi.services.FriendshipRequestService;
 import com.uniovi.services.RoleService;
 import com.uniovi.services.SecurityService;
 import com.uniovi.services.UsersService;
@@ -47,12 +43,6 @@ public class UsersController {
 
 	@Autowired
 	private RoleService roleService;
-
-	@Autowired
-	private FriendsService friendsService;
-	
-	@Autowired
-	private FriendshipRequestService friendShipService;
 
 	private final Logger log = LoggerFactory.getLogger(this.getClass());
 

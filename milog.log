@@ -7323,3 +7323,715 @@ java.sql.SQLIntegrityConstraintViolationException: violación del restricción d
 2018-03-19 17:12:35.233  INFO 10476 --- [http-nio-8090-exec-8] com.uniovi.controllers.UsersController   : Registro inválido
 2018-03-19 17:12:36.768  INFO 10476 --- [http-nio-8090-exec-7] com.uniovi.controllers.UsersController   : Se a añadido un nuevo usuario: Josefo - 29408.0@example.com
 >>>>>>> branch 'master' of https://github.com/gemma1401/RedSocialSDI.git
+2018-03-19 17:20:59.797  INFO 4768 --- [main] com.uniovi.RedSocialSdiApplication       : Starting RedSocialSdiApplication on Martin-PC with PID 4768 (started by Martin in D:\Universidad\Tercero\Segundo Semestre\Sistemas distribuidos e internet\Trabajos Practicas\RedSocialSDI)
+2018-03-19 17:20:59.800  INFO 4768 --- [main] com.uniovi.RedSocialSdiApplication       : No active profile set, falling back to default profiles: default
+2018-03-19 17:21:00.015  INFO 4768 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@770c2e6b: startup date [Mon Mar 19 17:21:00 CET 2018]; root of context hierarchy
+2018-03-19 17:21:01.137  INFO 4768 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d10ead74] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-19 17:21:01.675  INFO 4768 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8090 (http)
+2018-03-19 17:21:01.688  INFO 4768 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-19 17:21:01.689  INFO 4768 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-03-19 17:21:01.794  INFO 4768 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-19 17:21:01.794  INFO 4768 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1783 ms
+2018-03-19 17:21:01.964  INFO 4768 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-19 17:21:01.965  INFO 4768 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-19 17:21:01.965  INFO 4768 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-19 17:21:01.965  INFO 4768 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-19 17:21:01.966  INFO 4768 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-03-19 17:21:01.966  INFO 4768 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-19 17:21:03.310  INFO 4768 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-19 17:21:03.325  INFO 4768 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-19 17:21:03.390  INFO 4768 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-03-19 17:21:03.391  INFO 4768 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-03-19 17:21:03.392  INFO 4768 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-03-19 17:21:03.429  INFO 4768 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-19 17:21:03.627  INFO 4768 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2018-03-19 17:21:04.080  INFO 4768 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2018-03-19 17:21:04.092  INFO 4768 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2018-03-19 17:21:04.126  INFO 4768 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-19 17:21:04.342  INFO 4768 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-03-19 17:21:06.138  INFO 4768 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1377b1a0, org.springframework.security.web.context.SecurityContextPersistenceFilter@7eee6c13, org.springframework.security.web.header.HeaderWriterFilter@e4ca109, org.springframework.security.web.authentication.logout.LogoutFilter@48c5698, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6e239337, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@677cc4e8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3a3ad8e7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@48cf8414, org.springframework.security.web.session.SessionManagementFilter@1a17dd6f, org.springframework.security.web.access.ExceptionTranslationFilter@1322b575, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@79ad1774]
+2018-03-19 17:21:06.364  INFO 4768 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@770c2e6b: startup date [Mon Mar 19 17:21:00 CET 2018]; root of context hierarchy
+2018-03-19 17:21:06.435  INFO 4768 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendship/listFriendship]}" onto public java.lang.String com.uniovi.controllers.FriendshipController.getListado(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-19 17:21:06.436  INFO 4768 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/add/{id}]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.addFriendshipRequest(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.lang.Long,java.security.Principal)
+2018-03-19 17:21:06.437  INFO 4768 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/accept/{id}]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.acceptFriendshipRequest(java.lang.Long,java.security.Principal)
+2018-03-19 17:21:06.437  INFO 4768 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/listRequest]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.getListado(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-19 17:21:06.437  INFO 4768 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/listRequest/update]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.updateListado(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-19 17:21:06.438  INFO 4768 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.uniovi.controllers.HomeController.index()
+2018-03-19 17:21:06.438  INFO 4768 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/listFriendPublications/{id}]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getFriendPublications(org.springframework.ui.Model,java.lang.Long)
+2018-03-19 17:21:06.438  INFO 4768 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/listPosts]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getListado(org.springframework.ui.Model,java.security.Principal)
+2018-03-19 17:21:06.439  INFO 4768 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/add],methods=[POST]}" onto public java.lang.String com.uniovi.controllers.PublicationController.setPublication(com.uniovi.entities.Publication,org.springframework.validation.BindingResult,java.security.Principal,org.springframework.web.multipart.MultipartFile)
+2018-03-19 17:21:06.439  INFO 4768 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/add]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getPublication(org.springframework.ui.Model)
+2018-03-19 17:21:06.439  INFO 4768 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/details/{id}]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getDetail(org.springframework.ui.Model,java.lang.Long)
+2018-03-19 17:21:06.441  INFO 4768 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/home],methods=[GET]}" onto public java.lang.String com.uniovi.controllers.UsersController.home(org.springframework.ui.Model,org.springframework.data.domain.Pageable)
+2018-03-19 17:21:06.442  INFO 4768 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/listUsuarios]}" onto public java.lang.String com.uniovi.controllers.UsersController.getListado(org.springframework.ui.Model,java.lang.String,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-19 17:21:06.442  INFO 4768 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[GET]}" onto public java.lang.String com.uniovi.controllers.UsersController.login(org.springframework.ui.Model)
+2018-03-19 17:21:06.442  INFO 4768 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[POST]}" onto public java.lang.String com.uniovi.controllers.UsersController.signup(com.uniovi.entities.User,org.springframework.validation.BindingResult,org.springframework.ui.Model)
+2018-03-19 17:21:06.443  INFO 4768 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[GET]}" onto public java.lang.String com.uniovi.controllers.UsersController.signup(org.springframework.ui.Model)
+2018-03-19 17:21:06.443  INFO 4768 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/login],methods=[POST]}" onto public java.lang.String com.uniovi.controllers.UsersController.adminLogin(com.uniovi.entities.User,org.springframework.validation.BindingResult,org.springframework.ui.Model)
+2018-03-19 17:21:06.443  INFO 4768 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/login],methods=[GET]}" onto public java.lang.String com.uniovi.controllers.UsersController.adminLogin(org.springframework.ui.Model)
+2018-03-19 17:21:06.443  INFO 4768 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/deleteUser/{id}]}" onto public java.lang.String com.uniovi.controllers.UsersController.deleteUser(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.lang.Long,java.security.Principal)
+2018-03-19 17:21:06.447  INFO 4768 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-19 17:21:06.447  INFO 4768 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-19 17:21:06.477  INFO 4768 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-19 17:21:06.478  INFO 4768 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-19 17:21:06.512  INFO 4768 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-19 17:21:07.122  INFO 4768 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-19 17:21:07.197  INFO 4768 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8090 (http)
+2018-03-19 17:21:07.202  INFO 4768 --- [main] com.uniovi.RedSocialSdiApplication       : Started RedSocialSdiApplication in 7.659 seconds (JVM running for 7.985)
+2018-03-19 17:22:11.168  INFO 4768 --- [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-19 17:22:11.168  INFO 4768 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-19 17:22:11.186  INFO 4768 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2018-03-19 17:22:15.230  INFO 4768 --- [http-nio-8090-exec-8] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 17:22:15.848  INFO 4768 --- [http-nio-8090-exec-5] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 17:22:19.739  INFO 4768 --- [http-nio-8090-exec-4] com.uniovi.controllers.UsersController   : El usuario email2 ha consultado la lista de usuarios
+2018-03-19 17:22:23.752  INFO 4768 --- [http-nio-8090-exec-5] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 17:22:25.639  INFO 4768 --- [http-nio-8090-exec-5] com.uniovi.controllers.UsersController   : El usuario email11 ha consultado la lista de usuarios
+2018-03-19 17:22:26.462  WARN 4768 --- [http-nio-8090-exec-8] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: -8, SQLState: 23504
+2018-03-19 17:22:26.463 ERROR 4768 --- [http-nio-8090-exec-8] o.h.engine.jdbc.spi.SqlExceptionHelper   : violación del restricción de integridad: sin acción para la clave foránea; FKFHHQASTA3O85L2J85DJAAXXXM table: FRIEND
+2018-03-19 17:22:26.464  INFO 4768 --- [http-nio-8090-exec-8] o.h.e.j.b.internal.AbstractBatchImpl     : HHH000010: On release of batch it still contained JDBC statements
+2018-03-19 17:22:26.478 ERROR 4768 --- [http-nio-8090-exec-8] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint [FKFHHQASTA3O85L2J85DJAAXXXM]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement] with root cause
+
+java.sql.SQLIntegrityConstraintViolationException: violación del restricción de integridad: sin acción para la clave foránea; FKFHHQASTA3O85L2J85DJAAXXXM table: FRIEND
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source) ~[hsqldb-2.3.5.jar:2.3.5]
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source) ~[hsqldb-2.3.5.jar:2.3.5]
+	at org.hsqldb.jdbc.JDBCPreparedStatement.fetchResult(Unknown Source) ~[hsqldb-2.3.5.jar:2.3.5]
+	at org.hsqldb.jdbc.JDBCPreparedStatement.executeUpdate(Unknown Source) ~[hsqldb-2.3.5.jar:2.3.5]
+	at sun.reflect.GeneratedMethodAccessor74.invoke(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_161]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_161]
+	at org.apache.tomcat.jdbc.pool.StatementFacade$StatementProxy.invoke(StatementFacade.java:114) ~[tomcat-jdbc-8.5.27.jar:na]
+	at com.sun.proxy.$Proxy96.executeUpdate(Unknown Source) ~[na:na]
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:204) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.engine.jdbc.batch.internal.NonBatchingBatch.addToBatch(NonBatchingBatch.java:45) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.delete(AbstractEntityPersister.java:3261) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.delete(AbstractEntityPersister.java:3498) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.action.internal.EntityDeleteAction.execute(EntityDeleteAction.java:98) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:582) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:456) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:337) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:39) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.internal.SessionImpl.flush(SessionImpl.java:1282) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:465) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:2963) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2339) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:485) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:147) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$100(JdbcResourceLocalTransactionCoordinatorImpl.java:38) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:231) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:65) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.jpa.internal.TransactionImpl.commit(TransactionImpl.java:61) ~[hibernate-entitymanager-5.0.12.Final.jar:5.0.12.Final]
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:517) ~[spring-orm-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:761) ~[spring-tx-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:730) ~[spring-tx-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:518) ~[spring-tx-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:292) ~[spring-tx-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96) ~[spring-tx-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136) ~[spring-tx-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:133) ~[spring-data-jpa-1.11.10.RELEASE.jar:na]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92) ~[spring-aop-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptor.invoke(SurroundingTransactionDetectorMethodInterceptor.java:57) ~[spring-data-commons-1.13.10.RELEASE.jar:na]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213) ~[spring-aop-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at com.sun.proxy.$Proxy93.delete(Unknown Source) ~[na:na]
+	at com.uniovi.services.UsersService.deleteUser(UsersService.java:42) ~[classes/:na]
+	at com.uniovi.controllers.UsersController.deleteUser(UsersController.java:134) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_161]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_161]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_161]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_161]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97) ~[spring-webmvc-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) ~[spring-webmvc-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) ~[spring-webmvc-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967) ~[spring-webmvc-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) ~[spring-webmvc-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) ~[spring-webmvc-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687) ~[selenium-server-standalone-2.53.0.jar:na]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) ~[selenium-server-standalone-2.53.0.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.27.jar:8.5.27]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:317) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:114) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:64) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177) ~[spring-security-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:347) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:263) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504) [tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) [tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) [tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.27.jar:8.5.27]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_161]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_161]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.27.jar:8.5.27]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_161]
+
+2018-03-19 17:22:27.948  INFO 4768 --- [http-nio-8090-exec-6] com.uniovi.controllers.UsersController   : Login inválido
+2018-03-19 17:22:29.676  INFO 4768 --- [http-nio-8090-exec-10] com.uniovi.controllers.UsersController   : El usuario email11 ha consultado la lista de usuarios
+2018-03-19 17:22:31.683  INFO 4768 --- [http-nio-8090-exec-7] com.uniovi.controllers.UsersController   : El usuario email11 ha consultado la lista de usuarios
+2018-03-19 17:22:35.065  INFO 4768 --- [http-nio-8090-exec-9] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 17:22:35.703  INFO 4768 --- [http-nio-8090-exec-4] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 17:22:40.954  INFO 4768 --- [http-nio-8090-exec-7] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 17:22:43.399  INFO 4768 --- [http-nio-8090-exec-1] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 17:22:44.101  INFO 4768 --- [http-nio-8090-exec-2] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 17:22:47.647  INFO 4768 --- [http-nio-8090-exec-9] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 17:22:48.143  INFO 4768 --- [http-nio-8090-exec-5] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 17:22:51.015  INFO 4768 --- [http-nio-8090-exec-6] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 17:22:51.508  INFO 4768 --- [http-nio-8090-exec-3] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 17:22:55.285  INFO 4768 --- [http-nio-8090-exec-7] com.uniovi.controllers.UsersController   : El usuario email2 ha consultado la lista de usuarios
+2018-03-19 17:23:01.554  INFO 4768 --- [http-nio-8090-exec-8] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 17:23:02.015  INFO 4768 --- [http-nio-8090-exec-2] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 17:23:05.646  INFO 4768 --- [http-nio-8090-exec-1] com.uniovi.controllers.UsersController   : El usuario email2 ha consultado la lista de usuarios
+2018-03-19 17:23:11.053  INFO 4768 --- [http-nio-8090-exec-5] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 17:23:15.607  INFO 4768 --- [http-nio-8090-exec-9] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 17:23:17.231  INFO 4768 --- [http-nio-8090-exec-5] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 17:23:20.213  INFO 4768 --- [http-nio-8090-exec-7] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 17:23:20.712  INFO 4768 --- [http-nio-8090-exec-9] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 17:23:24.620  INFO 4768 --- [http-nio-8090-exec-3] com.uniovi.controllers.UsersController   : El usuario email2 ha consultado la lista de usuarios
+2018-03-19 17:23:29.200  INFO 4768 --- [http-nio-8090-exec-9] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 17:23:33.887  INFO 4768 --- [http-nio-8090-exec-7] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 17:23:39.855  INFO 4768 --- [http-nio-8090-exec-9] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 17:23:46.178  INFO 4768 --- [http-nio-8090-exec-4] com.uniovi.controllers.UsersController   : Registro inválido
+2018-03-19 17:23:50.327  INFO 4768 --- [http-nio-8090-exec-7] com.uniovi.controllers.UsersController   : Se a añadido un nuevo usuario: Josefo - 23797.0@example.com
+2018-03-19 17:23:50.421  INFO 4768 --- [http-nio-8090-exec-2] com.uniovi.controllers.UsersController   : El usuario 23797.0@example.com ha consultado la lista de usuarios
+2018-03-19 17:50:57.136  INFO 7332 --- [main] com.uniovi.RedSocialSdiApplication       : Starting RedSocialSdiApplication on Martin-PC with PID 7332 (started by Martin in D:\Universidad\Tercero\Segundo Semestre\Sistemas distribuidos e internet\Trabajos Practicas\RedSocialSDI)
+2018-03-19 17:50:57.138  INFO 7332 --- [main] com.uniovi.RedSocialSdiApplication       : No active profile set, falling back to default profiles: default
+2018-03-19 17:50:57.337  INFO 7332 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@770c2e6b: startup date [Mon Mar 19 17:50:57 CET 2018]; root of context hierarchy
+2018-03-19 17:50:58.475  INFO 7332 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a363b68a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-19 17:50:59.058  INFO 7332 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8090 (http)
+2018-03-19 17:50:59.070  INFO 7332 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-19 17:50:59.072  INFO 7332 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-03-19 17:50:59.198  INFO 7332 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-19 17:50:59.198  INFO 7332 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1864 ms
+2018-03-19 17:50:59.395  INFO 7332 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-19 17:50:59.395  INFO 7332 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-19 17:50:59.396  INFO 7332 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-19 17:50:59.396  INFO 7332 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-19 17:50:59.397  INFO 7332 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-03-19 17:50:59.397  INFO 7332 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-19 17:51:00.773  INFO 7332 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-19 17:51:00.792  INFO 7332 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-19 17:51:00.906  INFO 7332 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-03-19 17:51:00.908  INFO 7332 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-03-19 17:51:00.910  INFO 7332 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-03-19 17:51:00.972  INFO 7332 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-19 17:51:01.284  INFO 7332 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2018-03-19 17:51:01.850  INFO 7332 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2018-03-19 17:51:01.865  INFO 7332 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2018-03-19 17:51:01.912  INFO 7332 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-19 17:51:02.178  INFO 7332 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-03-19 17:51:04.050  INFO 7332 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@74c7522c, org.springframework.security.web.context.SecurityContextPersistenceFilter@c732e1c, org.springframework.security.web.header.HeaderWriterFilter@39c7fb0b, org.springframework.security.web.authentication.logout.LogoutFilter@5112b7, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@79f1e22e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@56c42964, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@c262f2f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@77c23d90, org.springframework.security.web.session.SessionManagementFilter@48c5698, org.springframework.security.web.access.ExceptionTranslationFilter@6a6d1ff3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@48cf8414]
+2018-03-19 17:51:04.296  INFO 7332 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@770c2e6b: startup date [Mon Mar 19 17:50:57 CET 2018]; root of context hierarchy
+2018-03-19 17:51:04.390  INFO 7332 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendship/listFriendship]}" onto public java.lang.String com.uniovi.controllers.FriendshipController.getListado(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-19 17:51:04.393  INFO 7332 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/add/{id}]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.addFriendshipRequest(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.lang.Long,java.security.Principal)
+2018-03-19 17:51:04.393  INFO 7332 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/listRequest]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.getListado(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-19 17:51:04.394  INFO 7332 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/listRequest/update]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.updateListado(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-19 17:51:04.394  INFO 7332 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/accept/{id}]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.acceptFriendshipRequest(java.lang.Long,java.security.Principal)
+2018-03-19 17:51:04.395  INFO 7332 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.uniovi.controllers.HomeController.index()
+2018-03-19 17:51:04.396  INFO 7332 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/listPosts]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getListado(org.springframework.ui.Model,java.security.Principal)
+2018-03-19 17:51:04.397  INFO 7332 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/add],methods=[POST]}" onto public java.lang.String com.uniovi.controllers.PublicationController.setPublication(com.uniovi.entities.Publication,org.springframework.validation.BindingResult,java.security.Principal,org.springframework.web.multipart.MultipartFile)
+2018-03-19 17:51:04.398  INFO 7332 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/add]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getPublication(org.springframework.ui.Model)
+2018-03-19 17:51:04.398  INFO 7332 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/details/{id}]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getDetail(org.springframework.ui.Model,java.lang.Long)
+2018-03-19 17:51:04.398  INFO 7332 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/listFriendPublications/{id}]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getFriendPublications(org.springframework.ui.Model,java.lang.Long)
+2018-03-19 17:51:04.403  INFO 7332 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[GET]}" onto public java.lang.String com.uniovi.controllers.UsersController.login(org.springframework.ui.Model)
+2018-03-19 17:51:04.404  INFO 7332 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/login],methods=[GET]}" onto public java.lang.String com.uniovi.controllers.UsersController.adminLogin(org.springframework.ui.Model)
+2018-03-19 17:51:04.404  INFO 7332 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/login],methods=[POST]}" onto public java.lang.String com.uniovi.controllers.UsersController.adminLogin(com.uniovi.entities.User,org.springframework.validation.BindingResult,org.springframework.ui.Model)
+2018-03-19 17:51:04.405  INFO 7332 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/deleteUser/{id}]}" onto public java.lang.String com.uniovi.controllers.UsersController.deleteUser(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.lang.Long,java.security.Principal)
+2018-03-19 17:51:04.405  INFO 7332 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/home],methods=[GET]}" onto public java.lang.String com.uniovi.controllers.UsersController.home(org.springframework.ui.Model,org.springframework.data.domain.Pageable)
+2018-03-19 17:51:04.405  INFO 7332 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/listUsuarios]}" onto public java.lang.String com.uniovi.controllers.UsersController.getListado(org.springframework.ui.Model,java.lang.String,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-19 17:51:04.405  INFO 7332 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[POST]}" onto public java.lang.String com.uniovi.controllers.UsersController.signup(com.uniovi.entities.User,org.springframework.validation.BindingResult,org.springframework.ui.Model)
+2018-03-19 17:51:04.406  INFO 7332 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[GET]}" onto public java.lang.String com.uniovi.controllers.UsersController.signup(org.springframework.ui.Model)
+2018-03-19 17:51:04.409  INFO 7332 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-19 17:51:04.410  INFO 7332 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-19 17:51:04.447  INFO 7332 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-19 17:51:04.447  INFO 7332 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-19 17:51:04.494  INFO 7332 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-19 17:51:05.177  INFO 7332 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-19 17:51:05.251  INFO 7332 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8090 (http)
+2018-03-19 17:51:05.255  INFO 7332 --- [main] com.uniovi.RedSocialSdiApplication       : Started RedSocialSdiApplication in 8.368 seconds (JVM running for 8.691)
+2018-03-19 17:51:38.802  INFO 7332 --- [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-19 17:51:38.803  INFO 7332 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-19 17:51:38.817  INFO 7332 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 14 ms
+2018-03-19 17:51:45.268  INFO 7332 --- [http-nio-8090-exec-9] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 17:51:55.715  INFO 7332 --- [http-nio-8090-exec-3] com.uniovi.controllers.UsersController   : El usuario email2 ha consultado la lista de usuarios
+2018-03-19 17:52:12.139  INFO 7332 --- [http-nio-8090-exec-3] com.uniovi.controllers.UsersController   : El usuario email11 ha consultado la lista de usuarios
+2018-03-19 17:52:29.897  INFO 7772 --- [main] com.uniovi.RedSocialSdiApplication       : Starting RedSocialSdiApplication on Martin-PC with PID 7772 (started by Martin in D:\Universidad\Tercero\Segundo Semestre\Sistemas distribuidos e internet\Trabajos Practicas\RedSocialSDI)
+2018-03-19 17:52:29.899  INFO 7772 --- [main] com.uniovi.RedSocialSdiApplication       : No active profile set, falling back to default profiles: default
+2018-03-19 17:52:30.105  INFO 7772 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@770c2e6b: startup date [Mon Mar 19 17:52:30 CET 2018]; root of context hierarchy
+2018-03-19 17:52:31.223  INFO 7772 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a363b68a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-19 17:52:31.705  INFO 7772 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8090 (http)
+2018-03-19 17:52:31.716  INFO 7772 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-19 17:52:31.717  INFO 7772 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-03-19 17:52:31.799  INFO 7772 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-19 17:52:31.800  INFO 7772 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1698 ms
+2018-03-19 17:52:31.970  INFO 7772 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-19 17:52:31.971  INFO 7772 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-19 17:52:31.971  INFO 7772 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-19 17:52:31.972  INFO 7772 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-19 17:52:31.973  INFO 7772 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-03-19 17:52:31.973  INFO 7772 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-19 17:52:33.312  INFO 7772 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-19 17:52:33.326  INFO 7772 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-19 17:52:33.387  INFO 7772 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-03-19 17:52:33.388  INFO 7772 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-03-19 17:52:33.389  INFO 7772 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-03-19 17:52:33.427  INFO 7772 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-19 17:52:33.610  INFO 7772 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2018-03-19 17:52:34.044  INFO 7772 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2018-03-19 17:52:34.054  INFO 7772 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2018-03-19 17:52:34.096  INFO 7772 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-19 17:52:34.358  INFO 7772 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-03-19 17:52:36.090  INFO 7772 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@74c7522c, org.springframework.security.web.context.SecurityContextPersistenceFilter@c732e1c, org.springframework.security.web.header.HeaderWriterFilter@39c7fb0b, org.springframework.security.web.authentication.logout.LogoutFilter@5112b7, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@79f1e22e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@56c42964, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@c262f2f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@77c23d90, org.springframework.security.web.session.SessionManagementFilter@48c5698, org.springframework.security.web.access.ExceptionTranslationFilter@6a6d1ff3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@48cf8414]
+2018-03-19 17:52:36.317  INFO 7772 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@770c2e6b: startup date [Mon Mar 19 17:52:30 CET 2018]; root of context hierarchy
+2018-03-19 17:52:36.393  INFO 7772 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendship/listFriendship]}" onto public java.lang.String com.uniovi.controllers.FriendshipController.getListado(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-19 17:52:36.395  INFO 7772 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/listRequest]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.getListado(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-19 17:52:36.395  INFO 7772 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/listRequest/update]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.updateListado(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-19 17:52:36.395  INFO 7772 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/add/{id}]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.addFriendshipRequest(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.lang.Long,java.security.Principal)
+2018-03-19 17:52:36.395  INFO 7772 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/accept/{id}]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.acceptFriendshipRequest(java.lang.Long,java.security.Principal)
+2018-03-19 17:52:36.396  INFO 7772 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.uniovi.controllers.HomeController.index()
+2018-03-19 17:52:36.397  INFO 7772 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/listPosts]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getListado(org.springframework.ui.Model,java.security.Principal)
+2018-03-19 17:52:36.397  INFO 7772 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/add],methods=[POST]}" onto public java.lang.String com.uniovi.controllers.PublicationController.setPublication(com.uniovi.entities.Publication,org.springframework.validation.BindingResult,java.security.Principal,org.springframework.web.multipart.MultipartFile)
+2018-03-19 17:52:36.397  INFO 7772 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/add]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getPublication(org.springframework.ui.Model)
+2018-03-19 17:52:36.398  INFO 7772 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/details/{id}]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getDetail(org.springframework.ui.Model,java.lang.Long)
+2018-03-19 17:52:36.398  INFO 7772 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/listFriendPublications/{id}]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getFriendPublications(org.springframework.ui.Model,java.lang.Long)
+2018-03-19 17:52:36.401  INFO 7772 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/listUsuarios]}" onto public java.lang.String com.uniovi.controllers.UsersController.getListado(org.springframework.ui.Model,java.lang.String,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-19 17:52:36.401  INFO 7772 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[POST]}" onto public java.lang.String com.uniovi.controllers.UsersController.signup(com.uniovi.entities.User,org.springframework.validation.BindingResult,org.springframework.ui.Model)
+2018-03-19 17:52:36.401  INFO 7772 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[GET]}" onto public java.lang.String com.uniovi.controllers.UsersController.signup(org.springframework.ui.Model)
+2018-03-19 17:52:36.401  INFO 7772 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[GET]}" onto public java.lang.String com.uniovi.controllers.UsersController.login(org.springframework.ui.Model)
+2018-03-19 17:52:36.401  INFO 7772 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/login],methods=[GET]}" onto public java.lang.String com.uniovi.controllers.UsersController.adminLogin(org.springframework.ui.Model)
+2018-03-19 17:52:36.402  INFO 7772 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/login],methods=[POST]}" onto public java.lang.String com.uniovi.controllers.UsersController.adminLogin(com.uniovi.entities.User,org.springframework.validation.BindingResult,org.springframework.ui.Model)
+2018-03-19 17:52:36.402  INFO 7772 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/deleteUser/{id}]}" onto public java.lang.String com.uniovi.controllers.UsersController.deleteUser(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.lang.Long,java.security.Principal)
+2018-03-19 17:52:36.402  INFO 7772 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/home],methods=[GET]}" onto public java.lang.String com.uniovi.controllers.UsersController.home(org.springframework.ui.Model,org.springframework.data.domain.Pageable)
+2018-03-19 17:52:36.405  INFO 7772 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-19 17:52:36.405  INFO 7772 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-19 17:52:36.434  INFO 7772 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-19 17:52:36.434  INFO 7772 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-19 17:52:36.468  INFO 7772 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-19 17:52:37.062  INFO 7772 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-19 17:52:37.134  INFO 7772 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8090 (http)
+2018-03-19 17:52:37.139  INFO 7772 --- [main] com.uniovi.RedSocialSdiApplication       : Started RedSocialSdiApplication in 7.512 seconds (JVM running for 7.845)
+2018-03-19 17:53:00.220  INFO 7772 --- [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-19 17:53:00.221  INFO 7772 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-19 17:53:00.237  INFO 7772 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2018-03-19 17:53:03.591  INFO 7772 --- [http-nio-8090-exec-8] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 17:53:04.167  INFO 7772 --- [http-nio-8090-exec-6] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 17:53:08.513  INFO 7772 --- [http-nio-8090-exec-7] com.uniovi.controllers.UsersController   : El usuario email2 ha consultado la lista de usuarios
+2018-03-19 17:53:12.562  INFO 7772 --- [http-nio-8090-exec-6] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 17:53:14.391  INFO 7772 --- [http-nio-8090-exec-2] com.uniovi.controllers.UsersController   : El usuario email11 ha consultado la lista de usuarios
+2018-03-19 17:53:18.576  INFO 7772 --- [http-nio-8090-exec-6] com.uniovi.controllers.UsersController   : Login inválido
+2018-03-19 17:53:22.590  INFO 7772 --- [http-nio-8090-exec-10] com.uniovi.controllers.UsersController   : El usuario email11 ha consultado la lista de usuarios
+2018-03-19 17:53:24.358  INFO 7772 --- [http-nio-8090-exec-10] com.uniovi.controllers.UsersController   : El usuario email11 ha consultado la lista de usuarios
+2018-03-19 17:54:25.969  INFO 4016 --- [main] com.uniovi.RedSocialSdiApplication       : Starting RedSocialSdiApplication on Martin-PC with PID 4016 (started by Martin in D:\Universidad\Tercero\Segundo Semestre\Sistemas distribuidos e internet\Trabajos Practicas\RedSocialSDI)
+2018-03-19 17:54:25.971  INFO 4016 --- [main] com.uniovi.RedSocialSdiApplication       : No active profile set, falling back to default profiles: default
+2018-03-19 17:54:26.179  INFO 4016 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@770c2e6b: startup date [Mon Mar 19 17:54:26 CET 2018]; root of context hierarchy
+2018-03-19 17:54:27.199  INFO 4016 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5297f374] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-19 17:54:27.704  INFO 4016 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8090 (http)
+2018-03-19 17:54:27.715  INFO 4016 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-19 17:54:27.716  INFO 4016 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-03-19 17:54:27.821  INFO 4016 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-19 17:54:27.822  INFO 4016 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1647 ms
+2018-03-19 17:54:27.977  INFO 4016 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-19 17:54:27.978  INFO 4016 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-19 17:54:27.978  INFO 4016 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-19 17:54:27.978  INFO 4016 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-19 17:54:27.979  INFO 4016 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-03-19 17:54:27.980  INFO 4016 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-19 17:54:29.313  INFO 4016 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-19 17:54:29.328  INFO 4016 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-19 17:54:29.387  INFO 4016 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-03-19 17:54:29.388  INFO 4016 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-03-19 17:54:29.389  INFO 4016 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-03-19 17:54:29.427  INFO 4016 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-19 17:54:29.602  INFO 4016 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2018-03-19 17:54:30.013  INFO 4016 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2018-03-19 17:54:30.023  INFO 4016 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2018-03-19 17:54:30.053  INFO 4016 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-19 17:54:30.268  INFO 4016 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-03-19 17:54:31.973  INFO 4016 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@60fc7f43, org.springframework.security.web.context.SecurityContextPersistenceFilter@48c5698, org.springframework.security.web.header.HeaderWriterFilter@64b73e0a, org.springframework.security.web.authentication.logout.LogoutFilter@60a01cb, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@38f502fc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@68e24e7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@45d389f2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@16e195cf, org.springframework.security.web.session.SessionManagementFilter@3b57f915, org.springframework.security.web.access.ExceptionTranslationFilter@3a16984c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@d1c5cf2]
+2018-03-19 17:54:32.225  INFO 4016 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@770c2e6b: startup date [Mon Mar 19 17:54:26 CET 2018]; root of context hierarchy
+2018-03-19 17:54:32.295  INFO 4016 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendship/listFriendship]}" onto public java.lang.String com.uniovi.controllers.FriendshipController.getListado(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-19 17:54:32.297  INFO 4016 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/listRequest]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.getListado(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-19 17:54:32.297  INFO 4016 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/listRequest/update]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.updateListado(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-19 17:54:32.297  INFO 4016 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/add/{id}]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.addFriendshipRequest(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.lang.Long,java.security.Principal)
+2018-03-19 17:54:32.298  INFO 4016 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/accept/{id}]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.acceptFriendshipRequest(java.lang.Long,java.security.Principal)
+2018-03-19 17:54:32.298  INFO 4016 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.uniovi.controllers.HomeController.index()
+2018-03-19 17:54:32.299  INFO 4016 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/listPosts]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getListado(org.springframework.ui.Model,java.security.Principal)
+2018-03-19 17:54:32.300  INFO 4016 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/add],methods=[POST]}" onto public java.lang.String com.uniovi.controllers.PublicationController.setPublication(com.uniovi.entities.Publication,org.springframework.validation.BindingResult,java.security.Principal,org.springframework.web.multipart.MultipartFile)
+2018-03-19 17:54:32.300  INFO 4016 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/add]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getPublication(org.springframework.ui.Model)
+2018-03-19 17:54:32.300  INFO 4016 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/details/{id}]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getDetail(org.springframework.ui.Model,java.lang.Long)
+2018-03-19 17:54:32.300  INFO 4016 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/listFriendPublications/{id}]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getFriendPublications(org.springframework.ui.Model,java.lang.Long)
+2018-03-19 17:54:32.303  INFO 4016 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/home],methods=[GET]}" onto public java.lang.String com.uniovi.controllers.UsersController.home(org.springframework.ui.Model,org.springframework.data.domain.Pageable)
+2018-03-19 17:54:32.304  INFO 4016 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/listUsuarios]}" onto public java.lang.String com.uniovi.controllers.UsersController.getListado(org.springframework.ui.Model,java.lang.String,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-19 17:54:32.304  INFO 4016 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[GET]}" onto public java.lang.String com.uniovi.controllers.UsersController.login(org.springframework.ui.Model)
+2018-03-19 17:54:32.304  INFO 4016 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[POST]}" onto public java.lang.String com.uniovi.controllers.UsersController.signup(com.uniovi.entities.User,org.springframework.validation.BindingResult,org.springframework.ui.Model)
+2018-03-19 17:54:32.304  INFO 4016 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[GET]}" onto public java.lang.String com.uniovi.controllers.UsersController.signup(org.springframework.ui.Model)
+2018-03-19 17:54:32.305  INFO 4016 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/login],methods=[POST]}" onto public java.lang.String com.uniovi.controllers.UsersController.adminLogin(com.uniovi.entities.User,org.springframework.validation.BindingResult,org.springframework.ui.Model)
+2018-03-19 17:54:32.305  INFO 4016 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/login],methods=[GET]}" onto public java.lang.String com.uniovi.controllers.UsersController.adminLogin(org.springframework.ui.Model)
+2018-03-19 17:54:32.305  INFO 4016 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/deleteUser/{id}]}" onto public java.lang.String com.uniovi.controllers.UsersController.deleteUser(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.lang.Long,java.security.Principal)
+2018-03-19 17:54:32.307  INFO 4016 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-19 17:54:32.308  INFO 4016 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-19 17:54:32.338  INFO 4016 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-19 17:54:32.338  INFO 4016 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-19 17:54:32.385  INFO 4016 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-19 17:54:32.898  INFO 4016 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-19 17:54:32.962  INFO 4016 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8090 (http)
+2018-03-19 17:54:32.968  INFO 4016 --- [main] com.uniovi.RedSocialSdiApplication       : Started RedSocialSdiApplication in 7.244 seconds (JVM running for 7.581)
+2018-03-19 17:55:07.536  INFO 4016 --- [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-19 17:55:07.536  INFO 4016 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-19 17:55:07.548  INFO 4016 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 12 ms
+2018-03-19 17:55:10.742  INFO 4016 --- [http-nio-8090-exec-9] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 17:55:11.281  INFO 4016 --- [http-nio-8090-exec-5] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 17:55:15.150  INFO 4016 --- [http-nio-8090-exec-7] com.uniovi.controllers.UsersController   : El usuario email2 ha consultado la lista de usuarios
+2018-03-19 17:55:19.374  INFO 4016 --- [http-nio-8090-exec-2] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 17:55:21.232  INFO 4016 --- [http-nio-8090-exec-2] com.uniovi.controllers.UsersController   : El usuario email11 ha consultado la lista de usuarios
+2018-03-19 17:55:25.459  INFO 4016 --- [http-nio-8090-exec-2] com.uniovi.controllers.UsersController   : Login inválido
+2018-03-19 17:55:29.646  INFO 4016 --- [http-nio-8090-exec-4] com.uniovi.controllers.UsersController   : El usuario email11 ha consultado la lista de usuarios
+2018-03-19 17:55:31.428  INFO 4016 --- [http-nio-8090-exec-4] com.uniovi.controllers.UsersController   : El usuario email11 ha consultado la lista de usuarios
+2018-03-19 17:56:32.627  INFO 5696 --- [main] com.uniovi.RedSocialSdiApplication       : Starting RedSocialSdiApplication on Martin-PC with PID 5696 (started by Martin in D:\Universidad\Tercero\Segundo Semestre\Sistemas distribuidos e internet\Trabajos Practicas\RedSocialSDI)
+2018-03-19 17:56:32.630  INFO 5696 --- [main] com.uniovi.RedSocialSdiApplication       : No active profile set, falling back to default profiles: default
+2018-03-19 17:56:32.815  INFO 5696 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@770c2e6b: startup date [Mon Mar 19 17:56:32 CET 2018]; root of context hierarchy
+2018-03-19 17:56:33.806  INFO 5696 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$59429178] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-19 17:56:34.311  INFO 5696 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8090 (http)
+2018-03-19 17:56:34.322  INFO 5696 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-19 17:56:34.323  INFO 5696 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-03-19 17:56:34.409  INFO 5696 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-19 17:56:34.410  INFO 5696 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1598 ms
+2018-03-19 17:56:34.553  INFO 5696 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-19 17:56:34.554  INFO 5696 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-19 17:56:34.554  INFO 5696 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-19 17:56:34.554  INFO 5696 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-19 17:56:34.555  INFO 5696 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-03-19 17:56:34.555  INFO 5696 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-19 17:56:35.891  INFO 5696 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-19 17:56:35.906  INFO 5696 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-19 17:56:35.963  INFO 5696 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-03-19 17:56:35.964  INFO 5696 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-03-19 17:56:35.965  INFO 5696 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-03-19 17:56:35.998  INFO 5696 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-19 17:56:36.179  INFO 5696 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2018-03-19 17:56:36.615  INFO 5696 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2018-03-19 17:56:36.625  INFO 5696 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2018-03-19 17:56:36.657  INFO 5696 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-19 17:56:36.878  INFO 5696 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-03-19 17:56:38.486  INFO 5696 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@752973de, org.springframework.security.web.context.SecurityContextPersistenceFilter@2b3f7704, org.springframework.security.web.header.HeaderWriterFilter@5ab63a04, org.springframework.security.web.authentication.logout.LogoutFilter@211a9647, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7e0986c9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3db1ce78, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@645dc557, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@52a67293, org.springframework.security.web.session.SessionManagementFilter@4c6bba7d, org.springframework.security.web.access.ExceptionTranslationFilter@1a17dd6f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1a536164]
+2018-03-19 17:56:38.706  INFO 5696 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@770c2e6b: startup date [Mon Mar 19 17:56:32 CET 2018]; root of context hierarchy
+2018-03-19 17:56:38.775  INFO 5696 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendship/listFriendship]}" onto public java.lang.String com.uniovi.controllers.FriendshipController.getListado(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-19 17:56:38.776  INFO 5696 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/listRequest]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.getListado(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-19 17:56:38.777  INFO 5696 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/listRequest/update]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.updateListado(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-19 17:56:38.777  INFO 5696 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/add/{id}]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.addFriendshipRequest(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.lang.Long,java.security.Principal)
+2018-03-19 17:56:38.777  INFO 5696 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/accept/{id}]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.acceptFriendshipRequest(java.lang.Long,java.security.Principal)
+2018-03-19 17:56:38.778  INFO 5696 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.uniovi.controllers.HomeController.index()
+2018-03-19 17:56:38.778  INFO 5696 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/listPosts]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getListado(org.springframework.ui.Model,java.security.Principal)
+2018-03-19 17:56:38.778  INFO 5696 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/add],methods=[POST]}" onto public java.lang.String com.uniovi.controllers.PublicationController.setPublication(com.uniovi.entities.Publication,org.springframework.validation.BindingResult,java.security.Principal,org.springframework.web.multipart.MultipartFile)
+2018-03-19 17:56:38.779  INFO 5696 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/add]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getPublication(org.springframework.ui.Model)
+2018-03-19 17:56:38.779  INFO 5696 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/details/{id}]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getDetail(org.springframework.ui.Model,java.lang.Long)
+2018-03-19 17:56:38.779  INFO 5696 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/listFriendPublications/{id}]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getFriendPublications(org.springframework.ui.Model,java.lang.Long)
+2018-03-19 17:56:38.782  INFO 5696 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/home],methods=[GET]}" onto public java.lang.String com.uniovi.controllers.UsersController.home(org.springframework.ui.Model,org.springframework.data.domain.Pageable)
+2018-03-19 17:56:38.783  INFO 5696 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/listUsuarios]}" onto public java.lang.String com.uniovi.controllers.UsersController.getListado(org.springframework.ui.Model,java.lang.String,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-19 17:56:38.783  INFO 5696 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[GET]}" onto public java.lang.String com.uniovi.controllers.UsersController.login(org.springframework.ui.Model)
+2018-03-19 17:56:38.783  INFO 5696 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[POST]}" onto public java.lang.String com.uniovi.controllers.UsersController.signup(com.uniovi.entities.User,org.springframework.validation.BindingResult,org.springframework.ui.Model)
+2018-03-19 17:56:38.784  INFO 5696 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[GET]}" onto public java.lang.String com.uniovi.controllers.UsersController.signup(org.springframework.ui.Model)
+2018-03-19 17:56:38.784  INFO 5696 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/login],methods=[POST]}" onto public java.lang.String com.uniovi.controllers.UsersController.adminLogin(com.uniovi.entities.User,org.springframework.validation.BindingResult,org.springframework.ui.Model)
+2018-03-19 17:56:38.784  INFO 5696 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/login],methods=[GET]}" onto public java.lang.String com.uniovi.controllers.UsersController.adminLogin(org.springframework.ui.Model)
+2018-03-19 17:56:38.784  INFO 5696 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/deleteUser/{id}]}" onto public java.lang.String com.uniovi.controllers.UsersController.deleteUser(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.lang.Long,java.security.Principal)
+2018-03-19 17:56:38.787  INFO 5696 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-19 17:56:38.788  INFO 5696 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-19 17:56:38.821  INFO 5696 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-19 17:56:38.821  INFO 5696 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-19 17:56:38.860  INFO 5696 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-19 17:56:39.449  INFO 5696 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-19 17:56:39.509  INFO 5696 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8090 (http)
+2018-03-19 17:56:39.512  INFO 5696 --- [main] com.uniovi.RedSocialSdiApplication       : Started RedSocialSdiApplication in 7.115 seconds (JVM running for 7.427)
+2018-03-19 17:56:58.209  INFO 5696 --- [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-19 17:56:58.210  INFO 5696 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-19 17:56:58.223  INFO 5696 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2018-03-19 17:57:01.288  INFO 5696 --- [http-nio-8090-exec-8] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 17:57:01.870  INFO 5696 --- [http-nio-8090-exec-4] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 17:57:05.725  INFO 5696 --- [http-nio-8090-exec-7] com.uniovi.controllers.UsersController   : El usuario email2 ha consultado la lista de usuarios
+2018-03-19 17:57:09.977  INFO 5696 --- [http-nio-8090-exec-6] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 17:57:11.846  INFO 5696 --- [http-nio-8090-exec-6] com.uniovi.controllers.UsersController   : El usuario email11 ha consultado la lista de usuarios
+2018-03-19 17:57:15.696  INFO 5696 --- [http-nio-8090-exec-1] com.uniovi.controllers.UsersController   : Login inválido
+2018-03-19 17:57:17.469  INFO 5696 --- [http-nio-8090-exec-1] com.uniovi.controllers.UsersController   : El usuario email11 ha consultado la lista de usuarios
+2018-03-19 17:57:19.551  INFO 5696 --- [http-nio-8090-exec-10] com.uniovi.controllers.UsersController   : El usuario email11 ha consultado la lista de usuarios
+2018-03-19 17:57:23.018  INFO 5696 --- [http-nio-8090-exec-6] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 17:57:23.677  INFO 5696 --- [http-nio-8090-exec-8] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 17:57:28.938  INFO 5696 --- [http-nio-8090-exec-9] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 17:57:31.562  INFO 5696 --- [http-nio-8090-exec-9] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 17:57:32.112  INFO 5696 --- [http-nio-8090-exec-1] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 17:57:35.720  INFO 5696 --- [http-nio-8090-exec-7] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 17:57:36.220  INFO 5696 --- [http-nio-8090-exec-6] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 17:57:39.435  INFO 5696 --- [http-nio-8090-exec-6] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 17:57:39.976  INFO 5696 --- [http-nio-8090-exec-3] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 17:57:43.785  INFO 5696 --- [http-nio-8090-exec-5] com.uniovi.controllers.UsersController   : El usuario email2 ha consultado la lista de usuarios
+2018-03-19 17:57:50.306  INFO 5696 --- [http-nio-8090-exec-8] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 17:57:51.005  INFO 5696 --- [http-nio-8090-exec-5] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 17:57:54.646  INFO 5696 --- [http-nio-8090-exec-5] com.uniovi.controllers.UsersController   : El usuario email2 ha consultado la lista de usuarios
+2018-03-19 17:58:00.344  INFO 5696 --- [http-nio-8090-exec-4] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 17:58:05.066  INFO 5696 --- [http-nio-8090-exec-4] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 17:58:06.708  INFO 5696 --- [http-nio-8090-exec-9] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 17:58:09.843  INFO 5696 --- [http-nio-8090-exec-3] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 17:58:10.379  INFO 5696 --- [http-nio-8090-exec-4] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 17:58:14.252  INFO 5696 --- [http-nio-8090-exec-4] com.uniovi.controllers.UsersController   : El usuario email2 ha consultado la lista de usuarios
+2018-03-19 17:58:18.980  INFO 5696 --- [http-nio-8090-exec-7] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 17:58:23.741  INFO 5696 --- [http-nio-8090-exec-6] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 17:58:29.673  INFO 5696 --- [http-nio-8090-exec-1] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 17:58:36.102  INFO 5696 --- [http-nio-8090-exec-2] com.uniovi.controllers.UsersController   : Registro inválido
+2018-03-19 17:58:40.328  INFO 5696 --- [http-nio-8090-exec-6] com.uniovi.controllers.UsersController   : Se a añadido un nuevo usuario: Josefo - 38080.0@example.com
+2018-03-19 17:58:40.415  INFO 5696 --- [http-nio-8090-exec-3] com.uniovi.controllers.UsersController   : El usuario 38080.0@example.com ha consultado la lista de usuarios
+2018-03-19 17:59:04.226  INFO 6428 --- [main] com.uniovi.RedSocialSdiApplication       : Starting RedSocialSdiApplication on Martin-PC with PID 6428 (started by Martin in D:\Universidad\Tercero\Segundo Semestre\Sistemas distribuidos e internet\Trabajos Practicas\RedSocialSDI)
+2018-03-19 17:59:04.228  INFO 6428 --- [main] com.uniovi.RedSocialSdiApplication       : No active profile set, falling back to default profiles: default
+2018-03-19 17:59:04.435  INFO 6428 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@770c2e6b: startup date [Mon Mar 19 17:59:04 CET 2018]; root of context hierarchy
+2018-03-19 17:59:06.002  INFO 6428 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2b787240] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-19 17:59:06.541  INFO 6428 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8090 (http)
+2018-03-19 17:59:06.551  INFO 6428 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-19 17:59:06.552  INFO 6428 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-03-19 17:59:06.639  INFO 6428 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-19 17:59:06.640  INFO 6428 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2208 ms
+2018-03-19 17:59:06.792  INFO 6428 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-19 17:59:06.793  INFO 6428 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-19 17:59:06.793  INFO 6428 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-19 17:59:06.793  INFO 6428 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-19 17:59:06.794  INFO 6428 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-03-19 17:59:06.795  INFO 6428 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-19 17:59:08.124  INFO 6428 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-19 17:59:08.139  INFO 6428 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-19 17:59:08.209  INFO 6428 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-03-19 17:59:08.210  INFO 6428 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-03-19 17:59:08.212  INFO 6428 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-03-19 17:59:08.259  INFO 6428 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-19 17:59:08.479  INFO 6428 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2018-03-19 17:59:08.952  INFO 6428 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2018-03-19 17:59:08.963  INFO 6428 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2018-03-19 17:59:09.001  INFO 6428 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-19 17:59:09.222  INFO 6428 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-03-19 17:59:10.921  INFO 6428 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@60fc7f43, org.springframework.security.web.context.SecurityContextPersistenceFilter@48c5698, org.springframework.security.web.header.HeaderWriterFilter@64b73e0a, org.springframework.security.web.authentication.logout.LogoutFilter@60a01cb, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@38f502fc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@68e24e7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@45d389f2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@16e195cf, org.springframework.security.web.session.SessionManagementFilter@3b57f915, org.springframework.security.web.access.ExceptionTranslationFilter@3a16984c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@d1c5cf2]
+2018-03-19 17:59:11.149  INFO 6428 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@770c2e6b: startup date [Mon Mar 19 17:59:04 CET 2018]; root of context hierarchy
+2018-03-19 17:59:11.219  INFO 6428 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendship/listFriendship]}" onto public java.lang.String com.uniovi.controllers.FriendshipController.getListado(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-19 17:59:11.221  INFO 6428 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/listRequest]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.getListado(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-19 17:59:11.221  INFO 6428 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/listRequest/update]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.updateListado(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-19 17:59:11.222  INFO 6428 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/add/{id}]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.addFriendshipRequest(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.lang.Long,java.security.Principal)
+2018-03-19 17:59:11.222  INFO 6428 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/accept/{id}]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.acceptFriendshipRequest(java.lang.Long,java.security.Principal)
+2018-03-19 17:59:11.222  INFO 6428 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.uniovi.controllers.HomeController.index()
+2018-03-19 17:59:11.223  INFO 6428 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/listPosts]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getListado(org.springframework.ui.Model,java.security.Principal)
+2018-03-19 17:59:11.223  INFO 6428 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/add],methods=[POST]}" onto public java.lang.String com.uniovi.controllers.PublicationController.setPublication(com.uniovi.entities.Publication,org.springframework.validation.BindingResult,java.security.Principal,org.springframework.web.multipart.MultipartFile)
+2018-03-19 17:59:11.223  INFO 6428 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/add]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getPublication(org.springframework.ui.Model)
+2018-03-19 17:59:11.223  INFO 6428 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/details/{id}]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getDetail(org.springframework.ui.Model,java.lang.Long)
+2018-03-19 17:59:11.224  INFO 6428 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/listFriendPublications/{id}]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getFriendPublications(org.springframework.ui.Model,java.lang.Long)
+2018-03-19 17:59:11.226  INFO 6428 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/listUsuarios]}" onto public java.lang.String com.uniovi.controllers.UsersController.getListado(org.springframework.ui.Model,java.lang.String,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-19 17:59:11.226  INFO 6428 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[GET]}" onto public java.lang.String com.uniovi.controllers.UsersController.login(org.springframework.ui.Model)
+2018-03-19 17:59:11.226  INFO 6428 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[POST]}" onto public java.lang.String com.uniovi.controllers.UsersController.signup(com.uniovi.entities.User,org.springframework.validation.BindingResult,org.springframework.ui.Model)
+2018-03-19 17:59:11.226  INFO 6428 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[GET]}" onto public java.lang.String com.uniovi.controllers.UsersController.signup(org.springframework.ui.Model)
+2018-03-19 17:59:11.226  INFO 6428 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/login],methods=[POST]}" onto public java.lang.String com.uniovi.controllers.UsersController.adminLogin(com.uniovi.entities.User,org.springframework.validation.BindingResult,org.springframework.ui.Model)
+2018-03-19 17:59:11.226  INFO 6428 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/login],methods=[GET]}" onto public java.lang.String com.uniovi.controllers.UsersController.adminLogin(org.springframework.ui.Model)
+2018-03-19 17:59:11.227  INFO 6428 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/deleteUser/{id}]}" onto public java.lang.String com.uniovi.controllers.UsersController.deleteUser(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.lang.Long,java.security.Principal)
+2018-03-19 17:59:11.227  INFO 6428 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/home],methods=[GET]}" onto public java.lang.String com.uniovi.controllers.UsersController.home(org.springframework.ui.Model,org.springframework.data.domain.Pageable)
+2018-03-19 17:59:11.229  INFO 6428 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-19 17:59:11.230  INFO 6428 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-19 17:59:11.260  INFO 6428 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-19 17:59:11.260  INFO 6428 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-19 17:59:11.297  INFO 6428 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-19 17:59:11.865  INFO 6428 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-19 17:59:11.933  INFO 6428 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8090 (http)
+2018-03-19 17:59:11.936  INFO 6428 --- [main] com.uniovi.RedSocialSdiApplication       : Started RedSocialSdiApplication in 7.966 seconds (JVM running for 8.294)
+2018-03-19 17:59:48.475  INFO 6428 --- [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-19 17:59:48.475  INFO 6428 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-19 17:59:48.488  INFO 6428 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2018-03-19 17:59:51.631  INFO 6428 --- [http-nio-8090-exec-9] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 17:59:52.183  INFO 6428 --- [http-nio-8090-exec-5] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 17:59:56.100  INFO 6428 --- [http-nio-8090-exec-7] com.uniovi.controllers.UsersController   : El usuario email2 ha consultado la lista de usuarios
+2018-03-19 18:00:00.344  INFO 6428 --- [http-nio-8090-exec-4] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 18:00:02.269  INFO 6428 --- [http-nio-8090-exec-2] com.uniovi.controllers.UsersController   : El usuario email11 ha consultado la lista de usuarios
+2018-03-19 18:00:06.569  INFO 6428 --- [http-nio-8090-exec-4] com.uniovi.controllers.UsersController   : Login inválido
+2018-03-19 18:00:08.562  INFO 6428 --- [http-nio-8090-exec-2] com.uniovi.controllers.UsersController   : El usuario email11 ha consultado la lista de usuarios
+2018-03-19 18:00:10.299  INFO 6428 --- [http-nio-8090-exec-2] com.uniovi.controllers.UsersController   : El usuario email11 ha consultado la lista de usuarios
+2018-03-19 18:00:13.714  INFO 6428 --- [http-nio-8090-exec-7] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 18:00:14.434  INFO 6428 --- [http-nio-8090-exec-3] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 18:00:19.685  INFO 6428 --- [http-nio-8090-exec-8] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 18:00:22.182  INFO 6428 --- [http-nio-8090-exec-5] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 18:00:22.837  INFO 6428 --- [http-nio-8090-exec-10] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 18:00:27.214  INFO 6428 --- [http-nio-8090-exec-2] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 18:00:27.726  INFO 6428 --- [http-nio-8090-exec-7] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 18:00:31.099  INFO 6428 --- [http-nio-8090-exec-5] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 18:00:31.624  INFO 6428 --- [http-nio-8090-exec-4] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 18:00:35.494  INFO 6428 --- [http-nio-8090-exec-9] com.uniovi.controllers.UsersController   : El usuario email2 ha consultado la lista de usuarios
+2018-03-19 18:00:41.964  INFO 6428 --- [http-nio-8090-exec-7] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 18:00:42.468  INFO 6428 --- [http-nio-8090-exec-5] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 18:00:46.154  INFO 6428 --- [http-nio-8090-exec-4] com.uniovi.controllers.UsersController   : El usuario email2 ha consultado la lista de usuarios
+2018-03-19 18:00:52.023  INFO 6428 --- [http-nio-8090-exec-6] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 18:00:56.749  INFO 6428 --- [http-nio-8090-exec-5] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 18:00:58.359  INFO 6428 --- [http-nio-8090-exec-8] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 18:01:01.445  INFO 6428 --- [http-nio-8090-exec-8] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 18:01:01.924  INFO 6428 --- [http-nio-8090-exec-9] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 18:01:05.518  INFO 6428 --- [http-nio-8090-exec-7] com.uniovi.controllers.UsersController   : El usuario email2 ha consultado la lista de usuarios
+2018-03-19 18:01:10.208  INFO 6428 --- [http-nio-8090-exec-9] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 18:01:15.124  INFO 6428 --- [http-nio-8090-exec-2] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 18:01:20.983  INFO 6428 --- [http-nio-8090-exec-2] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 18:01:27.356  INFO 6428 --- [http-nio-8090-exec-10] com.uniovi.controllers.UsersController   : Registro inválido
+2018-03-19 18:01:31.575  INFO 6428 --- [http-nio-8090-exec-6] com.uniovi.controllers.UsersController   : Se a añadido un nuevo usuario: Josefo - 502.0@example.com
+2018-03-19 18:01:31.668  INFO 6428 --- [http-nio-8090-exec-1] com.uniovi.controllers.UsersController   : El usuario 502.0@example.com ha consultado la lista de usuarios
+2018-03-19 18:03:53.647  INFO 6428 --- [http-nio-8090-exec-9] com.uniovi.controllers.UsersController   : El usuario email11 ha consultado la lista de usuarios
+2018-03-19 18:04:37.370  INFO 4176 --- [main] com.uniovi.RedSocialSdiApplication       : Starting RedSocialSdiApplication on Martin-PC with PID 4176 (started by Martin in D:\Universidad\Tercero\Segundo Semestre\Sistemas distribuidos e internet\Trabajos Practicas\RedSocialSDI)
+2018-03-19 18:04:37.373  INFO 4176 --- [main] com.uniovi.RedSocialSdiApplication       : No active profile set, falling back to default profiles: default
+2018-03-19 18:04:37.554  INFO 4176 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@770c2e6b: startup date [Mon Mar 19 18:04:37 CET 2018]; root of context hierarchy
+2018-03-19 18:04:38.532  INFO 4176 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5297f374] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-19 18:04:39.021  INFO 4176 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8090 (http)
+2018-03-19 18:04:39.031  INFO 4176 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-19 18:04:39.032  INFO 4176 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-03-19 18:04:39.119  INFO 4176 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-19 18:04:39.119  INFO 4176 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1567 ms
+2018-03-19 18:04:39.253  INFO 4176 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-19 18:04:39.254  INFO 4176 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-19 18:04:39.254  INFO 4176 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-19 18:04:39.254  INFO 4176 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-19 18:04:39.255  INFO 4176 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-03-19 18:04:39.255  INFO 4176 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-19 18:04:40.624  INFO 4176 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-19 18:04:40.639  INFO 4176 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-19 18:04:40.707  INFO 4176 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-03-19 18:04:40.708  INFO 4176 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-03-19 18:04:40.710  INFO 4176 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-03-19 18:04:40.746  INFO 4176 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-03-19 18:04:40.923  INFO 4176 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2018-03-19 18:04:41.327  INFO 4176 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2018-03-19 18:04:41.336  INFO 4176 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2018-03-19 18:04:41.369  INFO 4176 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-19 18:04:41.567  INFO 4176 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-03-19 18:04:43.208  INFO 4176 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@60fc7f43, org.springframework.security.web.context.SecurityContextPersistenceFilter@48c5698, org.springframework.security.web.header.HeaderWriterFilter@64b73e0a, org.springframework.security.web.authentication.logout.LogoutFilter@60a01cb, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@38f502fc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@68e24e7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@45d389f2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@16e195cf, org.springframework.security.web.session.SessionManagementFilter@3b57f915, org.springframework.security.web.access.ExceptionTranslationFilter@3a16984c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@d1c5cf2]
+2018-03-19 18:04:43.411  INFO 4176 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@770c2e6b: startup date [Mon Mar 19 18:04:37 CET 2018]; root of context hierarchy
+2018-03-19 18:04:43.482  INFO 4176 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendship/listFriendship]}" onto public java.lang.String com.uniovi.controllers.FriendshipController.getListado(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-19 18:04:43.483  INFO 4176 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/accept/{id}]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.acceptFriendshipRequest(java.lang.Long,java.security.Principal)
+2018-03-19 18:04:43.483  INFO 4176 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/add/{id}]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.addFriendshipRequest(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.lang.Long,java.security.Principal)
+2018-03-19 18:04:43.483  INFO 4176 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/listRequest]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.getListado(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-19 18:04:43.483  INFO 4176 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/friendshipRequest/listRequest/update]}" onto public java.lang.String com.uniovi.controllers.FriendshipRequestController.updateListado(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-19 18:04:43.484  INFO 4176 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.uniovi.controllers.HomeController.index()
+2018-03-19 18:04:43.484  INFO 4176 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/listFriendPublications/{id}]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getFriendPublications(org.springframework.ui.Model,java.lang.Long)
+2018-03-19 18:04:43.484  INFO 4176 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/listPosts]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getListado(org.springframework.ui.Model,java.security.Principal)
+2018-03-19 18:04:43.485  INFO 4176 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/add],methods=[POST]}" onto public java.lang.String com.uniovi.controllers.PublicationController.setPublication(com.uniovi.entities.Publication,org.springframework.validation.BindingResult,java.security.Principal,org.springframework.web.multipart.MultipartFile)
+2018-03-19 18:04:43.485  INFO 4176 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/add]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getPublication(org.springframework.ui.Model)
+2018-03-19 18:04:43.485  INFO 4176 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publication/details/{id}]}" onto public java.lang.String com.uniovi.controllers.PublicationController.getDetail(org.springframework.ui.Model,java.lang.Long)
+2018-03-19 18:04:43.487  INFO 4176 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/home],methods=[GET]}" onto public java.lang.String com.uniovi.controllers.UsersController.home(org.springframework.ui.Model,org.springframework.data.domain.Pageable)
+2018-03-19 18:04:43.487  INFO 4176 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/listUsuarios]}" onto public java.lang.String com.uniovi.controllers.UsersController.getListado(org.springframework.ui.Model,java.lang.String,org.springframework.data.domain.Pageable,java.security.Principal)
+2018-03-19 18:04:43.487  INFO 4176 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[GET]}" onto public java.lang.String com.uniovi.controllers.UsersController.login(org.springframework.ui.Model)
+2018-03-19 18:04:43.487  INFO 4176 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[POST]}" onto public java.lang.String com.uniovi.controllers.UsersController.signup(com.uniovi.entities.User,org.springframework.validation.BindingResult,org.springframework.ui.Model)
+2018-03-19 18:04:43.487  INFO 4176 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[GET]}" onto public java.lang.String com.uniovi.controllers.UsersController.signup(org.springframework.ui.Model)
+2018-03-19 18:04:43.488  INFO 4176 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/login],methods=[POST]}" onto public java.lang.String com.uniovi.controllers.UsersController.adminLogin(com.uniovi.entities.User,org.springframework.validation.BindingResult,org.springframework.ui.Model)
+2018-03-19 18:04:43.488  INFO 4176 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/login],methods=[GET]}" onto public java.lang.String com.uniovi.controllers.UsersController.adminLogin(org.springframework.ui.Model)
+2018-03-19 18:04:43.488  INFO 4176 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/deleteUser/{id}]}" onto public java.lang.String com.uniovi.controllers.UsersController.deleteUser(org.springframework.ui.Model,org.springframework.data.domain.Pageable,java.lang.Long,java.security.Principal)
+2018-03-19 18:04:43.490  INFO 4176 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-19 18:04:43.491  INFO 4176 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-19 18:04:43.519  INFO 4176 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-19 18:04:43.519  INFO 4176 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-19 18:04:43.551  INFO 4176 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-19 18:04:44.061  INFO 4176 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-19 18:04:44.121  INFO 4176 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8090 (http)
+2018-03-19 18:04:44.125  INFO 4176 --- [main] com.uniovi.RedSocialSdiApplication       : Started RedSocialSdiApplication in 6.981 seconds (JVM running for 7.295)
+2018-03-19 18:05:04.330  INFO 4176 --- [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-19 18:05:04.330  INFO 4176 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-19 18:05:04.348  INFO 4176 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2018-03-19 18:05:07.626  INFO 4176 --- [http-nio-8090-exec-10] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 18:05:08.146  INFO 4176 --- [http-nio-8090-exec-4] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 18:05:11.928  INFO 4176 --- [http-nio-8090-exec-7] com.uniovi.controllers.UsersController   : El usuario email2 ha consultado la lista de usuarios
+2018-03-19 18:05:16.098  INFO 4176 --- [http-nio-8090-exec-7] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 18:05:17.971  INFO 4176 --- [http-nio-8090-exec-7] com.uniovi.controllers.UsersController   : El usuario email11 ha consultado la lista de usuarios
+2018-03-19 18:05:20.021  INFO 4176 --- [http-nio-8090-exec-3] com.uniovi.controllers.UsersController   : Login inválido
+2018-03-19 18:05:21.730  INFO 4176 --- [http-nio-8090-exec-2] com.uniovi.controllers.UsersController   : El usuario email11 ha consultado la lista de usuarios
+2018-03-19 18:05:23.570  INFO 4176 --- [http-nio-8090-exec-3] com.uniovi.controllers.UsersController   : El usuario email11 ha consultado la lista de usuarios
+2018-03-19 18:05:27.082  INFO 4176 --- [http-nio-8090-exec-5] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 18:05:27.837  INFO 4176 --- [http-nio-8090-exec-3] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 18:05:33.127  INFO 4176 --- [http-nio-8090-exec-10] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 18:05:35.669  INFO 4176 --- [http-nio-8090-exec-10] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 18:05:36.153  INFO 4176 --- [http-nio-8090-exec-9] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 18:05:40.546  INFO 4176 --- [http-nio-8090-exec-5] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 18:05:41.056  INFO 4176 --- [http-nio-8090-exec-7] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 18:05:43.993  INFO 4176 --- [http-nio-8090-exec-10] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 18:05:44.727  INFO 4176 --- [http-nio-8090-exec-6] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 18:05:48.646  INFO 4176 --- [http-nio-8090-exec-2] com.uniovi.controllers.UsersController   : El usuario email2 ha consultado la lista de usuarios
+2018-03-19 18:05:55.217  INFO 4176 --- [http-nio-8090-exec-7] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 18:05:55.686  INFO 4176 --- [http-nio-8090-exec-5] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 18:05:59.359  INFO 4176 --- [http-nio-8090-exec-5] com.uniovi.controllers.UsersController   : El usuario email2 ha consultado la lista de usuarios
+2018-03-19 18:06:05.147  INFO 4176 --- [http-nio-8090-exec-1] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 18:06:09.587  INFO 4176 --- [http-nio-8090-exec-1] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 18:06:11.281  INFO 4176 --- [http-nio-8090-exec-9] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 18:06:14.321  INFO 4176 --- [http-nio-8090-exec-5] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 18:06:14.791  INFO 4176 --- [http-nio-8090-exec-10] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 18:06:18.491  INFO 4176 --- [http-nio-8090-exec-10] com.uniovi.controllers.UsersController   : El usuario email2 ha consultado la lista de usuarios
+2018-03-19 18:06:22.939  INFO 4176 --- [http-nio-8090-exec-7] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 18:06:28.086  INFO 4176 --- [http-nio-8090-exec-2] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 18:06:33.914  INFO 4176 --- [http-nio-8090-exec-9] com.uniovi.controllers.UsersController   : El usuario email1 ha consultado la lista de usuarios
+2018-03-19 18:06:40.208  INFO 4176 --- [http-nio-8090-exec-10] com.uniovi.controllers.UsersController   : Registro inválido
+2018-03-19 18:06:44.164  INFO 4176 --- [http-nio-8090-exec-5] com.uniovi.controllers.UsersController   : Se a añadido un nuevo usuario: Josefo - 17829.0@example.com
+2018-03-19 18:06:44.257  INFO 4176 --- [http-nio-8090-exec-2] com.uniovi.controllers.UsersController   : El usuario 17829.0@example.com ha consultado la lista de usuarios

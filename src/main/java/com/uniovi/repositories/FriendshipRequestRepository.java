@@ -1,5 +1,7 @@
 package com.uniovi.repositories;
 
+import java.util.List;
+
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.Query;
@@ -16,4 +18,7 @@ public interface FriendshipRequestRepository extends CrudRepository<FriendshipRe
 
 	@Query("SELECT r FROM FriendshipRequest r where r.user1 = ?1 and r.user2 = ?2")
 	FriendshipRequest findByUsers(User user1, User user2);
+	
+	@Query("SELECT r FROM FriendshipRequest r WHERE r.user2.id = ?1")
+	List<FriendshipRequest> findAllByUser(Long id);
 }
