@@ -346,19 +346,26 @@ public class RedSocialSDITests {
 		WebElement title = driver.findElement(By.name("title"));
 		title.click();
 		title.clear();
-		title.sendKeys("Primera publicación");
+		title.sendKeys("Publicación con foto");
 		WebElement text = driver.findElement(By.name("text"));
 		text.click();
 		text.clear();
 		text.sendKeys("Esto es una publicación de prueba");
 
-		elementos = SeleniumUtils.EsperaCargaPagina(driver, "class", "btn btn-outline-primary", PO_View.getTimeout());
-		elementos.get(0).click();
-		// TODO: mirar como subir la foto desde aquí
+		String imagen = System.getProperty("user.dir") + "\\imagen.jpg";
+		imagen = imagen.replace("\\", "/");
+		imagen = "file:///" + imagen;
+
+		driver.findElement(By.name("picture")).sendKeys(imagen);
+
 		By boton = By.id("submit");
 		driver.findElement(boton).click();
 
-		PO_View.checkElement(driver, "text", "Publicaciones");
+		elementos = SeleniumUtils.EsperaCargaPagina(driver, "text", "Publicación con foto", PO_View.getTimeout());
+		elementos.get(0).click();
+
+		PO_View.checkElement(driver, "text", "Foto");
+
 	}
 
 	// 12.1 Crear una publicación con datos válidos y sin una foto
