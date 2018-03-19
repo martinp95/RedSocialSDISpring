@@ -15,143 +15,143 @@ import javax.persistence.Transient;
 @Entity
 public class User {
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
-	@Column(unique = true)
-	private String email;
-	private String name;
-	private String password;
-	@Transient
-	private String passwordConfirm;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    @Column(unique = true)
+    private String email;
+    private String name;
+    private String password;
+    @Transient
+    private String passwordConfirm;
 
-	@OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
-	private Set<Publication> publications = new HashSet<Publication>();
-	
-	@OneToMany(mappedBy = "user1", cascade = CascadeType.ALL)
-	private Set<FriendshipRequest> friendsRequest = new HashSet<FriendshipRequest>();
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
+    private Set<Publication> publications = new HashSet<Publication>();
 
-	@OneToMany(mappedBy = "user1", cascade = CascadeType.ALL)
-	private Set<Friend> friends = new HashSet<Friend>();	
+    @OneToMany(mappedBy = "user1", cascade = CascadeType.ALL)
+    private Set<FriendshipRequest> friendsRequest = new HashSet<FriendshipRequest>();
 
-	private String role;
+    @OneToMany(mappedBy = "user1", cascade = CascadeType.ALL)
+    private Set<Friend> friends = new HashSet<Friend>();
 
-	public User() {
-	}
+    private String role;
 
-	public User(String email, String name) {
-		super();
-		this.email = email;
-		this.name = name;
-	}
+    public User() {
+    }
 
-	public String getRole() {
-		return role;
-	}
+    public User(String email, String name) {
+	super();
+	this.email = email;
+	this.name = name;
+    }
 
-	public void setRole(String role) {
-		this.role = role;
-	}
+    public String getRole() {
+	return role;
+    }
 
-	public String getEmail() {
-		return email;
-	}
+    public void setRole(String role) {
+	this.role = role;
+    }
 
-	public void setEmail(String email) {
-		this.email = email;
-	}
+    public String getEmail() {
+	return email;
+    }
 
-	public String getName() {
-		return name;
-	}
+    public void setEmail(String email) {
+	this.email = email;
+    }
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    public String getName() {
+	return name;
+    }
 
-	public String getPassword() {
-		return password;
-	}
+    public void setName(String name) {
+	this.name = name;
+    }
 
-	public void setPassword(String password) {
-		this.password = password;
-	}
+    public String getPassword() {
+	return password;
+    }
 
-	public Long getId() {
-		return id;
-	}
+    public void setPassword(String password) {
+	this.password = password;
+    }
 
-	protected Set<Publication> _getPublications() {
-		return publications;
-	}
+    public Long getId() {
+	return id;
+    }
 
-	public Set<Publication> getPublications() {
-		return new HashSet<Publication>(publications);
-	}
+    protected Set<Publication> _getPublications() {
+	return publications;
+    }
 
-	public void setPublications(Set<Publication> publications) {
-		this.publications = publications;
-	}
+    public Set<Publication> getPublications() {
+	return new HashSet<Publication>(publications);
+    }
 
-	protected Set<Friend> _getFriends() {
-		return friends;
-	}
+    public void setPublications(Set<Publication> publications) {
+	this.publications = publications;
+    }
 
-	public Set<Friend> getFriends() {
-		return new HashSet<Friend>(friends);
-	}
+    protected Set<Friend> _getFriends() {
+	return friends;
+    }
 
-	public void setFriends(Set<Friend> friends) {
-		this.friends = friends;
-	}
+    public Set<Friend> getFriends() {
+	return new HashSet<Friend>(friends);
+    }
 
-	protected Set<FriendshipRequest> _getFriendsRequest() {
-		return friendsRequest;
-	}
+    public void setFriends(Set<Friend> friends) {
+	this.friends = friends;
+    }
 
-	public Set<FriendshipRequest> getFriendsRequest() {
-		return new HashSet<FriendshipRequest>(friendsRequest);
-	}
+    protected Set<FriendshipRequest> _getFriendsRequest() {
+	return friendsRequest;
+    }
 
-	protected void _setFriendsRequest(Set<FriendshipRequest> friendsRequest) {
-		this.friendsRequest = friendsRequest;
-	}
+    public Set<FriendshipRequest> getFriendsRequest() {
+	return new HashSet<FriendshipRequest>(friendsRequest);
+    }
 
-	public String getPasswordConfirm() {
-		return passwordConfirm;
-	}
+    protected void _setFriendsRequest(Set<FriendshipRequest> friendsRequest) {
+	this.friendsRequest = friendsRequest;
+    }
 
-	public void setPasswordConfirm(String passwordConfirm) {
-		this.passwordConfirm = passwordConfirm;
-	}
+    public String getPasswordConfirm() {
+	return passwordConfirm;
+    }
 
-	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + ((id == null) ? 0 : id.hashCode());
-		return result;
-	}
+    public void setPasswordConfirm(String passwordConfirm) {
+	this.passwordConfirm = passwordConfirm;
+    }
 
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		User other = (User) obj;
-		if (id == null) {
-			if (other.id != null)
-				return false;
-		} else if (!id.equals(other.id))
-			return false;
-		return true;
-	}
+    @Override
+    public int hashCode() {
+	final int prime = 31;
+	int result = 1;
+	result = prime * result + ((id == null) ? 0 : id.hashCode());
+	return result;
+    }
 
-	@Override
-	public String toString() {
-		return "User [id=" + id + ", email=" + email + ", name=" + name + ", password=" + password + "]";
-	}
+    @Override
+    public boolean equals(Object obj) {
+	if (this == obj)
+	    return true;
+	if (obj == null)
+	    return false;
+	if (getClass() != obj.getClass())
+	    return false;
+	User other = (User) obj;
+	if (id == null) {
+	    if (other.id != null)
+		return false;
+	} else if (!id.equals(other.id))
+	    return false;
+	return true;
+    }
+
+    @Override
+    public String toString() {
+	return "User [id=" + id + ", email=" + email + ", name=" + name + ", password=" + password + "]";
+    }
 }

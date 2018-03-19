@@ -15,20 +15,20 @@ import com.uniovi.repositories.FriendsRepository;
 @Service
 public class FriendsService {
 
-	@Autowired
-	private FriendsRepository friendshipsRepository;
+    @Autowired
+    private FriendsRepository friendshipsRepository;
 
-	public void addFriendship(Friend friendship) {
-		friendshipsRepository.save(friendship);
-	}
+    public void addFriendship(Friend friendship) {
+	friendshipsRepository.save(friendship);
+    }
 
-	public void deleteFriendship(Friend friendship) {
-		friendshipsRepository.delete(friendship);
-	}
+    public void deleteFriendship(Friend friendship) {
+	friendshipsRepository.delete(friendship);
+    }
 
-	public Page<Friend> getFriendshipForUser(Pageable pageable, User user) {
-		Page<Friend> request = new PageImpl<Friend>(new LinkedList<Friend>());
-		request = friendshipsRepository.findAllByUser(pageable, user);
-		return request;
-	}
+    public Page<Friend> getFriendshipForUser(Pageable pageable, User user) {
+	Page<Friend> request = new PageImpl<Friend>(new LinkedList<Friend>());
+	request = friendshipsRepository.findAllByUser(pageable, user);
+	return request;
+    }
 }

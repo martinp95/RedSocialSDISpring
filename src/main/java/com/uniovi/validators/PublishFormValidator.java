@@ -10,15 +10,15 @@ import com.uniovi.entities.Publication;
 @Component
 public class PublishFormValidator implements Validator {
 
-	@Override
-	public boolean supports(Class<?> aClass) {
-		return Publication.class.equals(aClass);
-	}
+    @Override
+    public boolean supports(Class<?> aClass) {
+	return Publication.class.equals(aClass);
+    }
 
-	@Override
-	public void validate(Object target, Errors errors) {
-		ValidationUtils.rejectIfEmptyOrWhitespace(errors, "title", "Error.empty");
-		ValidationUtils.rejectIfEmptyOrWhitespace(errors, "text", "Error.empty");
-	}
+    @Override
+    public void validate(Object target, Errors errors) {
+	ValidationUtils.rejectIfEmptyOrWhitespace(errors, "title", "Error.empty");
+	ValidationUtils.rejectIfEmptyOrWhitespace(errors, "text", "Error.empty");
+    }
 
 }
