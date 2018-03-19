@@ -463,9 +463,7 @@ public class RedSocialSDITests {
 	// usuario existente en la aplicación.
 	@Test
 	public void AdBorUsrVal() {
-
 		driver.navigate().to("http://localhost:8090/admin/login");
-
 		WebElement email = driver.findElement(By.name("email"));
 		email.click();
 		email.clear();
@@ -477,15 +475,14 @@ public class RedSocialSDITests {
 		By boton = By.className("btn");
 		driver.findElement(boton).click();
 
-		List<WebElement> elementos = SeleniumUtils.EsperaCargaPagina(driver, "id", "deleteUserButton1",
+		List<WebElement> elementos = SeleniumUtils.EsperaCargaPagina(driver, "id", "deleteUserButton5",
 				PO_View.getTimeout());
 		elementos.get(0).click();
 		PO_View.checkElement(driver, "text", "Usuarios");
 		PO_View.checkElement(driver, "text", "Los usuarios que actualmente figuran en el sistema son los siguientes:");
 		PO_View.checkElement(driver, "text", "SDI - Red social");
-		elementos = SeleniumUtils.EsperaCargaPagina(driver, "id", "deleteUserButton1", PO_View.getTimeout());
-		assertTrue(elementos.size() == 0);
-		SeleniumUtils.textoNoPresentePagina(driver, "email1");
+
+		SeleniumUtils.textoNoPresentePagina(driver, "email5");
 	}
 
 	// 15.2 Intento de acceso vía URL al borrado de un usuario existente en la
