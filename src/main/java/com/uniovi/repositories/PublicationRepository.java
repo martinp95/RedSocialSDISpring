@@ -9,6 +9,6 @@ import com.uniovi.entities.User;
 
 public interface PublicationRepository extends CrudRepository<Publication, Long> {
 
-	List<Publication> findAllByUser(User user);
+    List<Publication> findAllByUser(User user);
 
 }

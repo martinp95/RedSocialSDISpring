@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class RedSocialSdiApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(RedSocialSdiApplication.class, args);
-	}
+    public static void main(String[] args) {
+	SpringApplication.run(RedSocialSdiApplication.class, args);
+    }
 }

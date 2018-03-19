@@ -26,68 +26,68 @@ import com.uniovi.validators.PublishFormValidator;
 @Controller
 public class PublicationController {
 
-	@Autowired
-	private PublicationService publicationService;
+    @Autowired
+    private PublicationService publicationService;
 
-	@Autowired
-	private UsersService usersService;
+    @Autowired
+    private UsersService usersService;
 
-	@Autowired
-	private PublishFormValidator publishFormValidator;
+    @Autowired
+    private PublishFormValidator publishFormValidator;
 
-	private final Logger log = LoggerFactory.getLogger(this.getClass());
+    private final Logger log = LoggerFactory.getLogger(this.getClass());
 
-	@RequestMapping(value = "/publication/add", method = RequestMethod.POST)
-	public String setPublication(@ModelAttribute Publication publication, BindingResult result, Principal principal,
-			@RequestParam(value = "picture", required = false) MultipartFile photo) {
-		publishFormValidator.validate(publication, result);
-		if (result.hasErrors()) {
-			log.info("La publicacion no es valida");
-			return "publication/add";
-		}
-		String email = principal.getName();
-		User user = usersService.getUserByEmail(email);
-		Publication original = new Publication(publication.getTitle(), publication.getText(), user);
-		try {
-			if (!photo.isEmpty())
-				original.setPhoto(photo.getBytes());
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		publicationService.addPublication(original);
-		return "redirect:/publication/listPosts";
+    @RequestMapping(value = "/publication/add", method = RequestMethod.POST)
+    public String setPublication(@ModelAttribute Publication publication, BindingResult result, Principal principal,
+	    @RequestParam(value = "picture", required = false) MultipartFile photo) {
+	publishFormValidator.validate(publication, result);
+	if (result.hasErrors()) {
+	    log.info("La publicacion no es valida");
+	    return "publication/add";
 	}
-
-	@RequestMapping(value = "/publication/add")
-	public String getPublication(Model model) {
-		model.addAttribute("publication", new Publication());
-		model.addAttribute("publicationList", publicationService.getPublications());
-		return "publication/add";
+	String email = principal.getName();
+	User user = usersService.getUserByEmail(email);
+	Publication original = new Publication(publication.getTitle(), publication.getText(), user);
+	try {
+	    if (!photo.isEmpty())
+		original.setPhoto(photo.getBytes());
+	} catch (IOException e) {
+	    e.printStackTrace();
 	}
+	publicationService.addPublication(original);
+	return "redirect:/publication/listPosts";
+    }
 
-	@RequestMapping("/publication/listPosts")
-	public String getListado(Model model, Principal principal) {
-		String email = principal.getName();
-		User user = usersService.getUserByEmail(email);
-		List<Publication> posts = publicationService.getPublicationsForUser(user);
-		model.addAttribute("postsList", posts);
-		return "/publication/listPosts";
-	}
+    @RequestMapping(value = "/publication/add")
+    public String getPublication(Model model) {
+	model.addAttribute("publication", new Publication());
+	model.addAttribute("publicationList", publicationService.getPublications());
+	return "publication/add";
+    }
 
-	@RequestMapping("/publication/details/{id}")
-	public String getDetail(Model model, @PathVariable Long id) {
-		Publication post = publicationService.getPublication(id);
-		model.addAttribute("post", post);
+    @RequestMapping("/publication/listPosts")
+    public String getListado(Model model, Principal principal) {
+	String email = principal.getName();
+	User user = usersService.getUserByEmail(email);
+	List<Publication> posts = publicationService.getPublicationsForUser(user);
+	model.addAttribute("postsList", posts);
+	return "/publication/listPosts";
+    }
 
-		return "publication/details";
-	}
+    @RequestMapping("/publication/details/{id}")
+    public String getDetail(Model model, @PathVariable Long id) {
+	Publication post = publicationService.getPublication(id);
+	model.addAttribute("post", post);
 
-	@RequestMapping("listFriendPublications/{id}")
-	public String getFriendPublications(Model model, @PathVariable Long id) {
-		User user = usersService.getUser(id);
-		List<Publication> posts = publicationService.getPublicationsForUser(user);
-		model.addAttribute("postsList", posts);
-		return "/publication/listPosts";
-	}
+	return "publication/details";
+    }
+
+    @RequestMapping("listFriendPublications/{id}")
+    public String getFriendPublications(Model model, @PathVariable Long id) {
+	User user = usersService.getUser(id);
+	List<Publication> posts = publicationService.getPublicationsForUser(user);
+	model.addAttribute("postsList", posts);
+	return "/publication/listPosts";
+    }
 
 }
