@@ -27,7 +27,7 @@ import com.uniovi.tests.utils.SeleniumUtils;
 public class RedSocialSDITests {
 
 	// C:\\Firefox46.win\\FirefoxPortable.exe
-	static String PathFirefox = "C:\\Users\\gemma\\Desktop\\RedSocialSDI\\Firefox46.win\\FirefoxPortable.exe";
+	static String PathFirefox = "C:\\Firefox46.win\\FirefoxPortable.exe";
 	static WebDriver driver = getDriver(PathFirefox);
 	static String URL = "http://localhost:8090";
 
@@ -79,6 +79,7 @@ public class RedSocialSDITests {
 		List<WebElement> elementos = SeleniumUtils.EsperaCargaPagina(driver, "id", "botonSignup", PO_View.getTimeout());
 		assertTrue(elementos.size() == 1);
 		elementos.get(0).click();
+		PO_NavView.clickOption(driver, "signup", "id", "botonSignup");
 		PO_RegisterView.fillForm(driver, "example@example.com", "Josefo", "123456", "1234567");
 		PO_View.checkElement(driver, "text", "Las contraseñas no coinciden.");
 	}
@@ -148,17 +149,6 @@ public class RedSocialSDITests {
 		PO_HomeView.clickOption(driver, "login", "class", "btn btn-primary");
 		PO_LoginView.fillForm(driver, "email1", "123456");
 		PO_HomeView.clickOption(driver, "user/listUsuarios", "id", "friendshipRequestButton2");
-
-		/*
-		 * PO_HomeView.clickOption(driver, "logout", "class", "btn btn-primary");
-		 * 
-		 * PO_HomeView.clickOption(driver, "login", "class", "btn btn-primary");
-		 * PO_LoginView.fillForm(driver, "email2", "123456");
-		 * 
-		 * PO_HomeView.clickOption(driver, "friendshipRequest/listRequest", "text",
-		 * "Pedro"); PO_View.checkElement(driver, "text",
-		 * "Solicitudes de amistad recibidas");
-		 */
 	}
 
 	// 5.2 Enviar una invitación de amistad a un usuario al que ya le habíamos
@@ -481,7 +471,6 @@ public class RedSocialSDITests {
 		PO_View.checkElement(driver, "text", "Usuarios");
 		PO_View.checkElement(driver, "text", "Los usuarios que actualmente figuran en el sistema son los siguientes:");
 		PO_View.checkElement(driver, "text", "SDI - Red social");
-
 		SeleniumUtils.textoNoPresentePagina(driver, "email5");
 	}
 

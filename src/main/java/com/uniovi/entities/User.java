@@ -27,12 +27,12 @@ public class User {
 
 	@OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
 	private Set<Publication> publications = new HashSet<Publication>();
-
-	@OneToMany(mappedBy = "user1", cascade = CascadeType.ALL)
-	private Set<Friend> friends = new HashSet<Friend>();
-
+	
 	@OneToMany(mappedBy = "user1", cascade = CascadeType.ALL)
 	private Set<FriendshipRequest> friendsRequest = new HashSet<FriendshipRequest>();
+
+	@OneToMany(mappedBy = "user1", cascade = CascadeType.ALL)
+	private Set<Friend> friends = new HashSet<Friend>();	
 
 	private String role;
 

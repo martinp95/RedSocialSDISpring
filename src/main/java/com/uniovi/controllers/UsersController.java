@@ -120,7 +120,7 @@ public class UsersController {
 	public String deleteUser(Model model, Pageable pageable, @PathVariable Long id, Principal principal) {
 		String email = principal.getName();
 		User user1 = usersService.getUserByEmail(email);
-
+				
 		usersService.deleteUser(id);
 
 		Page<User> users = usersService.findAll(pageable, user1.getId());

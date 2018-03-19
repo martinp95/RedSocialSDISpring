@@ -1,8 +1,6 @@
 package com.uniovi.services;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
-import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -20,22 +18,8 @@ public class FriendsService {
 	@Autowired
 	private FriendsRepository friendshipsRepository;
 
-	public List<Friend> getFriendships() {
-		List<Friend> friendship = new ArrayList<Friend>();
-		friendshipsRepository.findAll().forEach(friendship::add);
-		return friendship;
-	}
-
-	public Friend getFriendship(Long id) {
-		return friendshipsRepository.findOne(id);
-	}
-
 	public void addFriendship(Friend friendship) {
 		friendshipsRepository.save(friendship);
-	}
-
-	public void deleteFriendship(Long id) {
-		friendshipsRepository.delete(id);
 	}
 
 	public void deleteFriendship(Friend friendship) {
