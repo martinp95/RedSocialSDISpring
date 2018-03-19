@@ -44,7 +44,7 @@
 							</script>
 						</td>
 						<td sec:authorize="hasRole('ROLE_ADMIN')">
-							<button type="button" th:id="${'deleteUserButton' + user.id}"
+							<button type="button" th:id="${'deleteUserButton' + user.id}" 
 								class="btn btn-info" th:text="#{deleteUser.message}"></button>
 								
 							<script th:inline="javascript">
