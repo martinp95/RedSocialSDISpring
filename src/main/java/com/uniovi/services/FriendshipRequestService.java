@@ -25,16 +25,8 @@ public class FriendshipRequestService {
 		return request;
 	}
 
-	public FriendshipRequest getFriendshipRequest(Long id) {
-		return friendshipRequestRepository.findOne(id);
-	}
-
 	public void addFriendshipRequest(FriendshipRequest request) {
 		friendshipRequestRepository.save(request);
-	}
-
-	public void deleteFriendshipRequest(Long id) {
-		friendshipRequestRepository.delete(id);
 	}
 
 	public Page<FriendshipRequest> getFriendshipRequestsForUser(Pageable pageable, User user) {

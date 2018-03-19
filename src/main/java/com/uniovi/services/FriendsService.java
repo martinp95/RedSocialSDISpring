@@ -34,10 +34,6 @@ public class FriendsService {
 		friendshipsRepository.save(friendship);
 	}
 
-	public void deleteFriendship(Long id) {
-		friendshipsRepository.delete(id);
-	}
-
 	public void deleteFriendship(Friend friendship) {
 		friendshipsRepository.delete(friendship);
 	}
